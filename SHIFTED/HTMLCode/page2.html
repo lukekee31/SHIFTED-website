@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Motorsport Technology — SHIFTED</title>
+  <meta name="description" content="Learn how motorsport innovations such as ABS, traction control, active suspension and paddle-shift gearboxes shaped modern road cars." />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Font: Open Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <!-- Shared stylesheet -->
+  <link rel="stylesheet" href="../CSSCode/style.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">SHIFTED</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="page2.html">Motorsport</a></li>
+            <li class="nav-item"><a class="nav-link" href="page3.html">Engine</a></li>
+            <li class="nav-item"><a class="nav-link" href="page7.html">Hybrid</a></li>
+            <li class="nav-item"><a class="nav-link" href="page8.html">Electric</a></li>
+            <li class="nav-item"><a class="nav-link" href="page9.html">Ownership</a></li>
+            <li class="nav-item">
+              <button class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false"><i class="bi bi-moon-stars"></i><span>Dark</span></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero hero--page" aria-label="Motorsport Technology introduction">
+    <img class="hero-image" src="https://placehold.co/1920x1080/1a1a1a/1a1a1a?text=+" alt="Formula One car cornering at high speed on a race track">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <h1>Motorsport Technology</h1>
+        <p>Racing pushes engineering to its limits. Many technologies first developed for motorsport are now found in the cars we drive every day.</p>
+      </div>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- ================= INTRODUCTION ================= -->
+    <section>
+      <div class="container">
+        <div class="container-narrow text-center reveal">
+          <h2>The World's Fastest Engineering Laboratory</h2>
+          <p>Motorsport has always served as a testing ground for new automotive technologies. Engineers continually search for small improvements that can make a race car faster, safer and more reliable. Over time, many of these innovations become practical enough to be introduced into everyday road cars, improving the driving experience for millions of people.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WHY MOTORSPORT MATTERS ================= -->
+    <section class="bg-alt">
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2>Why Motorsport Matters</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-sm-6 col-lg-3">
+            <div class="card card--simple reveal">
+              <span class="icon-lg"><i class="bi bi-flag-fill"></i></span>
+              <h3 class="h5">Competition</h3>
+              <p>Competition encourages manufacturers to constantly improve performance.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card card--simple reveal">
+              <span class="icon-lg"><i class="bi bi-gear-fill"></i></span>
+              <h3 class="h5">Innovation</h3>
+              <p>New engineering solutions are developed much faster than in normal road car development.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card card--simple reveal">
+              <span class="icon-lg"><i class="bi bi-shield-fill-check"></i></span>
+              <h3 class="h5">Safety</h3>
+              <p>Many modern safety systems originated from racing.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card card--simple reveal">
+              <span class="icon-lg"><i class="bi bi-car-front-fill"></i></span>
+              <h3 class="h5">Road Cars</h3>
+              <p>Successful technologies eventually appear in vehicles available to the public.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TECHNOLOGY CARDS ================= -->
+    <section>
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2>From Racetrack to Road</h2>
+          <p>Select each technology below to see how it works and where it came from.</p>
+        </div>
+        <div class="row g-4">
+
+          <!-- Card 1: ABS -->
+          <div class="col-md-6">
+            <article class="card reveal">
+              <div class="card-img-wrap">
+                <img src="../Graphics/Technology-Images/abs-dashboard-light.jpg" alt="Dashboard warning lights showing the ABS indicator illuminated">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title h4">Anti-lock Braking System (ABS)</h3>
+                <p class="card-text">ABS prevents wheels from locking during heavy braking, allowing the driver to maintain steering control.</p>
+                <button class="btn-shifted-outline" type="button" data-bs-toggle="collapse" data-bs-target="#absCollapse" aria-expanded="false" aria-controls="absCollapse">
+                  Read More
+                </button>
+                <div class="collapse mt-3" id="absCollapse">
+                  <p><strong>How it works:</strong> Wheel speed sensors detect an impending lock-up, so brake pressure is rapidly modulated, which improves grip and maintains steering.</p>
+                  <p><strong>Motorsport example:</strong> GT Racing, Le Mans</p>
+                  <p class="mb-0"><strong>Road car example:</strong> Toyota Corolla, Honda Civic, Mercedes-Benz C-Class</p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card 2: Traction Control -->
+          <div class="col-md-6">
+            <article class="card reveal">
+              <div class="card-img-wrap">
+                <img src="../Graphics/Technology-Images/traction-control-button.png" alt="Traction control off button on a car interior">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title h4">Traction Control</h3>
+                <p class="card-text">Electronics prevent wheelspin so power reaches the road efficiently, even in low-grip conditions.</p>
+                <button class="btn-shifted-outline" type="button" data-bs-toggle="collapse" data-bs-target="#tractionCollapse" aria-expanded="false" aria-controls="tractionCollapse">
+                  Read More
+                </button>
+                <div class="collapse mt-3" id="tractionCollapse">
+                  <p><strong>How it works:</strong> Sensors detect wheelspin, engine power is reduced and braking is applied to individual wheels until grip is restored.</p>
+                  <p><strong>Motorsport example:</strong> Formula One</p>
+                  <p class="mb-0"><strong>Road car example:</strong> Most modern vehicles</p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card 3: Active Suspension -->
+          <div class="col-md-6">
+            <article class="card reveal">
+              <div class="card-img-wrap">
+                <img src="../Graphics/Technology-Images/williams-fw15c-active-suspension.jpg" alt="Williams FW15C active suspension hydraulic system">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title h4">Active Suspension</h3>
+                <p class="card-text">Suspension that adapts in real time to road and cornering conditions for maximum grip.</p>
+                <button class="btn-shifted-outline" type="button" data-bs-toggle="collapse" data-bs-target="#suspensionCollapse" aria-expanded="false" aria-controls="suspensionCollapse">
+                  Read More
+                </button>
+                <div class="collapse mt-3" id="suspensionCollapse">
+                  <p><strong>How it works:</strong> Hydraulic actuators controlled electronically adjust ride height corner by corner to keep the car balanced.</p>
+                  <p><strong>Motorsport example:</strong> Williams FW15C</p>
+                  <p class="mb-0"><strong>Road car example:</strong> Mercedes, Audi, McLaren</p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card 4: Semi-Automatic Gearboxes -->
+          <div class="col-md-6">
+            <article class="card reveal">
+              <div class="card-img-wrap">
+                <img src="../Graphics/Technology-Images/f1-steering-wheel-paddle-shift.jpg" alt="Formula One steering wheel with paddle shifters, rear view">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title h4">Semi-Automatic Gearboxes</h3>
+                <p class="card-text">Paddle-operated electronic shifting reduces driver workload and speeds up gear changes.</p>
+                <button class="btn-shifted-outline" type="button" data-bs-toggle="collapse" data-bs-target="#gearboxCollapse" aria-expanded="false" aria-controls="gearboxCollapse">
+                  Read More
+                </button>
+                <div class="collapse mt-3" id="gearboxCollapse">
+                  <p><strong>How it works:</strong> Electronic shifting enables faster gear changes than a manual clutch, reducing driver workload and improving lap times.</p>
+                  <p class="mb-0"><strong>Road car example:</strong> Ferrari, Porsche PDK, Volkswagen DSG</p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MOTORSPORT TIMELINE ================= -->
+    <section class="bg-alt">
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2>Motorsport Timeline</h2>
+          <p>Technologies developed in racing gradually become standard features in everyday vehicles.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <h3 class="h5 mb-1">Anti-lock Braking System (ABS)</h3>
+            <p class="small-text mb-1">Motorsport use: Endurance Racing</p>
+            <p class="mb-0">Road car adoption: Modern passenger vehicles</p>
+          </div>
+          <div class="timeline-item reveal">
+            <h3 class="h5 mb-1">Traction Control</h3>
+            <p class="small-text mb-1">Motorsport use: Formula One</p>
+            <p class="mb-0">Road car adoption: Most modern vehicles</p>
+          </div>
+          <div class="timeline-item reveal">
+            <h3 class="h5 mb-1">Active Suspension</h3>
+            <p class="small-text mb-1">Motorsport use: Williams F1</p>
+            <p class="mb-0">Road car adoption: Luxury &amp; performance cars</p>
+          </div>
+          <div class="timeline-item reveal">
+            <h3 class="h5 mb-1">Paddle Shift Gearboxes</h3>
+            <p class="small-text mb-1">Motorsport use: Formula One</p>
+            <p class="mb-0">Road car adoption: Sports cars &amp; dual-clutch transmissions</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ROAD CAR EXAMPLES ================= -->
+    <section>
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2>Road Car Examples</h2>
+          <p>These manufacturers apply motorsport-derived technology across their production line-ups.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-sm-6 col-lg-3">
+            <div class="card card--simple reveal">
+              <h3 class="h5">Toyota</h3>
+              <p class="small-text mb-1">ABS · Traction Control · Electronic Stability Systems</p>
+              <p class="mb-0"><strong>Example:</strong> Toyota GR Yaris</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card card--simple reveal">
+              <h3 class="h5">Mercedes-Benz</h3>
+              <p class="small-text mb-1">Active Suspension · Advanced Braking · Performance Electronics</p>
+              <p class="mb-0"><strong>Example:</strong> Mercedes-AMG C63</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card card--simple reveal">
+              <div class="card-img-wrap mb-3" style="border-radius:10px; margin: calc(-1 * var(--space-lg)) calc(-1 * var(--space-md)) 0;">
+                <img src="../Graphics/Technology-Images/porsche-911-carrera-t.jpg" alt="Porsche 911 Carrera T" style="height:160px; width:100%; object-fit:cover;">
+              </div>
+              <h3 class="h5 mt-3">Porsche</h3>
+              <p class="small-text mb-1">PDK Transmission · Advanced Suspension · Performance Aerodynamics</p>
+              <p class="mb-0"><strong>Example:</strong> Porsche 911 Carrera</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card card--simple reveal">
+              <h3 class="h5">Ferrari</h3>
+              <p class="small-text mb-1">Paddle Shift · Carbon Fibre · Electronic Differentials</p>
+              <p class="mb-0"><strong>Example:</strong> Ferrari 296 GTB</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SUMMARY ================= -->
+    <section class="bg-alt">
+      <div class="container">
+        <div class="container-narrow text-center reveal">
+          <h2>Summary</h2>
+          <p>Motorsport is more than just racing. It serves as a proving ground for new technologies that eventually improve the safety, performance and reliability of everyday road cars. Features such as ABS, traction control, active suspension and paddle-shift gearboxes all demonstrate how competition accelerates innovation.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PREVIOUS / NEXT NAVIGATION ================= -->
+    <section>
+      <div class="container">
+        <div class="prev-next">
+          <a href="../index.html" class="btn-shifted-outline">&larr; Home</a>
+          <a href="page3.html" class="btn-shifted">Engine Power &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row gy-4 align-items-start">
+        <div class="col-md-4">
+          <h5>SHIFTED</h5>
+          <p class="small-text">An educational automotive website built to teach beginners how modern cars work.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="page3.html">Engine</a></li>
+            <li><a href="page9.html">Ownership</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+        </div>
+      </div>
+      <hr class="mt-4" style="border-color: var(--color-border);">
+      <p class="small-text text-center mb-0">© 2026 SHIFTED. All rights reserved. Version 1.0</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Shared script -->
+  <script src="../JSCode/script.js"></script>
+</body>
+</html>
