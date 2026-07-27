@@ -1,235 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SHIFTED — Discover How Cars Work</title>
-  <meta name="description" content="SHIFTED is an educational website that teaches beginners how modern cars work, from motorsport innovation to hybrid and electric vehicles." />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="CSSCode/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | SHIFTED</title>
+    <meta name="description" content="SHIFTED is an educational automotive platform teaching beginners how modern cars work.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSSCode/style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <!-- ================= NAVIGATION ================= -->
+    <header>
+        <nav class="navbar navbar-expand-xl fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">SHIFTED<span>.</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list fs-2"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto align-items-xl-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="HTMLCode/page2.html">Motorsport Technology</a></li>
+                    <li class="nav-item"><a class="nav-link" href="HTMLCode/page3.html">Engine Power</a></li>
+                    <li class="nav-item"><a class="nav-link" href="HTMLCode/page4.html">Hybrid vs Electric</a></li>
+                    <li class="nav-item"><a class="nav-link" href="HTMLCode/page5.html">Popular Cars</a></li>
+                    <li class="nav-item"><a class="nav-link" href="HTMLCode/page6.html">Motorsport Scene</a></li>
+                    <li class="nav-item"><a class="nav-link" href="HTMLCode/page7.html">Showcase</a></li>
+                    <li class="nav-item"><a class="nav-link" href="HTMLCode/page8.html">Buying Guide</a></li>
+                    <li class="nav-item"><a class="nav-link" href="HTMLCode/page9.html">Maintenance</a></li>
+                    </ul>
+                    <button class="theme-toggle theme-toggle-btn" type="button" aria-label="Toggle dark and light mode">
+                        <i class="bi bi-moon-stars-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-  <!-- ================= NAVBAR ================= -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-overlay">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">SHIFTED</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto align-items-lg-center">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="HTMLCode/page2.html">Motorsport</a></li>
-            <li class="nav-item"><a class="nav-link" href="HTMLCode/page3.html">Engine</a></li>
-            <li class="nav-item"><a class="nav-link" href="HTMLCode/page7.html">Hybrid</a></li>
-            <li class="nav-item"><a class="nav-link" href="HTMLCode/page8.html">Electric</a></li>
-            <li class="nav-item"><a class="nav-link" href="HTMLCode/page9.html">Ownership</a></li>
-            <li class="nav-item">
-              <button class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false"><i class="bi bi-moon-stars"></i><span>Dark</span></button>
-            </li>
-          </ul>
+<main id="main">
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero" aria-label="Introduction">
+        <img class="hero-image" src="Graphics/911_Carrera_T.jpg" alt="Porsche 911 on an open road representing modern automotive performance">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-eyebrow">Automotive Learning Platform</p>
+                <h1 class="hero-title">SHIFTED</h1>
+                <p class="hero-subtitle">Discover the Technology Behind Modern Cars. From motorsport innovations to
+                    hybrid technology and ownership advice, SHIFTED makes learning about cars simple, interactive and
+                    enjoyable.</p>
+                <div class="hero-actions">
+                    <a href="#topics" class="btn btn-shifted">Explore SHIFTED<i class="bi bi-arrow-down ms-2"></i></a>
+                </div>
+            </div>
         </div>
-      </div>
-    </nav>
-  </header>
-
-  <!-- ================= HERO SECTION ================= -->
-  <section class="hero" aria-label="Introduction">
-    <img class="hero-image" src="Graphics/911_Carrera_T.jpg" alt="Porsche 911 on an open road representing modern automotive performance">
-    <div class="hero-overlay"></div>
-    <div class="container">
-      <div class="hero-content">
-        <p class="hero-eyebrow">SHIFTED</p>
-        <h1>Discover How Cars Work</h1>
-        <p>From motorsport innovations to hybrid and electric vehicles, explore the engineering behind today's automobiles.</p>
-        <a href="#topics" class="btn-shifted">Explore Topics</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= MAIN CONTENT ================= -->
-  <main>
-
-    <!-- Topics Section -->
-    <section id="topics">
-      <div class="container">
-        <div class="section-heading reveal">
-          <h2>Explore Our Topics</h2>
-          <p>Follow the journey from the racetrack to the driveway — five topics, one story of automotive evolution.</p>
-        </div>
-
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-4">
-            <div class="card reveal" onclick="window.location.href='HTMLCode/page2.html'">
-              <div class="card-img-wrap">
-                <img src="Graphics/porsche-apple-computer-livery-06-top.jpg" alt="Porsche 963 Apple Computer Livery">
-              </div>
-              <div class="card-body">
-                <h3 class="card-title">Motorsport Technology</h3>
-                <p class="card-text">Discover how racing innovations improve everyday road cars.</p>
-                <a href="HTMLCode/page2.html" class="btn-shifted-outline">Learn More</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <div class="card reveal" onclick="window.location.href='HTMLCode/page3.html'">
-              <div class="card-img-wrap">
-                <img src="Graphics/MercF1EngineW07.jpg" alt="">
-              </div>
-              <div class="card-body">
-                <h3 class="card-title">Engine Power</h3>
-                <p class="card-text">Learn how internal combustion engines produce power.</p>
-                <a href="HTMLCode/page3.html" class="btn-shifted-outline">Learn More</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <div class="card reveal" onclick="window.location.href='HTMLCode/page7.html'">
-              <div class="card-img-wrap">
-                <img src="Graphics/porsche_918_7.jpg" alt="Porsche 918 Spyder hybrid hypercar">
-              </div>
-              <div class="card-body">
-                <h3 class="card-title">Hybrid Power</h3>
-                <p class="card-text">Understand how petrol engines and electric motors work together.</p>
-                <a href="HTMLCode/page7.html" class="btn-shifted-outline">Learn More</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <div class="card reveal" onclick="window.location.href='HTMLCode/page8.html'">
-              <div class="card-img-wrap">
-                <img src="Graphics/rimac_nevera_drivetrain.jpg" alt="Rimac Nevera electric drivetrain">
-              </div>
-              <div class="card-body">
-                <h3 class="card-title">Electric Power</h3>
-                <p class="card-text">Learn how electric vehicles produce instant torque without using fuel.</p>
-                <a href="HTMLCode/page8.html" class="btn-shifted-outline">Learn More</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <div class="card reveal" onclick="window.location.href='HTMLCode/page9.html'">
-              <div class="card-img-wrap">
-                <img src="Graphics/KoeineseggSingapore.jpg" alt="Aston Martin DB12 outside Raffles Hotel, Singapore">
-              </div>
-              <div class="card-body">
-                <h3 class="card-title">Ownership Guide</h3>
-                <p class="card-text">Learn how to choose and maintain the right vehicle for your needs.</p>
-                <a href="HTMLCode/page9.html" class="btn-shifted-outline">Learn More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <!-- Featured / Why SHIFTED Section -->
-    <section class="bg-alt">
-      <div class="container">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-6 reveal">
-            <img src="Graphics/Ownership-Images/bugatti-production-line.jpg" alt="Modern automotive production line" class="w-100 rounded-4">
-          </div>
-          <div class="col-lg-6 reveal">
-            <h2>Why SHIFTED?</h2>
-            <p>Cars are becoming increasingly advanced every year through motorsport, hybrid systems and electric technologies.</p>
-            <p>SHIFTED helps beginners understand these technologies using simple explanations, diagrams and interactive learning experiences.</p>
-          </div>
+    <!-- ================= TOPICS SECTION ================= -->
+    <section class="section" id="topics">
+        <div class="container">
+            <div class="section-heading reveal">
+                <span class="section-label">Start Learning</span>
+                <h2>Where would you like to begin?</h2>
+                <p>Every topic on SHIFTED is designed to stand on its own — jump straight to what interests you
+                    most.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="card topic-card h-100">
+                        <div class="card-img-wrap"><img src="Graphics/topic-motorsport.jpg"
+                                alt="Formula One car cornering on a race track"></div>
+                        <div class="card-body">
+                            <h3 class="card-title">Motorsport Technology</h3>
+                            <p class="card-text">See how racing technology filters down into the cars we drive every
+                                day.</p>
+                            <a href="HTMLCode/page2.html" class="btn btn-dark-outline mt-auto">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="card topic-card h-100">
+                        <div class="card-img-wrap"><img src="Graphics/topic-engine.jpg"
+                                alt="Cutaway diagram of a car engine showing internal components"></div>
+                        <div class="card-body">
+                            <h3 class="card-title">Engine Power</h3>
+                            <p class="card-text">Explore how a four-stroke engine works and compare Inline, V and
+                                Boxer layouts.</p>
+                            <a href="HTMLCode/page3.html" class="btn btn-dark-outline mt-auto">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="card topic-card h-100">
+                        <div class="card-img-wrap"><img src="Graphics/topic-hybrid-ev.jpg"
+                                alt="Electric vehicle charging at a public charging station"></div>
+                        <div class="card-body">
+                            <h3 class="card-title">Hybrid vs Electric</h3>
+                            <p class="card-text">Understand how hybrid and electric powertrains differ, and which
+                                suits your lifestyle.</p>
+                            <a href="HTMLCode/page4.html" class="btn btn-dark-outline mt-auto">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="card topic-card h-100">
+                        <div class="card-img-wrap"><img src="Graphics/topic-popular-cars.jpg"
+                                alt="Row of popular passenger cars parked in a Singapore carpark"></div>
+                        <div class="card-body">
+                            <h3 class="card-title">Popular Cars in Singapore</h3>
+                            <p class="card-text">Get familiar with the models Singaporean drivers choose most
+                                often.</p>
+                            <a href="HTMLCode/page5.html" class="btn btn-dark-outline mt-auto">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="card topic-card h-100">
+                        <div class="card-img-wrap"><img src="Graphics/topic-buying-guide.jpg"
+                                alt="Customer shaking hands with a salesperson in a car showroom"></div>
+                        <div class="card-body">
+                            <h3 class="card-title">Buying Guide</h3>
+                            <p class="card-text">Work through a short questionnaire to get a personalised vehicle
+                                recommendation.</p>
+                            <a href="HTMLCode/page8.html" class="btn btn-dark-outline mt-auto">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="card topic-card h-100">
+                        <div class="card-img-wrap"><img src="Graphics/topic-maintenance.jpg"
+                                alt="Mechanic checking the engine bay of a car"></div>
+                        <div class="card-body">
+                            <h3 class="card-title">Maintenance Guide</h3>
+                            <p class="card-text">Learn the essential upkeep habits every driver should know.</p>
+                            <a href="HTMLCode/page9.html" class="btn btn-dark-outline mt-auto">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- Learning Journey Section -->
-    <section>
-      <div class="container">
-        <div class="section-heading reveal">
-          <h2>Your Learning Journey</h2>
-          <p>SHIFTED is designed to be explored in order, building your knowledge one stage at a time.</p>
+    <!-- ================= FEATURED SECTION ================= -->
+    <section class="section" style="background-color:var(--card);">
+        <div class="container">
+            <div class="split-section reveal">
+                <div class="split-media col-lg-6">
+                    <img src="Graphics/featured-purpose.jpg"
+                        alt="Close-up of a car dashboard and steering wheel showing modern digital displays">
+                </div>
+                <div class="split-text col-lg-6">
+                    <span class="section-label">Why SHIFTED</span>
+                    <h2>Learning about cars, made simple</h2>
+                    <p>Cars are becoming increasingly advanced every year. SHIFTED helps beginners understand modern
+                        automotive technology through interactive explanations, real-world examples and simple
+                        visual learning — no prior knowledge required.</p>
+                    <p>Whether you're a student, a first-time buyer, or simply curious about how things work, SHIFTED
+                        breaks down complex ideas into short, engaging sections you can explore at your own pace.</p>
+                </div>
+            </div>
         </div>
-        <div class="row text-center g-4">
-          <div class="col-6 col-md">
-            <div class="card card--simple reveal">
-              <span class="icon-lg"><i class="bi bi-flag-fill"></i></span>
-              <h3 class="h6 mb-0">Motorsport</h3>
-            </div>
-          </div>
-          <div class="col-6 col-md">
-            <div class="card card--simple reveal">
-              <span class="icon-lg"><i class="bi bi-gear-fill"></i></span>
-              <h3 class="h6 mb-0">Engine</h3>
-            </div>
-          </div>
-          <div class="col-6 col-md">
-            <div class="card card--simple reveal">
-              <span class="icon-lg"><i class="bi bi-battery-charging"></i></span>
-              <h3 class="h6 mb-0">Hybrid</h3>
-            </div>
-          </div>
-          <div class="col-6 col-md">
-            <div class="card card--simple reveal">
-              <span class="icon-lg"><i class="bi bi-lightning-charge-fill"></i></span>
-              <h3 class="h6 mb-0">Electric</h3>
-            </div>
-          </div>
-          <div class="col-6 col-md">
-            <div class="card card--simple reveal">
-              <span class="icon-lg"><i class="bi bi-car-front-fill"></i></span>
-              <h3 class="h6 mb-0">Ownership</h3>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <!-- Why Learn This Section -->
-    <section class="bg-alt">
-      <div class="container">
-        <div class="container-narrow text-center reveal">
-          <h2>Why Learn This?</h2>
-          <p>Whether you dream of becoming an engineer, buying your first car or simply understanding the technology around you, SHIFTED provides an easy starting point.</p>
+    <!-- ================= QUICK STATISTICS ================= -->
+    <section class="section pb-0">
+        <div class="container">
+            <div class="row reveal">
+                <div class="col-6 col-lg-3 stat-block">
+                    <span class="stat-number" data-count="9">0</span>
+                    <span class="stat-label">Learning Pages</span>
+                </div>
+                <div class="col-6 col-lg-3 stat-block">
+                    <span class="stat-number" data-count="30" data-suffix="+">0</span>
+                    <span class="stat-label">Vehicle Examples</span>
+                </div>
+                <div class="col-6 col-lg-3 stat-block">
+                    <span class="stat-number" data-count="15" data-suffix="+">0</span>
+                    <span class="stat-label">Interactive Features</span>
+                </div>
+                <div class="col-6 col-lg-3 stat-block">
+                    <span class="stat-number" data-count="100" data-suffix="%">0</span>
+                    <span class="stat-label">Responsive</span>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-  </main>
+    <!-- ================= QUOTE SECTION ================= -->
+    <section class="quote-section container reveal">
+        <p class="quote-text">&ldquo;The car has become the carapace, the protective and aggressive shell, of
+            urban and suburban man.&rdquo;</p>
+        <p class="quote-attribution">— Marshall McLuhan</p>
+    </section>
 
-  <!-- ================= FOOTER ================= -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="row gy-4 align-items-start">
-        <div class="col-md-4">
-          <h5>SHIFTED</h5>
-          <p class="small-text">An educational automotive website built to teach beginners how modern cars work.</p>
-        </div>
-        <div class="col-md-4">
-          <h5>Quick Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="HTMLCode/page2.html">Motorsport</a></li>
-            <li><a href="HTMLCode/page3.html">Engine</a></li>
-            <li><a href="HTMLCode/page9.html">Ownership</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4 text-md-end">
-          <button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
-        </div>
-      </div>
-      <hr class="mt-4" style="border-color: var(--color-border);">
-      <p class="small-text text-center mb-0">© 2026 SHIFTED. All rights reserved. Version 1.0</p>
-    </div>
-  </footer>
+</main>
 
-  <!-- Bootstrap Bundle (includes Popper) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="JSCode/script.js"></script>
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <p class="footer-brand mb-2">SHIFTED<span style="color:var(--text-secondary)">.</span></p>
+                    <p class="text-secondary" style="max-width:340px;">An educational automotive platform helping
+                        beginners understand the technology, culture and ownership side of modern cars.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p class="fw-semibold mb-3">Quick Links</p>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="HTMLCode/page2.html">Motorsport Technology</a>
+                        <a href="HTMLCode/page8.html">Buying Guide</a>
+                        <a href="HTMLCode/page9.html">Maintenance Guide</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <p class="fw-semibold mb-3">About This Project</p>
+                    <p class="text-secondary">SHIFTED is a student-built educational website exploring how modern
+                        vehicles work, from motorsport-derived technology to everyday ownership in Singapore.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="mb-0">&copy; 2026 SHIFTED. Built for educational purposes.</p>
+                <p class="mb-0">Designed &amp; developed with HTML5, CSS3, Bootstrap 5 &amp; JavaScript.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="JSCode/script.js" defer></script>
 </body>
 </html>

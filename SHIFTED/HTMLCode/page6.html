@@ -1,330 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Boxer Engine — SHIFTED</title>
-  <meta name="description" content="Learn how boxer engines are arranged, their advantages and disadvantages, and why Porsche and Subaru continue to use them." />
-
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Google Font: Open Sans -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-  <!-- Shared stylesheet -->
-  <link rel="stylesheet" href="../CSSCode/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singapore's Motorsport Scene | SHIFTED</title>
+    <meta name="description" content="Explore the racing series and milestones that define Singapore's motorsport culture.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSSCode/style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <!-- ================= NAVIGATION ================= -->
+    <header>
+        <nav class="navbar navbar-expand-xl fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">SHIFTED<span>.</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list fs-2"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto align-items-xl-center">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page2.html">Motorsport Technology</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page3.html">Engine Power</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page4.html">Hybrid vs Electric</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page5.html">Popular Cars</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page6.html">Motorsport Scene</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page7.html">Showcase</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page8.html">Buying Guide</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page9.html">Maintenance</a></li>
+                    </ul>
+                    <button class="theme-toggle theme-toggle-btn" type="button" aria-label="Toggle dark and light mode">
+                        <i class="bi bi-moon-stars-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-
-  <!-- ================= NAVBAR ================= -->
-  <header>
-    <nav class="navbar navbar-expand-lg sticky-top">
-      <div class="container">
-        <a class="navbar-brand" href="../index.html">SHIFTED</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto align-items-lg-center">
-            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="page2.html">Motorsport</a></li>
-            <li class="nav-item"><a class="nav-link" href="page3.html">Engine</a></li>
-            <li class="nav-item"><a class="nav-link" href="page7.html">Hybrid</a></li>
-            <li class="nav-item"><a class="nav-link" href="page8.html">Electric</a></li>
-            <li class="nav-item"><a class="nav-link" href="page9.html">Ownership</a></li>
-            <li class="nav-item">
-              <button class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false"><i class="bi bi-moon-stars"></i><span>Dark</span></button>
-            </li>
-          </ul>
+<main id="main">
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero">
+        <img class="hero-image" src="../Graphics/marina-bay-circuit.jpg" alt="Marina Bay Street Circuit lit up at night during a race">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <p class="hero-eyebrow">Page 6 of 9</p>
+            <h1 class="hero-title">Singapore's Motorsport Scene</h1>
+            <p class="hero-subtitle">Singapore may be a small country, but it hosts one of the world's most iconic
+                street races while continuing to support regional motorsport through international championships
+                and grassroots racing.</p>
         </div>
-      </div>
-    </nav>
-  </header>
-
-  <!-- ================= HERO SECTION ================= -->
-  <section class="hero hero--page" aria-label="Boxer Engine introduction">
-    <img class="hero-image" src="https://placehold.co/1920x1080/2b2b2b/2b2b2b?text=+" alt="Porsche 911 flat-six boxer engine bay">
-    <div class="hero-overlay"></div>
-    <div class="container">
-      <div class="hero-content">
-        <h1>Boxer Engine</h1>
-        <p>Balanced, stable and instantly recognisable. The Boxer engine's unique horizontal layout provides excellent balance and a lower centre of gravity, making it popular in Porsche and Subaru vehicles.</p>
-      </div>
-    </div>
-  </section>
-
-  <main>
-
-    <!-- ================= OVERVIEW ================= -->
-    <section>
-      <div class="container">
-        <div class="container-narrow text-center reveal">
-          <h2>Overview</h2>
-          <p>A Boxer engine positions its cylinders horizontally opposite each other. As the pistons move, they travel in opposite directions, resembling two boxers throwing punches, which is how the engine earned its name.</p>
-          <p>This layout naturally balances engine vibrations while lowering the engine within the chassis. As a result, Boxer engines are well known for excellent handling, stability and smoothness. Although less common than Inline and V engines, Boxer engines remain an important part of Porsche and Subaru's identity.</p>
-        </div>
-      </div>
     </section>
 
-    <!-- ================= HOW A BOXER ENGINE IS ARRANGED ================= -->
-    <section class="bg-alt">
-      <div class="container">
-        <div class="split-section reveal">
-          <img src="https://placehold.co/700x500/2b2b2b/2b2b2b?text=+" alt="Diagram showing opposing pistons and cylinder banks connected to a shared crankshaft">
-          <div>
-            <h2>How a Boxer Engine is Arranged</h2>
-            <p>Unlike Inline or V engines, Boxer engines place cylinders flat against each other. Opposing pistons move in opposite directions simultaneously, naturally cancelling many engine vibrations.</p>
-          </div>
+    <!-- ================= INTRODUCTION ================= -->
+    <section class="section">
+        <div class="container">
+            <div class="split-section reveal">
+                <div class="split-media col-lg-5">
+                    <img src="../Graphics/f1-singapore.jpg" alt="Formula One cars racing past the Singapore skyline">
+                </div>
+                <div class="split-text col-lg-7">
+                    <span class="section-label">A Racing Nation</span>
+                    <h2>Passion beyond the podium</h2>
+                    <p>Since 2008, the Singapore Grand Prix has placed the country firmly on the global motorsport
+                        map. Beyond Formula One, Singapore continues to support regional championships that attract
+                        engineers, teams and enthusiasts from across Asia.</p>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- ================= ADVANTAGES ================= -->
-    <section>
-      <div class="container">
-        <div class="section-heading reveal"><h2>Advantages</h2></div>
-        <div class="row g-4">
-          <div class="col-sm-6 col-lg-3">
-            <div class="card card--simple reveal">
-              <i class="bi bi-arrow-left-right icon-lg"></i>
-              <h3 class="h5">Excellent Balance</h3>
-              <p class="mb-0">Opposing pistons reduce vibration naturally.</p>
+    <!-- ================= FEATURED MOTORSPORT SERIES ================= -->
+    <section class="section" style="background-color:var(--card);">
+        <div class="container">
+            <div class="section-heading reveal">
+                <span class="section-label">Championships</span>
+                <h2>Featured Motorsport Series</h2>
             </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="card card--simple reveal">
-              <i class="bi bi-arrow-down icon-lg"></i>
-              <h3 class="h5">Low Centre of Gravity</h3>
-              <p class="mb-0">Improves cornering and vehicle stability.</p>
+            <div class="row g-4 reveal">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-img-wrap"><img src="../Graphics/series-f1.jpg" alt="Formula One car on a race track"></div>
+                        <div class="card-body">
+                            <h3 class="card-title">Formula One</h3>
+                            <p class="card-text">The pinnacle of open-wheel racing, hosted in Singapore since 2008.</p>
+                            <button class="btn btn-dark-outline btn-sm" data-bs-toggle="modal" data-bs-target="#f1Modal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-img-wrap"><img src="../Graphics/series-wec.jpg" alt="Hypercar racing at an endurance race"></div>
+                        <div class="card-body">
+                            <h3 class="card-title">FIA World Endurance Championship</h3>
+                            <p class="card-text">Gruelling endurance racing including the legendary Le Mans 24
+                                Hours.</p>
+                            <button class="btn btn-dark-outline btn-sm" data-bs-toggle="modal" data-bs-target="#wecModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-img-wrap"><img src="../Graphics/series-imsa.jpg" alt="Sports car racing in the IMSA championship"></div>
+                        <div class="card-body">
+                            <h3 class="card-title">IMSA SportsCar Championship</h3>
+                            <p class="card-text">North America's premier sports car racing series.</p>
+                            <button class="btn btn-dark-outline btn-sm" data-bs-toggle="modal" data-bs-target="#imsaModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-img-wrap"><img src="../Graphics/series-gtwc.jpg" alt="GT car racing in GT World Challenge Asia"></div>
+                        <div class="card-body">
+                            <h3 class="card-title">GT World Challenge Asia</h3>
+                            <p class="card-text">A regional GT series featuring manufacturers from across the
+                                world.</p>
+                            <button class="btn btn-dark-outline btn-sm" data-bs-toggle="modal" data-bs-target="#gtwcModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-img-wrap"><img src="../Graphics/series-porsche-cup.jpg" alt="Porsche Carrera Cup Asia race car"></div>
+                        <div class="card-body">
+                            <h3 class="card-title">Porsche Carrera Cup Asia</h3>
+                            <p class="card-text">A one-make series showcasing the Porsche 911 GT3 Cup car.</p>
+                            <button class="btn btn-dark-outline btn-sm" data-bs-toggle="modal" data-bs-target="#carreraModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-img-wrap"><img src="../Graphics/series-ferrari-challenge.jpg" alt="Ferrari Challenge Asia Pacific race car"></div>
+                        <div class="card-body">
+                            <h3 class="card-title">Ferrari Challenge Asia Pacific</h3>
+                            <p class="card-text">A one-make Ferrari series popular with regional collectors and
+                                drivers.</p>
+                            <button class="btn btn-dark-outline btn-sm" data-bs-toggle="modal" data-bs-target="#ferrariModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="card card--simple reveal">
-              <i class="bi bi-steering-wheel icon-lg"></i>
-              <h3 class="h5">Better Handling</h3>
-              <p class="mb-0">Weight sits lower in the vehicle.</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="card card--simple reveal">
-              <i class="bi bi-water icon-lg"></i>
-              <h3 class="h5">Smooth Operation</h3>
-              <p class="mb-0">Minimal engine vibration without requiring additional balancing shafts.</p>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    <!-- ================= DISADVANTAGES ================= -->
-    <section class="bg-alt">
-      <div class="container">
-        <div class="section-heading reveal"><h2>Disadvantages</h2></div>
-        <div class="row g-4">
-          <div class="col-sm-6 col-lg-3">
-            <div class="card card--simple reveal">
-              <i class="bi bi-arrows-expand icon-lg"></i>
-              <h3 class="h5">Wider Engine</h3>
-              <p class="mb-0">Requires more space across the engine bay.</p>
+    <!-- Series info modals -->
+    <div class="modal fade" id="f1Modal" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header">
+        <h2 class="modal-title h5">Formula One</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div><div class="modal-body">
+        <img src="../Graphics/f1-large.jpg" alt="Formula One car racing at speed" class="modal-img">
+        <p><strong>Race duration:</strong> Approx. 1.5–2 hours</p>
+        <p><strong>Famous manufacturers:</strong> Ferrari, Mercedes, McLaren</p>
+        <p class="mb-0">Formula One is the world's premier single-seater racing series, and the Singapore Grand Prix
+            is one of its most iconic events.</p>
+    </div></div></div></div>
+    <div class="modal fade" id="wecModal" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header">
+        <h2 class="modal-title h5">FIA World Endurance Championship</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div><div class="modal-body">
+        <img src="../Graphics/wec-large.jpg" alt="Hypercar racing at night during an endurance race" class="modal-img">
+        <p><strong>Race duration:</strong> Up to 24 hours</p>
+        <p><strong>Famous manufacturers:</strong> Porsche, Ferrari, Toyota, Peugeot</p>
+        <p class="mb-0">The WEC tests both car and driver over extreme distances, including the legendary 24 Hours
+            of Le Mans.</p>
+    </div></div></div></div>
+    <div class="modal fade" id="imsaModal" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header">
+        <h2 class="modal-title h5">IMSA SportsCar Championship</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div><div class="modal-body">
+        <img src="../Graphics/imsa-large.jpg" alt="Sports prototype car racing in IMSA" class="modal-img">
+        <p><strong>Race duration:</strong> Ranges from 1 hour to 24 hours (Daytona)</p>
+        <p><strong>Famous manufacturers:</strong> Cadillac, Porsche, Acura, BMW</p>
+        <p class="mb-0">North America's leading sports car series, famous for the Rolex 24 at Daytona.</p>
+    </div></div></div></div>
+    <div class="modal fade" id="gtwcModal" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header">
+        <h2 class="modal-title h5">GT World Challenge Asia</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div><div class="modal-body">
+        <img src="../Graphics/gtwc-large.jpg" alt="GT3 cars racing closely on track" class="modal-img">
+        <p><strong>Race duration:</strong> Approx. 1 hour per race</p>
+        <p><strong>Famous manufacturers:</strong> Mercedes-AMG, BMW, Porsche, Audi</p>
+        <p class="mb-0">A leading regional GT3 series that regularly features on the Asian racing calendar.</p>
+    </div></div></div></div>
+    <div class="modal fade" id="carreraModal" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header">
+        <h2 class="modal-title h5">Porsche Carrera Cup Asia</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div><div class="modal-body">
+        <img src="../Graphics/carrera-cup-large.jpg" alt="Porsche 911 GT3 Cup race car" class="modal-img">
+        <p><strong>Race duration:</strong> Approx. 30–40 minutes</p>
+        <p><strong>Famous cars:</strong> Porsche 911 GT3 Cup</p>
+        <p class="mb-0">A one-make series that gives drivers identical machinery, putting the focus purely on
+            skill.</p>
+    </div></div></div></div>
+    <div class="modal fade" id="ferrariModal" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header">
+        <h2 class="modal-title h5">Ferrari Challenge Asia Pacific</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div><div class="modal-body">
+        <img src="../Graphics/ferrari-challenge-large.jpg" alt="Ferrari 296 Challenge race car" class="modal-img">
+        <p><strong>Race duration:</strong> Approx. 30 minutes</p>
+        <p><strong>Famous cars:</strong> Ferrari 296 Challenge</p>
+        <p class="mb-0">A one-make Ferrari series popular with regional collectors, gentleman drivers and rising
+            talent.</p>
+    </div></div></div></div>
+
+    <!-- ================= MOTORSPORT TIMELINE ================= -->
+    <section class="section">
+        <div class="container">
+            <div class="section-heading reveal">
+                <span class="section-label">Milestones</span>
+                <h2>Singapore Motorsport Timeline</h2>
             </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="card card--simple reveal">
-              <i class="bi bi-currency-dollar icon-lg"></i>
-              <h3 class="h5">More Expensive</h3>
-              <p class="mb-0">More difficult to manufacture than Inline engines.</p>
+            <div class="timeline-vertical reveal">
+                <div class="timeline-v-item">
+                    <p class="timeline-v-year">2008</p>
+                    <p class="timeline-v-title">First Singapore Formula One Grand Prix</p>
+                    <p class="text-secondary mb-0">Singapore hosts F1's first-ever night race, transforming Marina
+                        Bay into a global racing icon.</p>
+                </div>
+                <div class="timeline-v-item">
+                    <p class="timeline-v-year">2012</p>
+                    <p class="timeline-v-title">Growth of GT Racing</p>
+                    <p class="text-secondary mb-0">Regional GT championships expand, drawing manufacturers and teams
+                        from across Asia.</p>
+                </div>
+                <div class="timeline-v-item">
+                    <p class="timeline-v-year">2020+</p>
+                    <p class="timeline-v-title">Electric Racing Expansion</p>
+                    <p class="text-secondary mb-0">Interest grows in electric and hybrid racing series as
+                        manufacturers shift focus.</p>
+                </div>
+                <div class="timeline-v-item">
+                    <p class="timeline-v-year">Future</p>
+                    <p class="timeline-v-title">Sustainable Motorsport</p>
+                    <p class="text-secondary mb-0">Racing continues to evolve toward more sustainable fuels and
+                        powertrains.</p>
+                </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="card card--simple reveal">
-              <i class="bi bi-tools icon-lg"></i>
-              <h3 class="h5">Maintenance Difficulty</h3>
-              <p class="mb-0">Spark plugs and cylinder heads may be harder to access.</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="card card--simple reveal">
-              <i class="bi bi-graph-down icon-lg"></i>
-              <h3 class="h5">Limited Adoption</h3>
-              <p class="mb-0">Only a small number of manufacturers continue to use Boxer engines.</p>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    <!-- ================= COMMON VEHICLES ================= -->
-    <section>
-      <div class="container">
-        <div class="section-heading reveal"><h2>Common Vehicles</h2></div>
-        <div id="page6VehicleCarousel" class="carousel slide vehicle-carousel" data-bs-touch="true">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row g-4 justify-content-center">
-          <div class="col-sm-6 col-lg-4">
-            <div class="card vehicle-card reveal">
-              <div class="card-img-wrap"><img src="../Graphics/Technology-Images/porsche-911-carrera-t.jpg" alt="Porsche 911 exterior"></div>
-              <div class="card-body">
-                <h3 class="card-title h5">Porsche 911</h3>
-                <span class="badge-shifted">Flat-6</span>
-                <p class="card-text mt-2 mb-0">The world's most famous Boxer-powered sports car.</p>
-              </div>
+    <!-- ================= DID YOU KNOW? ================= -->
+    <section class="section" style="background-color:var(--card);">
+        <div class="container">
+            <div class="section-heading reveal">
+                <span class="section-label">Trivia</span>
+                <h2>Did You Know?</h2>
             </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card vehicle-card reveal">
-              <div class="card-img-wrap"><img src="https://placehold.co/400x260/2b2b2b/2b2b2b?text=+" alt="Subaru WRX exterior"></div>
-              <div class="card-body">
-                <h3 class="card-title h5">Subaru WRX</h3>
-                <span class="badge-shifted">Turbocharged Flat-4</span>
-                <p class="card-text mt-2 mb-0">Performance rally-inspired sedan.</p>
-              </div>
+            <div class="row g-3 reveal">
+                <div class="col-lg-4">
+                    <div class="alert-shifted p-4 h-100"><i class="bi bi-lightbulb-fill me-2"></i><strong>Did You
+                        Know?</strong><br>The Singapore Grand Prix was the world's first Formula One night race.</div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="alert-shifted p-4 h-100"><i class="bi bi-lightbulb-fill me-2"></i><strong>Did You
+                        Know?</strong><br>Endurance races such as Le Mans last for 24 hours.</div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="alert-shifted p-4 h-100"><i class="bi bi-lightbulb-fill me-2"></i><strong>Did You
+                        Know?</strong><br>Many hybrid technologies used in today's road cars were first tested in
+                        endurance racing.</div>
+                </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card vehicle-card reveal">
-              <div class="card-img-wrap"><img src="https://placehold.co/400x260/2b2b2b/2b2b2b?text=+" alt="Subaru BRZ exterior"></div>
-              <div class="card-body">
-                <h3 class="card-title h5">Subaru BRZ</h3>
-                <span class="badge-shifted">Naturally Aspirated Flat-4</span>
-                <p class="card-text mt-2 mb-0">Lightweight sports coupe.</p>
-              </div>
-            </div>
-          </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row g-4 justify-content-center">
-          <div class="col-sm-6 col-lg-4">
-            <div class="card vehicle-card reveal">
-              <div class="card-img-wrap"><img src="https://placehold.co/400x260/2b2b2b/2b2b2b?text=+" alt="Toyota GR86 exterior"></div>
-              <div class="card-body">
-                <h3 class="card-title h5">Toyota GR86</h3>
-                <span class="badge-shifted">Flat-4 (shared with Subaru)</span>
-                <p class="card-text mt-2 mb-0">Rear-wheel-drive sports coupe.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card vehicle-card reveal">
-              <div class="card-img-wrap"><img src="https://placehold.co/400x260/2b2b2b/2b2b2b?text=+" alt="Porsche Cayman exterior"></div>
-              <div class="card-body">
-                <h3 class="card-title h5">Porsche Cayman</h3>
-                <span class="badge-shifted">Flat-4 / Flat-6</span>
-                <p class="card-text mt-2 mb-0">Mid-engine sports car.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card vehicle-card reveal">
-              <div class="card-img-wrap"><img src="https://placehold.co/400x260/2b2b2b/2b2b2b?text=+" alt="Porsche Boxster exterior"></div>
-              <div class="card-body">
-                <h3 class="card-title h5">Porsche Boxster</h3>
-                <span class="badge-shifted">Flat-4</span>
-                <p class="card-text mt-2 mb-0">Convertible sports car.</p>
-              </div>
-            </div>
-          </div>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#page6VehicleCarousel" data-bs-slide="prev">
-            <i class="bi bi-chevron-left"></i>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#page6VehicleCarousel" data-bs-slide="next">
-            <i class="bi bi-chevron-right"></i>
-            <span class="visually-hidden">Next</span>
-          </button>
-          <div class="vehicle-carousel-indicators">
-            <button type="button" data-bs-target="#page6VehicleCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#page6VehicleCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          </div>
         </div>
-      </div>
     </section>
 
-    <!-- ================= WHY PORSCHE & SUBARU USE BOXER ENGINES ================= -->
-    <section class="bg-alt">
-      <div class="container">
-        <div class="section-heading reveal"><h2>Why Porsche &amp; Subaru Continue Using Boxer Engines</h2></div>
-        <div class="split-section reveal mb-4">
-          <img src="https://placehold.co/500x350/2b2b2b/2b2b2b?text=+" alt="Porsche 911 rear engine bay">
-          <div>
-            <h3 class="h5">Porsche</h3>
-            <p>The Boxer engine allows Porsche to keep the engine low in the chassis, improving handling while maintaining the characteristic driving feel of the 911.</p>
-          </div>
+    <!-- ================= SUMMARY ================= -->
+    <section class="section">
+        <div class="container">
+            <div class="row reveal">
+                <div class="col-lg-8">
+                    <span class="section-label">Summary</span>
+                    <h2>More than entertainment</h2>
+                    <p>Motorsport is more than a spectacle — it develops the technology that eventually reaches
+                        everyday road cars. Singapore continues to play an important role in international
+                        motorsport, hosting world-class events while supporting the growth of regional racing
+                        series.</p>
+                </div>
+            </div>
         </div>
-        <div class="split-section split-section--reverse reveal">
-          <img src="https://placehold.co/500x350/2b2b2b/2b2b2b?text=+" alt="Subaru boxer engine with symmetrical all-wheel drive">
-          <div>
-            <h3 class="h5">Subaru</h3>
-            <p>Subaru combines its Boxer engines with Symmetrical All-Wheel Drive to improve vehicle balance, stability and traction in all weather conditions.</p>
-          </div>
+    </section>
+    <!-- ================= PAGE NAVIGATION ================= -->
+    <section class="section pt-0">
+        <div class="container">
+            <hr class="divider mb-5">
+        <div class="page-nav">
+            <a href="page5.html" class="btn btn-dark-outline"><i class="bi bi-arrow-left me-2"></i>Popular Cars</a>
+            <a href="../index.html" class="btn btn-dark-outline"><i class="bi bi-house-door me-2"></i>Home</a>
+            <a href="page7.html" class="btn btn-shifted">Showcase<i class="bi bi-arrow-right ms-2"></i></a>
         </div>
-      </div>
+        </div>
     </section>
 
-    <!-- ================= QUICK FACTS ================= -->
-    <section>
-      <div class="container">
-        <div class="info-panel reveal">
-          <h3 class="h5">Quick Facts</h3>
-          <ul>
-            <li>Invented over 100 years ago.</li>
-            <li>Naturally balanced design.</li>
-            <li>Lower centre of gravity than Inline or V engines.</li>
-            <li>Primarily used by Porsche and Subaru today.</li>
-            <li>Also known as a Flat Engine.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+</main>
 
-    <!-- ================= PREVIOUS / NEXT NAVIGATION ================= -->
-    <section class="bg-alt">
-      <div class="container">
-        <div class="prev-next">
-          <a href="page5.html" class="btn-shifted-outline">&larr; V Engine</a>
-          <a href="page7.html" class="btn-shifted">Hybrid Power &rarr;</a>
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <p class="footer-brand mb-2">SHIFTED<span style="color:var(--text-secondary)">.</span></p>
+                    <p class="text-secondary" style="max-width:340px;">An educational automotive platform helping
+                        beginners understand the technology, culture and ownership side of modern cars.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p class="fw-semibold mb-3">Quick Links</p>
+                    <div class="footer-links">
+                        <a href="../index.html">Home</a>
+                        <a href="page2.html">Motorsport Technology</a>
+                        <a href="page8.html">Buying Guide</a>
+                        <a href="page9.html">Maintenance Guide</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <p class="fw-semibold mb-3">About This Project</p>
+                    <p class="text-secondary">SHIFTED is a student-built educational website exploring how modern
+                        vehicles work, from motorsport-derived technology to everyday ownership in Singapore.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="mb-0">&copy; 2026 SHIFTED. Built for educational purposes.</p>
+                <p class="mb-0">Designed &amp; developed with HTML5, CSS3, Bootstrap 5 &amp; JavaScript.</p>
+            </div>
         </div>
-      </div>
-    </section>
+    </footer>
 
-  </main>
+    <!-- Back to top -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
 
-  <!-- ================= FOOTER ================= -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="row gy-4 align-items-start">
-        <div class="col-md-4">
-          <h5>SHIFTED</h5>
-          <p class="small-text">An educational automotive website built to teach beginners how modern cars work.</p>
-        </div>
-        <div class="col-md-4">
-          <h5>Quick Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="page3.html">Engine</a></li>
-            <li><a href="page9.html">Ownership</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4 text-md-end">
-          <button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
-        </div>
-      </div>
-      <hr class="mt-4" style="border-color: var(--color-border);">
-      <p class="small-text text-center mb-0">© 2026 SHIFTED. All rights reserved. Version 1.0</p>
-    </div>
-  </footer>
-
-
-  <!-- Bootstrap Bundle (includes Popper) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Shared script -->
-  <script src="../JSCode/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../JSCode/script.js" defer></script>
 </body>
 </html>

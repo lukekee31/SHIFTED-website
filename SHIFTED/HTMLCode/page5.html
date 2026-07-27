@@ -1,326 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>V Engine — SHIFTED</title>
-  <meta name="description" content="Learn how V engines are arranged, their advantages and disadvantages, common variants, and which cars use them." />
-
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Google Font: Open Sans -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-  <!-- Shared stylesheet -->
-  <link rel="stylesheet" href="../CSSCode/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Cars in Singapore | SHIFTED</title>
+    <meta name="description" content="A catalogue of the passenger vehicles most commonly seen on Singapore roads.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSSCode/style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <!-- ================= NAVIGATION ================= -->
+    <header>
+        <nav class="navbar navbar-expand-xl fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">SHIFTED<span>.</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list fs-2"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto align-items-xl-center">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page2.html">Motorsport Technology</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page3.html">Engine Power</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page4.html">Hybrid vs Electric</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page5.html">Popular Cars</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page6.html">Motorsport Scene</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page7.html">Showcase</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page8.html">Buying Guide</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page9.html">Maintenance</a></li>
+                    </ul>
+                    <button class="theme-toggle theme-toggle-btn" type="button" aria-label="Toggle dark and light mode">
+                        <i class="bi bi-moon-stars-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-
-  <!-- ================= NAVBAR ================= -->
-  <header>
-    <nav class="navbar navbar-expand-lg sticky-top">
-      <div class="container">
-        <a class="navbar-brand" href="../index.html">SHIFTED</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto align-items-lg-center">
-            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="page2.html">Motorsport</a></li>
-            <li class="nav-item"><a class="nav-link" href="page3.html">Engine</a></li>
-            <li class="nav-item"><a class="nav-link" href="page7.html">Hybrid</a></li>
-            <li class="nav-item"><a class="nav-link" href="page8.html">Electric</a></li>
-            <li class="nav-item"><a class="nav-link" href="page9.html">Ownership</a></li>
-            <li class="nav-item">
-              <button class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false"><i class="bi bi-moon-stars"></i><span>Dark</span></button>
-            </li>
-          </ul>
+<main id="main">
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero">
+        <img class="hero-image" src="../Graphics/singapore-cars-hero.jpg" alt="Row of cars parked beneath HDB flats in Singapore">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <p class="hero-eyebrow">Page 5 of 9</p>
+            <h1 class="hero-title">Popular Cars in Singapore</h1>
+            <p class="hero-subtitle">From practical family sedans to modern electric vehicles, discover the cars
+                that have become favourites among Singaporean drivers.</p>
         </div>
-      </div>
-    </nav>
-  </header>
-
-  <!-- ================= HERO SECTION ================= -->
-  <section class="hero hero--page" aria-label="V Engine introduction">
-    <img class="hero-image" src="https://placehold.co/1920x1080/2b2b2b/2b2b2b?text=+" alt="Ferrari V8 engine bay">
-    <div class="hero-overlay"></div>
-    <div class="container">
-      <div class="hero-content">
-        <h1>V Engine</h1>
-        <p>Compact, powerful and built for performance. The V engine allows manufacturers to fit more cylinders into a shorter engine, making it the preferred choice for many sports cars and performance vehicles.</p>
-      </div>
-    </div>
-  </section>
-
-  <main>
-
-    <!-- ================= OVERVIEW ================= -->
-    <section>
-      <div class="container">
-        <div class="container-narrow text-center reveal">
-          <h2>Overview</h2>
-          <p>A V engine arranges its cylinders into two separate banks that meet at an angle, forming the shape of the letter "V". This arrangement allows manufacturers to install engines with six, eight, ten or even twelve cylinders while keeping the engine shorter than an equivalent inline engine.</p>
-          <p>Because of this compact design, V engines are commonly used in sports cars, luxury sedans and high-performance SUVs where greater power is required.</p>
-        </div>
-      </div>
     </section>
 
-    <!-- ================= HOW A V ENGINE IS ARRANGED ================= -->
-    <section class="bg-alt">
-      <div class="container">
-        <div class="split-section reveal">
-          <img src="https://placehold.co/700x500/2b2b2b/2b2b2b?text=+" alt="Labelled diagram showing left and right cylinder banks meeting at the crankshaft in a V shape">
-          <div>
-            <h2>How a V Engine is Arranged</h2>
-            <p>Instead of arranging every cylinder in a straight line, V engines split the cylinders into two separate banks connected to a common crankshaft. This design shortens the engine while allowing more cylinders to be fitted.</p>
-          </div>
+    <!-- ================= INTRODUCTION ================= -->
+    <section class="section">
+        <div class="container">
+            <div class="split-section reveal">
+                <div class="split-media col-lg-5">
+                    <img src="../Graphics/singapore-coe.jpg" alt="Marina Bay skyline with traffic on a Singapore expressway">
+                </div>
+                <div class="split-text col-lg-7">
+                    <span class="section-label">The Singapore Context</span>
+                    <h2>A unique car ownership environment</h2>
+                    <p>Owning a car in Singapore is different from most countries. The Certificate of Entitlement
+                        (COE) system, combined with high overall vehicle costs, makes reliability, efficiency and
+                        resale value especially important considerations for local buyers.</p>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- ================= ADVANTAGES ================= -->
-    <section>
-      <div class="container">
-        <div class="section-heading reveal"><h2>Advantages</h2></div>
-        <div class="row g-4">
-          <div class="col-sm-6 col-lg-3">
-            <div class="card card--simple reveal">
-              <i class="bi bi-lightning-charge icon-lg"></i>
-              <h3 class="h5">More Power</h3>
-              <p class="mb-0">Supports higher cylinder counts, ideal for performance vehicles.</p>
+    <!-- ================= CATEGORY FILTER + VEHICLE GALLERY ================= -->
+    <section class="section" style="background-color:var(--card);">
+        <div class="container">
+            <div class="section-heading reveal">
+                <span class="section-label">Browse</span>
+                <h2>Top Selling Cars</h2>
             </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="card card--simple reveal">
-              <i class="bi bi-arrows-collapse icon-lg"></i>
-              <h3 class="h5">Compact Length</h3>
-              <p class="mb-0">Shorter than an equivalent inline engine, allowing better packaging.</p>
+            <div class="filter-group mb-4 reveal" id="carFilterGroup">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="sedan">Sedans</button>
+                <button class="filter-btn" data-filter="suv">SUVs</button>
+                <button class="filter-btn" data-filter="electric">Electric</button>
+                <button class="filter-btn" data-filter="hybrid">Hybrid</button>
             </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="card card--simple reveal">
-              <i class="bi bi-water icon-lg"></i>
-              <h3 class="h5">Smooth Operation</h3>
-              <p class="mb-0">V6, V8 and V12 engines provide smoother power delivery than smaller engines.</p>
+            <div class="row g-4 reveal">
+                <div class="col-md-6 col-lg-4 gallery-item car-filter-item" data-category="sedan">
+                    <div class="card h-100">
+                        <div class="card-img-wrap"><img src="../Graphics/corolla-altis.jpg" alt="Toyota Corolla Altis sedan"></div>
+                        <div class="card-body">
+                            <span class="badge-outline mb-2 d-inline-block">Petrol</span>
+                            <h3 class="card-title">Toyota Corolla Altis</h3>
+                            <p class="card-text">From S$135,000 — a dependable, low-maintenance family sedan.</p>
+                            <button class="btn btn-dark-outline btn-sm" data-bs-toggle="modal" data-bs-target="#corollaModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item car-filter-item" data-category="sedan">
+                    <div class="card h-100">
+                        <div class="card-img-wrap"><img src="../Graphics/honda-civic.jpg" alt="Honda Civic sedan"></div>
+                        <div class="card-body">
+                            <span class="badge-outline mb-2 d-inline-block">Petrol</span>
+                            <h3 class="card-title">Honda Civic</h3>
+                            <p class="card-text">From S$150,000 — praised for its handling and refined interior.</p>
+                            <button class="btn btn-dark-outline btn-sm" data-bs-toggle="modal" data-bs-target="#civicSgModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item car-filter-item" data-category="electric">
+                    <div class="card h-100">
+                        <div class="card-img-wrap"><img src="../Graphics/byd-atto3.jpg" alt="BYD Atto 3 electric SUV"></div>
+                        <div class="card-body">
+                            <span class="badge-outline mb-2 d-inline-block">Electric</span>
+                            <h3 class="card-title">BYD Atto 3</h3>
+                            <p class="card-text">From S$155,000 — a well-equipped, popular electric SUV.</p>
+                            <button class="btn btn-dark-outline btn-sm" data-bs-toggle="modal" data-bs-target="#attoModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item car-filter-item" data-category="hybrid">
+                    <div class="card h-100">
+                        <div class="card-img-wrap"><img src="../Graphics/toyota-prius-sg.jpg" alt="Toyota Prius hybrid hatchback"></div>
+                        <div class="card-body">
+                            <span class="badge-outline mb-2 d-inline-block">Hybrid</span>
+                            <h3 class="card-title">Toyota Prius</h3>
+                            <p class="card-text">From S$140,000 — exceptional fuel economy for city driving.</p>
+                            <button class="btn btn-dark-outline btn-sm" data-bs-toggle="modal" data-bs-target="#priusSgModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item car-filter-item" data-category="electric">
+                    <div class="card h-100">
+                        <div class="card-img-wrap"><img src="../Graphics/ioniq5.jpg" alt="Hyundai IONIQ 5 electric SUV"></div>
+                        <div class="card-body">
+                            <span class="badge-outline mb-2 d-inline-block">Electric</span>
+                            <h3 class="card-title">Hyundai IONIQ 5</h3>
+                            <p class="card-text">From S$175,000 — distinctive design with fast-charging capability.</p>
+                            <button class="btn btn-dark-outline btn-sm" data-bs-toggle="modal" data-bs-target="#ioniqModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item car-filter-item" data-category="suv">
+                    <div class="card h-100">
+                        <div class="card-img-wrap"><img src="../Graphics/honda-hrv.jpg" alt="Honda HR-V compact SUV"></div>
+                        <div class="card-body">
+                            <span class="badge-outline mb-2 d-inline-block">Petrol</span>
+                            <h3 class="card-title">Honda HR-V</h3>
+                            <p class="card-text">From S$160,000 — a practical, compact SUV for small families.</p>
+                            <button class="btn btn-dark-outline btn-sm" data-bs-toggle="modal" data-bs-target="#hrvModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="card card--simple reveal">
-              <i class="bi bi-speedometer2 icon-lg"></i>
-              <h3 class="h5">Performance</h3>
-              <p class="mb-0">Excellent for sports cars, luxury vehicles and racing.</p>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    <!-- ================= DISADVANTAGES ================= -->
-    <section class="bg-alt">
-      <div class="container">
-        <div class="section-heading reveal"><h2>Disadvantages</h2></div>
-        <div class="row g-4">
-          <div class="col-sm-6 col-lg-3">
-            <div class="card card--simple reveal">
-              <i class="bi bi-diagram-3 icon-lg"></i>
-              <h3 class="h5">More Complex</h3>
-              <p class="mb-0">Contains more components than many inline engines.</p>
+    <!-- Vehicle modals -->
+    <div class="modal fade" id="corollaModal" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header">
+        <h2 class="modal-title h5">Toyota Corolla Altis</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div><div class="modal-body">
+        <img src="../Graphics/corolla-altis-large.jpg" alt="Toyota Corolla Altis sedan parked outdoors" class="modal-img">
+        <p><strong>Engine:</strong> 1.6L Petrol &nbsp;|&nbsp; <strong>Seating:</strong> 5 &nbsp;|&nbsp; <strong>Fuel Economy:</strong> Approx. 17 km/L</p>
+        <p>Popular in Singapore for its low running costs, strong reliability record and generous cabin space.</p>
+        <a href="https://www.toyota.com.sg" target="_blank" rel="noopener" class="btn btn-shifted btn-sm">Toyota Singapore</a>
+    </div></div></div></div>
+    <div class="modal fade" id="civicSgModal" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header">
+        <h2 class="modal-title h5">Honda Civic</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div><div class="modal-body">
+        <img src="../Graphics/honda-civic-large.jpg" alt="Honda Civic sedan on a city street" class="modal-img">
+        <p><strong>Engine:</strong> 1.5L Turbo Petrol &nbsp;|&nbsp; <strong>Seating:</strong> 5 &nbsp;|&nbsp; <strong>Fuel Economy:</strong> Approx. 16 km/L</p>
+        <p>A favourite among enthusiast drivers in Singapore thanks to its sharp handling and upscale cabin.</p>
+        <a href="https://www.honda.com.sg" target="_blank" rel="noopener" class="btn btn-shifted btn-sm">Honda Singapore</a>
+    </div></div></div></div>
+    <div class="modal fade" id="attoModal" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header">
+        <h2 class="modal-title h5">BYD Atto 3</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div><div class="modal-body">
+        <img src="../Graphics/byd-atto3-large.jpg" alt="BYD Atto 3 electric SUV parked in a showroom" class="modal-img">
+        <p><strong>Powertrain:</strong> Electric &nbsp;|&nbsp; <strong>Seating:</strong> 5 &nbsp;|&nbsp; <strong>Range:</strong> Approx. 400+ km</p>
+        <p>One of the most popular EVs in Singapore, valued for its spacious cabin and competitive pricing.</p>
+        <a href="https://www.byd.com/sg" target="_blank" rel="noopener" class="btn btn-shifted btn-sm">BYD Singapore</a>
+    </div></div></div></div>
+    <div class="modal fade" id="priusSgModal" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header">
+        <h2 class="modal-title h5">Toyota Prius</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div><div class="modal-body">
+        <img src="../Graphics/toyota-prius-sg-large.jpg" alt="Toyota Prius hybrid hatchback parked outdoors" class="modal-img">
+        <p><strong>Powertrain:</strong> Hybrid &nbsp;|&nbsp; <strong>Seating:</strong> 5 &nbsp;|&nbsp; <strong>Fuel Economy:</strong> Approx. 25 km/L</p>
+        <p>A long-standing favourite for drivers who want low running costs without needing to charge.</p>
+        <a href="https://www.toyota.com.sg" target="_blank" rel="noopener" class="btn btn-shifted btn-sm">Toyota Singapore</a>
+    </div></div></div></div>
+    <div class="modal fade" id="ioniqModal" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header">
+        <h2 class="modal-title h5">Hyundai IONIQ 5</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div><div class="modal-body">
+        <img src="../Graphics/ioniq5-large.jpg" alt="Hyundai IONIQ 5 electric SUV in a studio setting" class="modal-img">
+        <p><strong>Powertrain:</strong> Electric &nbsp;|&nbsp; <strong>Seating:</strong> 5 &nbsp;|&nbsp; <strong>Range:</strong> Approx. 450+ km</p>
+        <p>Known for its retro-futuristic design and ultra-fast 800V charging architecture.</p>
+        <a href="https://www.hyundai.com/sg" target="_blank" rel="noopener" class="btn btn-shifted btn-sm">Hyundai Singapore</a>
+    </div></div></div></div>
+    <div class="modal fade" id="hrvModal" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header">
+        <h2 class="modal-title h5">Honda HR-V</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div><div class="modal-body">
+        <img src="../Graphics/honda-hrv-large.jpg" alt="Honda HR-V compact SUV parked outdoors" class="modal-img">
+        <p><strong>Engine:</strong> 1.5L Petrol &nbsp;|&nbsp; <strong>Seating:</strong> 5 &nbsp;|&nbsp; <strong>Fuel Economy:</strong> Approx. 15 km/L</p>
+        <p>A practical crossover popular with small families needing extra boot space.</p>
+        <a href="https://www.honda.com.sg" target="_blank" rel="noopener" class="btn btn-shifted btn-sm">Honda Singapore</a>
+    </div></div></div></div>
+
+    <!-- ================= COMPARISON TABLE ================= -->
+    <section class="section">
+        <div class="container">
+            <div class="section-heading reveal">
+                <span class="section-label">Compare</span>
+                <h2>At a Glance</h2>
             </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="card card--simple reveal">
-              <i class="bi bi-currency-dollar icon-lg"></i>
-              <h3 class="h5">Higher Manufacturing Cost</h3>
-              <p class="mb-0">More expensive to produce.</p>
+            <div class="table-responsive reveal">
+                <table class="table table-shifted align-middle">
+                    <thead><tr><th>Vehicle</th><th>Fuel</th><th>Seats</th><th>Approx. Price</th></tr></thead>
+                    <tbody>
+                        <tr><td>Corolla Altis</td><td>Petrol</td><td>5</td><td>From S$135,000</td></tr>
+                        <tr><td>Honda Civic</td><td>Petrol</td><td>5</td><td>From S$150,000</td></tr>
+                        <tr><td>BYD Atto 3</td><td>Electric</td><td>5</td><td>From S$155,000</td></tr>
+                        <tr><td>Hyundai IONIQ 5</td><td>Electric</td><td>5</td><td>From S$175,000</td></tr>
+                        <tr><td>Toyota Prius</td><td>Hybrid</td><td>5</td><td>From S$140,000</td></tr>
+                    </tbody>
+                </table>
+                <p class="table-note">Disclaimer: Vehicle prices shown are approximate and intended for educational
+                    purposes only. Actual prices may vary due to COE premiums, dealer promotions, taxes, and
+                    optional equipment. Users should refer to the official Singapore distributor's website for the
+                    latest pricing.</p>
             </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="card card--simple reveal">
-              <i class="bi bi-tools icon-lg"></i>
-              <h3 class="h5">More Difficult Maintenance</h3>
-              <p class="mb-0">The two cylinder banks reduce accessibility.</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="card card--simple reveal">
-              <i class="bi bi-arrow-down-up icon-lg"></i>
-              <h3 class="h5">Increased Weight</h3>
-              <p class="mb-0">Typically heavier than equivalent inline engines.</p>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    <!-- ================= COMMON VEHICLES ================= -->
-    <section>
-      <div class="container">
-        <div class="section-heading reveal">
-          <h2>Common Vehicles</h2>
+    <!-- ================= MANUFACTURER SPOTLIGHT (CAROUSEL) ================= -->
+    <section class="section" style="background-color:var(--card);">
+        <div class="container">
+            <div class="section-heading reveal">
+                <span class="section-label">Spotlight</span>
+                <h2>Manufacturers Behind the Wheel</h2>
+            </div>
+            <div id="brandCarousel" class="carousel carousel-shifted slide reveal" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#brandCarousel" data-bs-slide-to="0" class="active" aria-label="Toyota"></button>
+                    <button type="button" data-bs-target="#brandCarousel" data-bs-slide-to="1" aria-label="Honda"></button>
+                    <button type="button" data-bs-target="#brandCarousel" data-bs-slide-to="2" aria-label="BYD"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row align-items-center g-4">
+                            <div class="col-md-5"><img src="../Graphics/toyota-logo.jpg" alt="Toyota logo" class="rounded-4"></div>
+                            <div class="col-md-7">
+                                <h3>Toyota</h3>
+                                <p class="text-secondary">Founded in 1937, Toyota is renowned worldwide for
+                                    reliability and pioneering hybrid technology. Its models consistently rank among
+                                    Singapore's best-selling cars thanks to strong resale value and low running
+                                    costs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row align-items-center g-4">
+                            <div class="col-md-5"><img src="../Graphics/honda-logo.jpg" alt="Honda logo" class="rounded-4"></div>
+                            <div class="col-md-7">
+                                <h3>Honda</h3>
+                                <p class="text-secondary">Honda has built a reputation for engaging, well-engineered
+                                    cars since 1948. Its Civic and HR-V models are common sights on Singapore roads,
+                                    prized for their driving feel and build quality.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row align-items-center g-4">
+                            <div class="col-md-5"><img src="../Graphics/byd-logo.jpg" alt="BYD logo" class="rounded-4"></div>
+                            <div class="col-md-7">
+                                <h3>BYD</h3>
+                                <p class="text-secondary">BYD has rapidly become one of the world's largest EV
+                                    makers, and its growing lineup in Singapore offers strong value alongside
+                                    competitive range and technology.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#brandCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#brandCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
-        <div id="page5VehicleCarousel" class="carousel slide vehicle-carousel" data-bs-touch="true">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row g-4 justify-content-center">
-          <div class="col-sm-6 col-lg-4">
-            <div class="card vehicle-card reveal">
-              <div class="card-img-wrap"><img src="https://placehold.co/400x260/2b2b2b/2b2b2b?text=+" alt="Ford Mustang GT exterior"></div>
-              <div class="card-body">
-                <h3 class="card-title h5">Ford Mustang GT</h3>
-                <span class="badge-shifted">5.0L V8</span>
-                <p class="card-text mt-2 mb-0">An iconic naturally aspirated American muscle car.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card vehicle-card reveal">
-              <div class="card-img-wrap"><img src="https://placehold.co/400x260/2b2b2b/2b2b2b?text=+" alt="Ferrari F8 Tributo exterior"></div>
-              <div class="card-body">
-                <h3 class="card-title h5">Ferrari F8 Tributo</h3>
-                <span class="badge-shifted">Twin Turbo V8</span>
-                <p class="card-text mt-2 mb-0">A mid-engine supercar with blistering performance.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card vehicle-card reveal">
-              <div class="card-img-wrap"><img src="https://placehold.co/400x260/2b2b2b/2b2b2b?text=+" alt="Mercedes-AMG C63 exterior"></div>
-              <div class="card-body">
-                <h3 class="card-title h5">Mercedes-AMG C63</h3>
-                <span class="badge-shifted">V8</span>
-                <p class="card-text mt-2 mb-0">A performance sedan built for daily usability and speed.</p>
-              </div>
-            </div>
-          </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row g-4 justify-content-center">
-          <div class="col-sm-6 col-lg-4">
-            <div class="card vehicle-card reveal">
-              <div class="card-img-wrap"><img src="https://placehold.co/400x260/2b2b2b/2b2b2b?text=+" alt="Audi RS6 Avant exterior"></div>
-              <div class="card-body">
-                <h3 class="card-title h5">Audi RS6 Avant</h3>
-                <span class="badge-shifted">Twin Turbo V8</span>
-                <p class="card-text mt-2 mb-0">A performance wagon that blends practicality and power.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card vehicle-card reveal">
-              <div class="card-img-wrap"><img src="https://placehold.co/400x260/2b2b2b/2b2b2b?text=+" alt="Lamborghini Aventador exterior"></div>
-              <div class="card-body">
-                <h3 class="card-title h5">Lamborghini Aventador</h3>
-                <span class="badge-shifted">Naturally Aspirated V12</span>
-                <p class="card-text mt-2 mb-0">A flagship supercar with a dramatic exhaust note.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card vehicle-card reveal">
-              <div class="card-img-wrap"><img src="https://placehold.co/400x260/2b2b2b/2b2b2b?text=+" alt="Toyota Land Cruiser exterior"></div>
-              <div class="card-body">
-                <h3 class="card-title h5">Toyota Land Cruiser</h3>
-                <span class="badge-shifted">V6 Twin Turbo</span>
-                <p class="card-text mt-2 mb-0">A large, capable SUV built for durability.</p>
-              </div>
-            </div>
-          </div>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#page5VehicleCarousel" data-bs-slide="prev">
-            <i class="bi bi-chevron-left"></i>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#page5VehicleCarousel" data-bs-slide="next">
-            <i class="bi bi-chevron-right"></i>
-            <span class="visually-hidden">Next</span>
-          </button>
-          <div class="vehicle-carousel-indicators">
-            <button type="button" data-bs-target="#page5VehicleCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#page5VehicleCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          </div>
+    </section>
+    <!-- ================= PAGE NAVIGATION ================= -->
+    <section class="section pt-0">
+        <div class="container">
+            <hr class="divider mb-5">
+        <div class="page-nav">
+            <a href="page4.html" class="btn btn-dark-outline"><i class="bi bi-arrow-left me-2"></i>Hybrid vs Electric</a>
+            <a href="../index.html" class="btn btn-dark-outline"><i class="bi bi-house-door me-2"></i>Home</a>
+            <a href="page6.html" class="btn btn-shifted">Motorsport Scene<i class="bi bi-arrow-right ms-2"></i></a>
         </div>
-      </div>
+        </div>
     </section>
 
-    <!-- ================= ENGINE VARIANTS ================= -->
-    <section class="bg-alt">
-      <div class="container">
-        <div class="section-heading reveal">
-          <h2>Engine Variants</h2>
-          <p>Increasing cylinder count generally improves smoothness and power but also increases fuel consumption and manufacturing cost.</p>
-        </div>
-        <div class="row g-4 text-center">
-          <div class="col-6 col-lg-3"><div class="card card--simple reveal"><h3 class="h4 mb-1">V6</h3><p class="mb-0">Family sedans, SUVs</p></div></div>
-          <div class="col-6 col-lg-3"><div class="card card--simple reveal"><h3 class="h4 mb-1">V8</h3><p class="mb-0">Sports cars, muscle cars</p></div></div>
-          <div class="col-6 col-lg-3"><div class="card card--simple reveal"><h3 class="h4 mb-1">V10</h3><p class="mb-0">Supercars</p></div></div>
-          <div class="col-6 col-lg-3"><div class="card card--simple reveal"><h3 class="h4 mb-1">V12</h3><p class="mb-0">Luxury &amp; hypercars</p></div></div>
-        </div>
-      </div>
-    </section>
+</main>
 
-    <!-- ================= QUICK FACTS ================= -->
-    <section>
-      <div class="container">
-        <div class="info-panel reveal">
-          <h3 class="h5">Quick Facts</h3>
-          <ul>
-            <li>Common V angles include 60°, 90° and 72°.</li>
-            <li>V8 engines are widely used in performance cars.</li>
-            <li>V12 engines are among the smoothest engine layouts.</li>
-            <li>Shorter than comparable inline engines.</li>
-          </ul>
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <p class="footer-brand mb-2">SHIFTED<span style="color:var(--text-secondary)">.</span></p>
+                    <p class="text-secondary" style="max-width:340px;">An educational automotive platform helping
+                        beginners understand the technology, culture and ownership side of modern cars.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p class="fw-semibold mb-3">Quick Links</p>
+                    <div class="footer-links">
+                        <a href="../index.html">Home</a>
+                        <a href="page2.html">Motorsport Technology</a>
+                        <a href="page8.html">Buying Guide</a>
+                        <a href="page9.html">Maintenance Guide</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <p class="fw-semibold mb-3">About This Project</p>
+                    <p class="text-secondary">SHIFTED is a student-built educational website exploring how modern
+                        vehicles work, from motorsport-derived technology to everyday ownership in Singapore.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="mb-0">&copy; 2026 SHIFTED. Built for educational purposes.</p>
+                <p class="mb-0">Designed &amp; developed with HTML5, CSS3, Bootstrap 5 &amp; JavaScript.</p>
+            </div>
         </div>
-      </div>
-    </section>
+    </footer>
 
-    <!-- ================= PREVIOUS / NEXT NAVIGATION ================= -->
-    <section class="bg-alt">
-      <div class="container">
-        <div class="prev-next">
-          <a href="page4.html" class="btn-shifted-outline">&larr; Inline Engine</a>
-          <a href="page6.html" class="btn-shifted">Boxer Engine &rarr;</a>
-        </div>
-      </div>
-    </section>
+    <!-- Back to top -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
 
-  </main>
-
-  <!-- ================= FOOTER ================= -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="row gy-4 align-items-start">
-        <div class="col-md-4">
-          <h5>SHIFTED</h5>
-          <p class="small-text">An educational automotive website built to teach beginners how modern cars work.</p>
-        </div>
-        <div class="col-md-4">
-          <h5>Quick Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="page3.html">Engine</a></li>
-            <li><a href="page9.html">Ownership</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4 text-md-end">
-          <button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
-        </div>
-      </div>
-      <hr class="mt-4" style="border-color: var(--color-border);">
-      <p class="small-text text-center mb-0">© 2026 SHIFTED. All rights reserved. Version 1.0</p>
-    </div>
-  </footer>
-
-
-  <!-- Bootstrap Bundle (includes Popper) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Shared script -->
-  <script src="../JSCode/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../JSCode/script.js" defer></script>
 </body>
 </html>

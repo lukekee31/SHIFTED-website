@@ -1,494 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Electric Power — SHIFTED</title>
-  <meta name="description" content="Learn how battery-electric vehicles work, how they charge, and the advantages and disadvantages of going electric." />
-
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Google Font: Open Sans -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-  <!-- Shared stylesheet -->
-  <link rel="stylesheet" href="../CSSCode/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Buying Guide | SHIFTED</title>
+    <meta name="description" content="A step-by-step guide and recommendation tool to help you choose your first car.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSSCode/style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <!-- ================= NAVIGATION ================= -->
+    <header>
+        <nav class="navbar navbar-expand-xl fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">SHIFTED<span>.</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list fs-2"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto align-items-xl-center">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page2.html">Motorsport Technology</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page3.html">Engine Power</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page4.html">Hybrid vs Electric</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page5.html">Popular Cars</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page6.html">Motorsport Scene</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page7.html">Showcase</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page8.html">Buying Guide</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page9.html">Maintenance</a></li>
+                    </ul>
+                    <button class="theme-toggle theme-toggle-btn" type="button" aria-label="Toggle dark and light mode">
+                        <i class="bi bi-moon-stars-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-  <!-- ================= NAVBAR ================= -->
-  <header>
-    <nav class="navbar navbar-expand-lg sticky-top">
-      <div class="container">
-        <a class="navbar-brand" href="../index.html">SHIFTED</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto align-items-lg-center">
-            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="page2.html">Motorsport</a></li>
-            <li class="nav-item"><a class="nav-link" href="page3.html">Engine</a></li>
-            <li class="nav-item"><a class="nav-link" href="page7.html">Hybrid</a></li>
-            <li class="nav-item"><a class="nav-link" href="page8.html">Electric</a></li>
-            <li class="nav-item"><a class="nav-link" href="page9.html">Ownership</a></li>
-            <li class="nav-item">
-              <button class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false"><i class="bi bi-moon-stars"></i><span>Dark</span></button>
-            </li>
-          </ul>
+<main id="main">
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero">
+        <img class="hero-image" src="../Graphics/buying-guide-hero.jpg" alt="Customer receiving car keys from a salesperson in a showroom">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <p class="hero-eyebrow">Page 8 of 9</p>
+            <h1 class="hero-title">Car Buying Guide</h1>
+            <p class="hero-subtitle">Buying a car is one of the biggest financial decisions many people make. Learn
+                what to consider before choosing the vehicle that's right for you.</p>
         </div>
-      </div>
-    </nav>
-  </header>
-
-  <!-- ================= HERO SECTION ================= -->
-  <section class="hero hero--page" aria-label="Electric Power introduction">
-    <img class="hero-image" src="https://placehold.co/1920x1080/1a1a1a/1a1a1a?text=+" alt="Porsche Taycan electric vehicle at a charging station">
-    <div class="hero-overlay"></div>
-    <div class="container">
-      <div class="hero-content">
-        <h1>Electric Power</h1>
-        <p>Driving without combustion. Electric vehicles replace the traditional engine with powerful electric motors and high-capacity batteries, delivering smooth, quiet and highly efficient transportation.</p>
-      </div>
-    </div>
-  </section>
-
-  <main>
-
-    <!-- ================= INTRODUCTION ================= -->
-    <section>
-      <div class="container">
-        <div class="container-narrow text-center reveal">
-          <h2>Power Without a Petrol Tank</h2>
-          <p>Electric vehicles use electricity stored inside a battery pack instead of burning petrol or diesel. The stored electrical energy powers one or more electric motors that drive the wheels.</p>
-          <p>Because there is no combustion process, electric vehicles produce zero tailpipe emissions while delivering instant torque and quiet operation.</p>
-        </div>
-      </div>
     </section>
 
-    <!-- ================= WHAT IS AN EV? ================= -->
-    <section class="bg-alt">
-      <div class="container">
-        <div class="split-section reveal">
-          <img src="../Graphics/EV-Images/ev-drivetrain-cutaway.jpg" alt="Cutaway illustration of an EV drivetrain showing battery pack, motor and wheels">
-          <div>
-            <h2>What is an Electric Vehicle?</h2>
-            <p>Electric vehicles store energy inside a rechargeable battery pack. When the accelerator is pressed, electricity flows through an inverter into the electric motor, producing instant torque that turns the wheels.</p>
-          </div>
+    <!-- ================= BUYING CHECKLIST ================= -->
+    <section class="section">
+        <div class="container">
+            <div class="section-heading reveal">
+                <span class="section-label">Before You Start</span>
+                <h2>Buying Checklist</h2>
+            </div>
+            <div class="row g-4 reveal">
+                <div class="col-md-6 col-lg-4">
+                    <div class="d-flex gap-3"><i class="bi bi-wallet2 fs-3"></i>
+                        <div><p class="fw-semibold mb-1">Budget</p><p class="small text-secondary mb-0">Decide your
+                            total budget, including COE, insurance and running costs.</p></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="d-flex gap-3"><i class="bi bi-fuel-pump fs-3"></i>
+                        <div><p class="fw-semibold mb-1">Fuel Type</p><p class="small text-secondary mb-0">Petrol,
+                            hybrid or electric each come with different running costs.</p></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="d-flex gap-3"><i class="bi bi-people fs-3"></i>
+                        <div><p class="fw-semibold mb-1">Seating Capacity</p><p class="small text-secondary mb-0">Consider
+                            how many passengers you'll regularly carry.</p></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="d-flex gap-3"><i class="bi bi-signpost-split fs-3"></i>
+                        <div><p class="fw-semibold mb-1">Daily Driving Distance</p><p class="small text-secondary mb-0">Longer
+                            commutes may favour different powertrains.</p></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="d-flex gap-3"><i class="bi bi-p-square fs-3"></i>
+                        <div><p class="fw-semibold mb-1">Parking Availability</p><p class="small text-secondary mb-0">Check
+                            whether your home has convenient parking access.</p></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="d-flex gap-3"><i class="bi bi-ev-station fs-3"></i>
+                        <div><p class="fw-semibold mb-1">Charging Availability</p><p class="small text-secondary mb-0">Important
+                            if you're considering an electric vehicle.</p></div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- ================= EV DRIVETRAIN DIAGRAM ================= -->
-    <section>
-      <div class="container">
-        <div class="section-heading reveal">
-          <h2>EV Drivetrain Diagram</h2>
-          <p>A simplified view of how energy travels from the battery to the wheels.</p>
+    <!-- ================= NEW VS USED COMPARISON ================= -->
+    <section class="section" style="background-color:var(--card);">
+        <div class="container">
+            <div class="section-heading reveal">
+                <span class="section-label">Decision Point</span>
+                <h2>New vs Used</h2>
+            </div>
+            <div class="row g-4 reveal">
+                <div class="col-lg-6">
+                    <div class="card h-100 card-body">
+                        <h3 class="card-title">New Car</h3>
+                        <p class="fw-semibold small mb-1 text-success">Advantages</p>
+                        <ul class="small text-secondary ps-3">
+                            <li>Manufacturer warranty</li>
+                            <li>Latest technology</li>
+                            <li>Better reliability</li>
+                        </ul>
+                        <p class="fw-semibold small mb-1">Disadvantages</p>
+                        <ul class="small text-secondary ps-3 mb-0">
+                            <li>Higher purchase price</li>
+                            <li>Greater depreciation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100 card-body">
+                        <h3 class="card-title">Used Car</h3>
+                        <p class="fw-semibold small mb-1 text-success">Advantages</p>
+                        <ul class="small text-secondary ps-3">
+                            <li>Lower upfront cost</li>
+                            <li>Slower depreciation</li>
+                            <li>Greater variety</li>
+                        </ul>
+                        <p class="fw-semibold small mb-1">Disadvantages</p>
+                        <ul class="small text-secondary ps-3 mb-0">
+                            <li>Unknown maintenance history</li>
+                            <li>Higher repair risk</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="power-flow reveal">
-          <div class="power-flow-node">Charging Port</div>
-          <span class="power-flow-arrow">&rarr;</span>
-          <div class="power-flow-node">Battery Pack</div>
-          <span class="power-flow-arrow">&rarr;</span>
-          <div class="power-flow-node">Inverter</div>
-          <span class="power-flow-arrow">&rarr;</span>
-          <div class="power-flow-node">Electric Motor</div>
-          <span class="power-flow-arrow">&rarr;</span>
-          <div class="power-flow-node">Reduction Gear</div>
-          <span class="power-flow-arrow">&rarr;</span>
-          <div class="power-flow-node">Wheels</div>
-        </div>
-      </div>
     </section>
 
-    <!-- ================= MAIN COMPONENTS ================= -->
-    <section class="bg-alt">
-      <div class="container">
-        <div class="section-heading reveal">
-          <h2>Main Components</h2>
+    <!-- ================= OWNERSHIP COSTS ================= -->
+    <section class="section">
+        <div class="container">
+            <div class="section-heading reveal">
+                <span class="section-label">Budget For</span>
+                <h2>Ownership Costs</h2>
+            </div>
+            <div class="row reveal text-center">
+                <div class="col-4 col-md-2 icon-grid-item">
+                    <div class="icon-circle"><i class="bi bi-fuel-pump"></i></div>
+                    <p class="small fw-semibold mb-0">Fuel</p>
+                </div>
+                <div class="col-4 col-md-2 icon-grid-item">
+                    <div class="icon-circle"><i class="bi bi-shield-check"></i></div>
+                    <p class="small fw-semibold mb-0">Insurance</p>
+                </div>
+                <div class="col-4 col-md-2 icon-grid-item">
+                    <div class="icon-circle"><i class="bi bi-file-earmark-text"></i></div>
+                    <p class="small fw-semibold mb-0">Road Tax</p>
+                </div>
+                <div class="col-4 col-md-2 icon-grid-item">
+                    <div class="icon-circle"><i class="bi bi-tools"></i></div>
+                    <p class="small fw-semibold mb-0">Maintenance</p>
+                </div>
+                <div class="col-4 col-md-2 icon-grid-item">
+                    <div class="icon-circle"><i class="bi bi-p-circle"></i></div>
+                    <p class="small fw-semibold mb-0">Parking</p>
+                </div>
+                <div class="col-4 col-md-2 icon-grid-item">
+                    <div class="icon-circle"><i class="bi bi-signpost"></i></div>
+                    <p class="small fw-semibold mb-0">ERP</p>
+                </div>
+            </div>
         </div>
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-3">
-            <article class="card reveal">
-              <div class="card-img-wrap">
-                <img src="https://placehold.co/500x300/2b2b2b/2b2b2b?text=+" alt="EV lithium-ion battery pack mounted under the vehicle floor">
-              </div>
-              <div class="card-body">
-                <h3 class="card-title h5">Battery Pack</h3>
-                <p class="card-text">Stores electrical energy using lithium-ion cells at high voltage. It is the largest and heaviest component in an EV.</p>
-              </div>
-            </article>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <article class="card reveal">
-              <div class="card-img-wrap">
-                <img src="https://placehold.co/500x300/2b2b2b/2b2b2b?text=+" alt="Compact electric motor assembly">
-              </div>
-              <div class="card-body">
-                <h3 class="card-title h5">Electric Motor</h3>
-                <p class="card-text">Converts electricity into mechanical motion, delivering instant torque with very few moving parts and high efficiency.</p>
-              </div>
-            </article>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <article class="card reveal">
-              <div class="card-img-wrap">
-                <img src="https://placehold.co/500x300/2b2b2b/2b2b2b?text=+" alt="Power inverter unit inside an electric vehicle">
-              </div>
-              <div class="card-body">
-                <h3 class="card-title h5">Inverter</h3>
-                <p class="card-text">Converts DC electricity from the battery into AC electricity for the motor, while also controlling motor speed.</p>
-              </div>
-            </article>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <article class="card reveal">
-              <div class="card-img-wrap">
-                <img src="https://placehold.co/500x300/2b2b2b/2b2b2b?text=+" alt="Electric vehicle charging port">
-              </div>
-              <div class="card-body">
-                <h3 class="card-title h5">Charging Port</h3>
-                <p class="card-text">Allows the vehicle to recharge using external power, supporting both AC and DC charging depending on the vehicle.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <!-- ================= CHARGING METHODS ================= -->
-    <section>
-      <div class="container">
-        <div class="section-heading reveal">
-          <h2>Charging Methods</h2>
+    <!-- ================= VEHICLE RECOMMENDATION TOOL ================= -->
+    <section class="section" style="background-color:var(--card);">
+        <div class="container">
+            <div class="row justify-content-center reveal">
+                <div class="col-lg-8">
+                    <div class="text-center mb-4">
+                        <span class="section-label">Interactive Tool</span>
+                        <h2>Find Your Vehicle Type</h2>
+                        <p>Answer a few questions and we'll recommend the powertrain that fits your needs best.</p>
+                    </div>
+                    <form id="buyingForm" class="form-shifted bg-body p-4 p-md-5 rounded-4 border" novalidate>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <label for="budget" class="form-label">Budget</label>
+                                <select id="budget" name="budget" class="form-select" required>
+                                    <option value="" selected disabled>Choose...</option>
+                                    <option value="under-120">Under S$120,000</option>
+                                    <option value="120-180">S$120,000–180,000</option>
+                                    <option value="above-180">Above S$180,000</option>
+                                </select>
+                                <div class="invalid-feedback">Please select a budget range.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="passengers" class="form-label">Passengers</label>
+                                <select id="passengers" name="passengers" class="form-select" required>
+                                    <option value="" selected disabled>Choose...</option>
+                                    <option value="2">2</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5+</option>
+                                    <option value="7">7</option>
+                                </select>
+                                <div class="invalid-feedback">Please select the number of passengers.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <fieldset>
+                                    <legend class="form-label fs-6">Daily Driving</legend>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="driving" id="drivingCity" value="city" required>
+                                        <label class="form-check-label" for="drivingCity">Mostly City</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="driving" id="drivingMixed" value="mixed">
+                                        <label class="form-check-label" for="drivingMixed">Mixed</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="driving" id="drivingLong" value="long-distance">
+                                        <label class="form-check-label" for="drivingLong">Long Distance</label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="col-md-6">
+                                <fieldset>
+                                    <legend class="form-label fs-6">Charging Available?</legend>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="charging" id="chargingYes" value="yes" required>
+                                        <label class="form-check-label" for="chargingYes">Yes</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="charging" id="chargingNo" value="no">
+                                        <label class="form-check-label" for="chargingNo">No</label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="priority" class="form-label">Priority</label>
+                                <select id="priority" name="priority" class="form-select" required>
+                                    <option value="" selected disabled>Choose...</option>
+                                    <option value="running-cost">Lowest Running Cost</option>
+                                    <option value="performance">Performance</option>
+                                    <option value="comfort">Comfort</option>
+                                    <option value="family">Family Use</option>
+                                    <option value="environment">Environment</option>
+                                </select>
+                                <div class="invalid-feedback">Please select a priority.</div>
+                            </div>
+                        </div>
+                        <div id="buyingFormFeedback" class="alert-shifted mt-4 p-3" style="display:none;" role="alert"></div>
+                        <button type="submit" class="btn btn-shifted w-100 mt-4">Get My Recommendation</button>
+                    </form>
+
+                    <div id="buyingResult" class="result-card card card-body">
+                        <p class="section-label mb-1">Recommended Vehicle Type</p>
+                        <h3 id="resultType" class="mb-2">—</h3>
+                        <p class="fw-semibold small mb-1">Why?</p>
+                        <p id="resultWhy" class="text-secondary">—</p>
+                        <p class="fw-semibold small mb-1">Suggested Models</p>
+                        <ul id="resultModels" class="text-secondary ps-3 mb-0"></ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card card--simple reveal">
-              <span class="icon-lg"><i class="bi bi-house-door"></i></span>
-              <h3 class="h5">Home Charging (AC)</h3>
-              <p class="small-text mb-1">Typical Power: 7&ndash;11 kW</p>
-              <p class="mb-0">Charging Time: 6&ndash;10 hours. Best for overnight charging.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card--simple reveal">
-              <span class="icon-lg"><i class="bi bi-p-square"></i></span>
-              <h3 class="h5">Public AC Charging</h3>
-              <p class="small-text mb-1">Typical Power: 11&ndash;22 kW</p>
-              <p class="mb-0">Common at shopping centres and workplaces.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card--simple reveal">
-              <span class="icon-lg"><i class="bi bi-lightning-charge"></i></span>
-              <h3 class="h5">DC Fast Charging</h3>
-              <p class="small-text mb-1">Typical Power: 50&ndash;350 kW</p>
-              <p class="mb-0">Recharges many EVs from around 10% to 80% in roughly 20&ndash;40 minutes.</p>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <!-- ================= CHARGING SPEED COMPARISON ================= -->
-    <section class="bg-alt">
-      <div class="container">
-        <div class="section-heading reveal">
-          <h2>Charging Speed Comparison</h2>
+    <!-- ================= BUYING TIPS (ACCORDION) ================= -->
+    <section class="section">
+        <div class="container">
+            <div class="section-heading reveal">
+                <span class="section-label">Good Practice</span>
+                <h2>Buying Tips</h2>
+            </div>
+            <div class="accordion reveal" id="tipsAccordion">
+                <div class="accordion-item">
+                    <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tipDrive">Test Driving</button></h3>
+                    <div id="tipDrive" class="accordion-collapse collapse show" data-bs-parent="#tipsAccordion">
+                        <div class="accordion-body"><p class="mb-0">Always test drive on varied roads, including
+                            highways and rougher surfaces, to properly judge comfort and noise levels.</p></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tipWarranty">Warranty</button></h3>
+                    <div id="tipWarranty" class="accordion-collapse collapse" data-bs-parent="#tipsAccordion">
+                        <div class="accordion-body"><p class="mb-0">Check what's covered, for how long, and whether
+                            the warranty transfers if you sell the car before it expires.</p></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tipHistory">Maintenance History</button></h3>
+                    <div id="tipHistory" class="accordion-collapse collapse" data-bs-parent="#tipsAccordion">
+                        <div class="accordion-body"><p class="mb-0">For used cars, request full service records to
+                            understand how well the vehicle has been looked after.</p></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tipInspection">Vehicle Inspection</button></h3>
+                    <div id="tipInspection" class="accordion-collapse collapse" data-bs-parent="#tipsAccordion">
+                        <div class="accordion-body"><p class="mb-0">Have an independent inspection done before
+                            buying a used car to catch issues that aren't visible at first glance.</p></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tipInsurance">Insurance</button></h3>
+                    <div id="tipInsurance" class="accordion-collapse collapse" data-bs-parent="#tipsAccordion">
+                        <div class="accordion-body"><p class="mb-0">Compare quotes from multiple insurers, as
+                            premiums can vary significantly based on the vehicle and your driving profile.</p></div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="table-responsive reveal">
-          <table class="table table-shifted table-striped table-hover align-middle mb-2">
-            <thead>
-              <tr>
-                <th scope="col">Charging Method</th>
-                <th scope="col">Typical Power</th>
-                <th scope="col">Approximate Time</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Home AC</td>
-                <td>7&ndash;11 kW</td>
-                <td>6&ndash;10 hours</td>
-              </tr>
-              <tr>
-                <td>Public AC</td>
-                <td>11&ndash;22 kW</td>
-                <td>4&ndash;8 hours</td>
-              </tr>
-              <tr>
-                <td>DC Fast Charger</td>
-                <td>50&ndash;350 kW</td>
-                <td>20&ndash;40 minutes (10&ndash;80%)</td>
-              </tr>
-            </tbody>
-          </table>
+    </section>
+    <!-- ================= PAGE NAVIGATION ================= -->
+    <section class="section pt-0">
+        <div class="container">
+            <hr class="divider mb-5">
+        <div class="page-nav">
+            <a href="page7.html" class="btn btn-dark-outline"><i class="bi bi-arrow-left me-2"></i>Showcase</a>
+            <a href="../index.html" class="btn btn-dark-outline"><i class="bi bi-house-door me-2"></i>Home</a>
+            <a href="page9.html" class="btn btn-shifted">Maintenance Guide<i class="bi bi-arrow-right ms-2"></i></a>
         </div>
-        <p class="small-text reveal">Charging times vary depending on battery size, charger power and environmental conditions.</p>
-      </div>
+        </div>
     </section>
 
-    <!-- ================= ADVANTAGES ================= -->
-    <section>
-      <div class="container">
-        <div class="section-heading reveal">
-          <h2>Advantages</h2>
-        </div>
-        <div class="row g-4">
-          <div class="col-sm-6 col-lg-4">
-            <div class="card card--simple reveal">
-              <span class="icon-lg"><i class="bi bi-cloud-check"></i></span>
-              <p class="mb-0">Zero tailpipe emissions</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card card--simple reveal">
-              <span class="icon-lg"><i class="bi bi-speedometer2"></i></span>
-              <p class="mb-0">Instant torque</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card card--simple reveal">
-              <span class="icon-lg"><i class="bi bi-volume-mute"></i></span>
-              <p class="mb-0">Quiet driving</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card card--simple reveal">
-              <span class="icon-lg"><i class="bi bi-tools"></i></span>
-              <p class="mb-0">Lower maintenance</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card card--simple reveal">
-              <span class="icon-lg"><i class="bi bi-battery-charging"></i></span>
-              <p class="mb-0">High energy efficiency</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+</main>
 
-    <!-- ================= DISADVANTAGES ================= -->
-    <section class="bg-alt">
-      <div class="container">
-        <div class="section-heading reveal">
-          <h2>Disadvantages</h2>
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <p class="footer-brand mb-2">SHIFTED<span style="color:var(--text-secondary)">.</span></p>
+                    <p class="text-secondary" style="max-width:340px;">An educational automotive platform helping
+                        beginners understand the technology, culture and ownership side of modern cars.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p class="fw-semibold mb-3">Quick Links</p>
+                    <div class="footer-links">
+                        <a href="../index.html">Home</a>
+                        <a href="page2.html">Motorsport Technology</a>
+                        <a href="page8.html">Buying Guide</a>
+                        <a href="page9.html">Maintenance Guide</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <p class="fw-semibold mb-3">About This Project</p>
+                    <p class="text-secondary">SHIFTED is a student-built educational website exploring how modern
+                        vehicles work, from motorsport-derived technology to everyday ownership in Singapore.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="mb-0">&copy; 2026 SHIFTED. Built for educational purposes.</p>
+                <p class="mb-0">Designed &amp; developed with HTML5, CSS3, Bootstrap 5 &amp; JavaScript.</p>
+            </div>
         </div>
-        <div class="row g-4">
-          <div class="col-sm-6 col-lg-4">
-            <div class="card card--simple reveal">
-              <span class="icon-lg"><i class="bi bi-hourglass-split"></i></span>
-              <p class="mb-0">Charging takes longer than refuelling</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card card--simple reveal">
-              <span class="icon-lg"><i class="bi bi-signpost-split"></i></span>
-              <p class="mb-0">Limited charging infrastructure in some areas</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card card--simple reveal">
-              <span class="icon-lg"><i class="bi bi-cash-stack"></i></span>
-              <p class="mb-0">Higher purchase price</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card card--simple reveal">
-              <span class="icon-lg"><i class="bi bi-battery-half"></i></span>
-              <p class="mb-0">Battery degradation over time</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card card--simple reveal">
-              <span class="icon-lg"><i class="bi bi-map"></i></span>
-              <p class="mb-0">Longer-distance travel requires planning</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </footer>
 
-    <!-- ================= COMMON ELECTRIC VEHICLES ================= -->
-    <section>
-      <div class="container">
-        <div class="section-heading reveal">
-          <h2>Common Electric Vehicles</h2>
-        </div>
-        <div class="row g-4">
-          <div class="col-sm-6 col-lg-4">
-            <div class="card vehicle-card reveal">
-              <div class="card-img-wrap">
-                <img src="https://placehold.co/500x320/2b2b2b/2b2b2b?text=+" alt="Tesla Model 3 electric saloon">
-              </div>
-              <div class="card-body">
-                <span class="badge-shifted">75 kWh</span>
-                <h3 class="card-title h5 mt-2">Tesla Model 3</h3>
-                <p class="card-text">A benchmark electric saloon known for efficiency and over-the-air software updates.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card vehicle-card reveal">
-              <div class="card-img-wrap">
-                <img src="https://placehold.co/500x320/2b2b2b/2b2b2b?text=+" alt="Hyundai IONIQ 5 electric crossover">
-              </div>
-              <div class="card-body">
-                <span class="badge-shifted">77.4 kWh</span>
-                <h3 class="card-title h5 mt-2">Hyundai IONIQ 5</h3>
-                <p class="card-text">A spacious crossover with ultra-fast 800V charging capability.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card vehicle-card reveal">
-              <div class="card-img-wrap">
-                <img src="https://placehold.co/500x320/2b2b2b/2b2b2b?text=+" alt="Kia EV6 electric crossover">
-              </div>
-              <div class="card-body">
-                <span class="badge-shifted">77.4 kWh</span>
-                <h3 class="card-title h5 mt-2">Kia EV6</h3>
-                <p class="card-text">A sporty crossover sharing its efficient platform with the IONIQ 5.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card vehicle-card reveal">
-              <div class="card-img-wrap">
-                <img src="https://placehold.co/500x320/2b2b2b/2b2b2b?text=+" alt="Porsche Taycan electric sports saloon">
-              </div>
-              <div class="card-body">
-                <span class="badge-shifted">93 kWh</span>
-                <h3 class="card-title h5 mt-2">Porsche Taycan</h3>
-                <p class="card-text">A performance-focused EV that proves electric power and driving thrills can coexist.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card vehicle-card reveal">
-              <div class="card-img-wrap">
-                <img src="https://placehold.co/500x320/2b2b2b/2b2b2b?text=+" alt="BYD Seal electric saloon">
-              </div>
-              <div class="card-body">
-                <span class="badge-shifted">82.5 kWh</span>
-                <h3 class="card-title h5 mt-2">BYD Seal</h3>
-                <p class="card-text">A value-focused electric saloon with strong range and blade battery technology.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card vehicle-card reveal">
-              <div class="card-img-wrap">
-                <img src="../Graphics/EV-Images/rimac-nevera-drivetrain.jpg" alt="Rimac Nevera electric drivetrain and motor assembly">
-              </div>
-              <div class="card-body">
-                <span class="badge-shifted">120 kWh</span>
-                <h3 class="card-title h5 mt-2">Rimac Nevera</h3>
-                <p class="card-text">A record-breaking electric hypercar demonstrating the outer limits of EV performance.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Back to top -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
 
-    <!-- ================= CHARGING TIME CALCULATOR ================= -->
-    <section class="bg-alt">
-      <div class="container">
-        <div class="section-heading reveal">
-          <h2>Charging Time Calculator</h2>
-          <p>Estimate how long it will take to charge an EV based on battery size, current charge and charger power.</p>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <form id="chargingCalculatorForm" class="form-shifted row g-3 reveal" novalidate>
-              <div class="col-sm-6">
-                <label for="batterySize" class="form-label">Battery Size (kWh)</label>
-                <input type="number" class="form-control" id="batterySize" min="1" step="0.1" placeholder="e.g. 77" required>
-              </div>
-              <div class="col-sm-6">
-                <label for="chargerPower" class="form-label">Charger Power (kW)</label>
-                <input type="number" class="form-control" id="chargerPower" min="0.1" step="0.1" placeholder="e.g. 11" required>
-              </div>
-              <div class="col-sm-6">
-                <label for="currentPercent" class="form-label">Current Battery (%)</label>
-                <input type="number" class="form-control" id="currentPercent" min="0" max="100" placeholder="e.g. 20" required>
-              </div>
-              <div class="col-sm-6">
-                <label for="targetPercent" class="form-label">Target Battery (%)</label>
-                <input type="number" class="form-control" id="targetPercent" min="0" max="100" placeholder="e.g. 80" required>
-              </div>
-              <div class="col-12">
-                <button type="submit" class="btn-shifted">Calculate Charging Time</button>
-              </div>
-              <div class="col-12">
-                <div id="chargingError" class="alert alert-danger d-none mb-0" role="alert"></div>
-                <div id="chargingResult" class="result-box d-none fw-bold text-center" role="status"></div>
-              </div>
-              <div class="col-12">
-                <p class="small-text mb-0">This is only an estimate — real-world charging speed slows as the battery approaches full capacity.</p>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= SUMMARY ================= -->
-    <section>
-      <div class="container">
-        <div class="container-narrow text-center reveal">
-          <h2>Summary</h2>
-          <p>Electric vehicles represent a major shift in automotive technology. By replacing combustion engines with electric motors and battery packs, they offer quieter operation, instant acceleration and zero tailpipe emissions. As charging infrastructure continues to improve, EVs are becoming an increasingly practical choice for many drivers.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= PREVIOUS / NEXT NAVIGATION ================= -->
-    <section class="bg-alt">
-      <div class="container">
-        <div class="prev-next">
-          <a href="page7.html" class="btn-shifted-outline">&larr; Hybrid Power</a>
-          <a href="page9.html" class="btn-shifted">Ownership Guide &rarr;</a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ================= FOOTER ================= -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="row gy-4 align-items-start">
-        <div class="col-md-4">
-          <h5>SHIFTED</h5>
-          <p class="small-text">An educational automotive website built to teach beginners how modern cars work.</p>
-        </div>
-        <div class="col-md-4">
-          <h5>Quick Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="page3.html">Engine</a></li>
-            <li><a href="page9.html">Ownership</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4 text-md-end">
-          <button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
-        </div>
-      </div>
-      <hr class="mt-4" style="border-color: var(--color-border);">
-      <p class="small-text text-center mb-0">© 2026 SHIFTED. All rights reserved. Version 1.0</p>
-    </div>
-  </footer>
-
-  <!-- Bootstrap Bundle (includes Popper) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Shared script -->
-  <script src="../JSCode/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../JSCode/script.js" defer></script>
 </body>
 </html>

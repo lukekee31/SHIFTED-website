@@ -1,334 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Engine Power — SHIFTED</title>
-  <meta name="description" content="Discover how internal combustion engines work and explore Inline, V and Boxer engine layouts." />
-
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Google Font: Open Sans -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-  <!-- Shared stylesheet -->
-  <link rel="stylesheet" href="../CSSCode/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engine Power | SHIFTED</title>
+    <meta name="description" content="Learn how four-stroke engines work and compare Inline, V and Boxer layouts.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSSCode/style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <!-- ================= NAVIGATION ================= -->
+    <header>
+        <nav class="navbar navbar-expand-xl fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">SHIFTED<span>.</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list fs-2"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto align-items-xl-center">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page2.html">Motorsport Technology</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page3.html">Engine Power</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page4.html">Hybrid vs Electric</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page5.html">Popular Cars</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page6.html">Motorsport Scene</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page7.html">Showcase</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page8.html">Buying Guide</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page9.html">Maintenance</a></li>
+                    </ul>
+                    <button class="theme-toggle theme-toggle-btn" type="button" aria-label="Toggle dark and light mode">
+                        <i class="bi bi-moon-stars-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-
-  <!-- ================= NAVBAR ================= -->
-  <header>
-    <nav class="navbar navbar-expand-lg sticky-top">
-      <div class="container">
-        <a class="navbar-brand" href="../index.html">SHIFTED</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto align-items-lg-center">
-            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="page2.html">Motorsport</a></li>
-            <li class="nav-item"><a class="nav-link" href="page3.html">Engine</a></li>
-            <li class="nav-item"><a class="nav-link" href="page7.html">Hybrid</a></li>
-            <li class="nav-item"><a class="nav-link" href="page8.html">Electric</a></li>
-            <li class="nav-item"><a class="nav-link" href="page9.html">Ownership</a></li>
-            <li class="nav-item">
-              <button class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false"><i class="bi bi-moon-stars"></i><span>Dark</span></button>
-            </li>
-          </ul>
+<main id="main">
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero">
+        <img class="hero-image" src="../Graphics/engine-hero.jpg" alt="Cutaway photograph of a modern car engine bay">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <p class="hero-eyebrow">Page 3 of 9</p>
+            <h1 class="hero-title">Engine Power</h1>
+            <p class="hero-subtitle">Internal combustion engines have powered cars for over a century. Learn how
+                they work, why different layouts exist and what makes each engine unique.</p>
         </div>
-      </div>
-    </nav>
-  </header>
-
-  <!-- ================= HERO SECTION ================= -->
-  <section class="hero hero--page" aria-label="Engine Power introduction">
-    <img class="hero-image" src="https://placehold.co/1920x1080/2b2b2b/2b2b2b?text=+" alt="Cutaway photograph of a high-performance internal combustion engine">
-    <div class="hero-overlay"></div>
-    <div class="container">
-      <div class="hero-content">
-        <h1>Engine Power</h1>
-        <p>Discover how internal combustion engines convert fuel into motion and explore the different engine layouts used by manufacturers around the world.</p>
-      </div>
-    </div>
-  </section>
-
-  <main>
-
-    <!-- ================= INTRODUCTION ================= -->
-    <section>
-      <div class="container">
-        <div class="container-narrow text-center reveal">
-          <h2>Turning Fuel Into Motion</h2>
-          <p>Internal combustion engines have powered automobiles for over a century. Although modern engines differ in size and performance, they all operate using the same basic principle: converting the chemical energy stored in fuel into mechanical energy that turns the wheels.</p>
-          <p>Understanding this process makes it easier to appreciate why different engine layouts exist and why manufacturers choose one design over another.</p>
-        </div>
-      </div>
     </section>
 
-    <!-- ================= HOW AN ENGINE WORKS ================= -->
-    <section class="bg-alt">
-      <div class="container">
-        <div class="split-section reveal">
-          <img src="https://placehold.co/700x500/2b2b2b/2b2b2b?text=+" alt="Simple diagram of a piston and cylinder inside an engine">
-          <div>
-            <h2>How an Engine Works</h2>
-            <p>Air enters the cylinder, fuel is injected, and a spark ignites the mixture. The expanding gases push the piston downward, and the crankshaft converts that piston movement into the rotational motion that drives the wheels.</p>
-          </div>
+    <!-- ================= INTRODUCTION ================= -->
+    <section class="section">
+        <div class="container">
+            <div class="split-section reveal">
+                <div class="split-media col-lg-5">
+                    <img src="../Graphics/engine-block.jpg" alt="Close-up of a car engine block on a workshop bench">
+                </div>
+                <div class="split-text col-lg-7">
+                    <span class="section-label">The Basics</span>
+                    <h2>Turning fuel into motion</h2>
+                    <p>An engine's job is simple to state but complex to achieve: convert the chemical energy in
+                        fuel into the mechanical motion that turns the wheels. How this happens — and how the
+                        cylinders are arranged inside the engine — varies between manufacturers and vehicle
+                        types.</p>
+                    <p>Different engine layouts exist because each one balances smoothness, size, cost and
+                        performance differently, making them suited to different kinds of cars.</p>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- ================= FOUR-STROKE CYCLE ================= -->
-    <section>
-      <div class="container">
-        <div class="section-heading reveal">
-          <h2>The Four-Stroke Cycle</h2>
-          <p>Almost every modern petrol engine repeats this same four-step cycle thousands of times per minute.</p>
+    <section class="section" style="background-color:var(--card);">
+        <div class="container">
+            <div class="section-heading reveal">
+                <span class="section-label">How It Works</span>
+                <h2>The Four-Stroke Cycle</h2>
+            </div>
+            <div class="process-strip reveal">
+                <div class="process-step">
+                    <div class="process-icon"><i class="bi bi-arrow-down-circle"></i></div>
+                    <h3 class="h6 fw-bold">Intake</h3>
+                    <p class="small mb-0 text-secondary">The piston moves down, drawing an air-fuel mixture into the
+                        cylinder.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-icon"><i class="bi bi-arrows-collapse"></i></div>
+                    <h3 class="h6 fw-bold">Compression</h3>
+                    <p class="small mb-0 text-secondary">The piston moves up, compressing the mixture tightly.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+                    <h3 class="h6 fw-bold">Power</h3>
+                    <p class="small mb-0 text-secondary">A spark ignites the mixture, forcing the piston back
+                        down.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-icon"><i class="bi bi-arrow-up-circle"></i></div>
+                    <h3 class="h6 fw-bold">Exhaust</h3>
+                    <p class="small mb-0 text-secondary">The piston rises again, pushing spent gases out.</p>
+                </div>
+            </div>
         </div>
-        <div class="row g-4">
-          <div class="col-sm-6 col-lg-3">
-            <div class="card reveal">
-              <div class="card-img-wrap"><img src="https://placehold.co/400x300/2b2b2b/2b2b2b?text=+" alt="Piston moving downward during the intake stroke"></div>
-              <div class="card-body">
-                <h3 class="card-title h5">1. Intake</h3>
-                <p class="card-text">The intake valve opens while the piston moves downward, allowing air and fuel to enter the cylinder.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="card reveal">
-              <div class="card-img-wrap"><img src="https://placehold.co/400x300/2b2b2b/2b2b2b?text=+" alt="Compressed air-fuel mixture during the compression stroke"></div>
-              <div class="card-body">
-                <h3 class="card-title h5">2. Compression</h3>
-                <p class="card-text">The piston moves upward, compressing the air-fuel mixture to prepare for combustion.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="card reveal">
-              <div class="card-img-wrap"><img src="https://placehold.co/400x300/2b2b2b/2b2b2b?text=+" alt="Spark plug igniting the compressed mixture during the power stroke"></div>
-              <div class="card-body">
-                <h3 class="card-title h5">3. Power</h3>
-                <p class="card-text">The spark plug ignites the compressed mixture, forcing the piston downward and producing useful power.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="card reveal">
-              <div class="card-img-wrap"><img src="https://placehold.co/400x300/2b2b2b/2b2b2b?text=+" alt="Exhaust gases leaving the cylinder during the exhaust stroke"></div>
-              <div class="card-body">
-                <h3 class="card-title h5">4. Exhaust</h3>
-                <p class="card-text">The exhaust valve opens while the piston moves upward, pushing burnt gases out before the cycle begins again.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <!-- ================= ENGINE COMPONENTS ================= -->
-    <section class="bg-alt">
-      <div class="container">
-        <div class="section-heading reveal">
-          <h2>Engine Components</h2>
-          <p>Select each component to learn more about the role it plays.</p>
+    <!-- ================= MAJOR ENGINE COMPONENTS ================= -->
+    <section class="section">
+        <div class="container">
+            <div class="section-heading reveal">
+                <span class="section-label">Explore</span>
+                <h2>Major Engine Components</h2>
+                <p>Select a component to see what it does.</p>
+            </div>
+            <div class="row reveal">
+                <div class="col-4 col-md-2 icon-grid-item">
+                    <button class="icon-circle" data-bs-toggle="modal" data-bs-target="#componentModal" data-component="pistons" aria-label="Learn about pistons">
+                        <i class="bi bi-circle-square"></i>
+                    </button>
+                    <p class="small fw-semibold mb-0">Pistons</p>
+                </div>
+                <div class="col-4 col-md-2 icon-grid-item">
+                    <button class="icon-circle" data-bs-toggle="modal" data-bs-target="#componentModal" data-component="crankshaft" aria-label="Learn about the crankshaft">
+                        <i class="bi bi-arrow-repeat"></i>
+                    </button>
+                    <p class="small fw-semibold mb-0">Crankshaft</p>
+                </div>
+                <div class="col-4 col-md-2 icon-grid-item">
+                    <button class="icon-circle" data-bs-toggle="modal" data-bs-target="#componentModal" data-component="camshaft" aria-label="Learn about the camshaft">
+                        <i class="bi bi-gear-wide"></i>
+                    </button>
+                    <p class="small fw-semibold mb-0">Camshaft</p>
+                </div>
+                <div class="col-4 col-md-2 icon-grid-item">
+                    <button class="icon-circle" data-bs-toggle="modal" data-bs-target="#componentModal" data-component="connecting-rod" aria-label="Learn about the connecting rod">
+                        <i class="bi bi-distribute-vertical"></i>
+                    </button>
+                    <p class="small fw-semibold mb-0">Connecting Rod</p>
+                </div>
+                <div class="col-4 col-md-2 icon-grid-item">
+                    <button class="icon-circle" data-bs-toggle="modal" data-bs-target="#componentModal" data-component="spark-plug" aria-label="Learn about the spark plug">
+                        <i class="bi bi-lightning-fill"></i>
+                    </button>
+                    <p class="small fw-semibold mb-0">Spark Plug</p>
+                </div>
+                <div class="col-4 col-md-2 icon-grid-item">
+                    <button class="icon-circle" data-bs-toggle="modal" data-bs-target="#componentModal" data-component="valves" aria-label="Learn about the valves">
+                        <i class="bi bi-sliders"></i>
+                    </button>
+                    <p class="small fw-semibold mb-0">Valves</p>
+                </div>
+            </div>
         </div>
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-4">
-            <div class="card reveal">
-              <div class="card-img-wrap"><img src="https://placehold.co/400x260/2b2b2b/2b2b2b?text=+" alt="Piston engine component illustration"></div>
-              <div class="card-body">
-                <h3 class="card-title h5">Piston</h3>
-                <p class="card-text">Converts combustion pressure into linear movement.</p>
-                <button class="btn-shifted-outline" type="button" data-bs-toggle="collapse" data-bs-target="#comp0" aria-expanded="false" aria-controls="comp0">Read More</button>
-                <div class="collapse mt-3" id="comp0"><p class="mb-0">The piston is pushed down by expanding gases during combustion, transferring that force to the connecting rod.</p></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="card reveal">
-              <div class="card-img-wrap"><img src="https://placehold.co/400x260/2b2b2b/2b2b2b?text=+" alt="Connecting Rod engine component illustration"></div>
-              <div class="card-body">
-                <h3 class="card-title h5">Connecting Rod</h3>
-                <p class="card-text">Transfers force from the piston to the crankshaft.</p>
-                <button class="btn-shifted-outline" type="button" data-bs-toggle="collapse" data-bs-target="#comp1" aria-expanded="false" aria-controls="comp1">Read More</button>
-                <div class="collapse mt-3" id="comp1"><p class="mb-0">This rigid link connects the piston to the crankshaft, converting linear force into rotational input.</p></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="card reveal">
-              <div class="card-img-wrap"><img src="https://placehold.co/400x260/2b2b2b/2b2b2b?text=+" alt="Crankshaft engine component illustration"></div>
-              <div class="card-body">
-                <h3 class="card-title h5">Crankshaft</h3>
-                <p class="card-text">Converts linear piston motion into rotational motion.</p>
-                <button class="btn-shifted-outline" type="button" data-bs-toggle="collapse" data-bs-target="#comp2" aria-expanded="false" aria-controls="comp2">Read More</button>
-                <div class="collapse mt-3" id="comp2"><p class="mb-0">The crankshaft turns the up-and-down motion of the pistons into the spinning motion that ultimately drives the wheels.</p></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="card reveal">
-              <div class="card-img-wrap"><img src="https://placehold.co/400x260/2b2b2b/2b2b2b?text=+" alt="Cylinder engine component illustration"></div>
-              <div class="card-body">
-                <h3 class="card-title h5">Cylinder</h3>
-                <p class="card-text">The chamber where combustion occurs.</p>
-                <button class="btn-shifted-outline" type="button" data-bs-toggle="collapse" data-bs-target="#comp3" aria-expanded="false" aria-controls="comp3">Read More</button>
-                <div class="collapse mt-3" id="comp3"><p class="mb-0">Each cylinder houses a piston and is where the air-fuel mixture is compressed and ignited.</p></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="card reveal">
-              <div class="card-img-wrap"><img src="https://placehold.co/400x260/2b2b2b/2b2b2b?text=+" alt="Spark Plug engine component illustration"></div>
-              <div class="card-body">
-                <h3 class="card-title h5">Spark Plug</h3>
-                <p class="card-text">Ignites the compressed air-fuel mixture in petrol engines.</p>
-                <button class="btn-shifted-outline" type="button" data-bs-toggle="collapse" data-bs-target="#comp4" aria-expanded="false" aria-controls="comp4">Read More</button>
-                <div class="collapse mt-3" id="comp4"><p class="mb-0">A precisely timed electrical spark ignites the mixture at the top of the compression stroke.</p></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="card reveal">
-              <div class="card-img-wrap"><img src="https://placehold.co/400x260/2b2b2b/2b2b2b?text=+" alt="Valves engine component illustration"></div>
-              <div class="card-body">
-                <h3 class="card-title h5">Valves</h3>
-                <p class="card-text">Control the intake of air-fuel mixture and the release of exhaust gases.</p>
-                <button class="btn-shifted-outline" type="button" data-bs-toggle="collapse" data-bs-target="#comp5" aria-expanded="false" aria-controls="comp5">Read More</button>
-                <div class="collapse mt-3" id="comp5"><p class="mb-0">Intake and exhaust valves open and close in sync with the piston to manage airflow in and out of the cylinder.</p></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <!-- ================= ENGINE LAYOUTS ================= -->
-    <section>
-      <div class="container">
-        <div class="section-heading reveal">
-          <h2>Choose an Engine Layout</h2>
-          <p>All three layouts use the same four-stroke cycle, but their cylinder arrangement affects packaging, balance, performance and manufacturing cost.</p>
-        </div>
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-4">
-            <div class="card reveal" onclick="window.location.href='page4.html'">
-              <div class="card-img-wrap"><img src="https://placehold.co/600x380/2b2b2b/2b2b2b?text=+" alt="Toyota GR Corolla engine bay"></div>
-              <div class="card-body">
-                <h3 class="card-title h4">Inline Engine</h3>
-                <p class="card-text">Inline engines arrange all cylinders in a single straight line. They are simple, compact and economical, making them the most common engine layout used in everyday passenger vehicles.</p>
-                <a href="page4.html" class="btn-shifted-outline">Learn More &rarr;</a>
-              </div>
+    <!-- ================= ENGINE LAYOUT EXPLORER (TABS) ================= -->
+    <section class="section" style="background-color:var(--card);">
+        <div class="container">
+            <div class="section-heading reveal">
+                <span class="section-label">The Main Feature</span>
+                <h2>Engine Layout Explorer</h2>
+                <p>Compare the three most common cylinder layouts used in cars today.</p>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="card reveal" onclick="window.location.href='page5.html'">
-              <div class="card-img-wrap"><img src="https://placehold.co/600x380/2b2b2b/2b2b2b?text=+" alt="Ferrari V8 engine"></div>
-              <div class="card-body">
-                <h3 class="card-title h4">V Engine</h3>
-                <p class="card-text">V engines position two banks of cylinders in a V shape. This design allows more cylinders to fit into a shorter engine while delivering higher performance.</p>
-                <a href="page5.html" class="btn-shifted-outline">Learn More &rarr;</a>
-              </div>
+            <div class="reveal">
+                <ul class="nav nav-tabs mb-4" id="engineTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="inline-tab" data-bs-toggle="tab" data-bs-target="#inline-pane" type="button" role="tab" aria-controls="inline-pane" aria-selected="true">Inline</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="v-tab" data-bs-toggle="tab" data-bs-target="#v-pane" type="button" role="tab" aria-controls="v-pane" aria-selected="false">V Engine</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="boxer-tab" data-bs-toggle="tab" data-bs-target="#boxer-pane" type="button" role="tab" aria-controls="boxer-pane" aria-selected="false">Boxer</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="engineTabsContent">
+                    <div class="tab-pane fade show active" id="inline-pane" role="tabpanel" tabindex="0">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-lg-5">
+                                <img src="../Graphics/engine-inline.jpg" alt="BMW inline-six engine on display" class="rounded-4" style="width:100%;aspect-ratio:4/3;object-fit:cover;">
+                            </div>
+                            <div class="col-lg-7">
+                                <h3>Inline Engine</h3>
+                                <p class="text-secondary">Cylinders are arranged in a single straight row. It's the
+                                    simplest, most compact and most cost-effective layout to manufacture.</p>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p class="fw-semibold mb-1">Advantages</p>
+                                        <p class="small text-secondary">Compact, lightweight, inexpensive to
+                                            produce.</p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p class="fw-semibold mb-1">Disadvantages</p>
+                                        <p class="small text-secondary">Less smooth than a V or Boxer at high cylinder
+                                            counts.</p>
+                                    </div>
+                                </div>
+                                <p class="small"><strong>Manufacturers:</strong> Toyota, Honda, BMW</p>
+                                <p class="small"><strong>Example cars:</strong> Corolla, Civic, Mazda 3</p>
+                                <div class="alert-shifted p-3 mt-2"><i class="bi bi-stars me-2"></i>BMW is famous for
+                                    its smooth inline-six engines, prized for decades by driving enthusiasts.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pane" role="tabpanel" tabindex="0">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-lg-5">
+                                <img src="../Graphics/engine-v8.jpg" alt="Ferrari V8 engine bay" class="rounded-4" style="width:100%;aspect-ratio:4/3;object-fit:cover;">
+                            </div>
+                            <div class="col-lg-7">
+                                <h3>V Engine</h3>
+                                <p class="text-secondary">Two banks of cylinders are set at an angle to each other,
+                                    forming a "V" shape. This allows more cylinders in a shorter engine.</p>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p class="fw-semibold mb-1">Advantages</p>
+                                        <p class="small text-secondary">High power potential, smooth at high cylinder
+                                            counts.</p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p class="fw-semibold mb-1">Disadvantages</p>
+                                        <p class="small text-secondary">Wider, heavier and more expensive to
+                                            build.</p>
+                                    </div>
+                                </div>
+                                <p class="small"><strong>Manufacturers:</strong> Ferrari, Mercedes-AMG, Ford</p>
+                                <p class="small"><strong>Example cars:</strong> Mustang GT, Ferrari F8, AMG GT</p>
+                                <div class="alert-shifted p-3 mt-2"><i class="bi bi-stars me-2"></i>V engines power
+                                    most modern supercars thanks to their high power density.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="boxer-pane" role="tabpanel" tabindex="0">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-lg-5">
+                                <img src="../Graphics/engine-boxer.jpg" alt="Porsche flat-six boxer engine" class="rounded-4" style="width:100%;aspect-ratio:4/3;object-fit:cover;">
+                            </div>
+                            <div class="col-lg-7">
+                                <h3>Boxer Engine</h3>
+                                <p class="text-secondary">Cylinders lie flat and oppose each other horizontally,
+                                    "punching" like boxing gloves. This creates an extremely low centre of gravity.</p>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p class="fw-semibold mb-1">Advantages</p>
+                                        <p class="small text-secondary">Very low centre of gravity, excellent
+                                            balance.</p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p class="fw-semibold mb-1">Disadvantages</p>
+                                        <p class="small text-secondary">Wide engine bay, costly to manufacture and
+                                            service.</p>
+                                    </div>
+                                </div>
+                                <p class="small"><strong>Manufacturers:</strong> Subaru, Porsche</p>
+                                <p class="small"><strong>Example cars:</strong> WRX, BRZ / GR86, Porsche 911</p>
+                                <div class="alert-shifted p-3 mt-2"><i class="bi bi-stars me-2"></i>Subaru has built
+                                    boxer engines for decades, prized for their low, balanced weight
+                                    distribution.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="card reveal" onclick="window.location.href='page6.html'">
-              <div class="card-img-wrap"><img src="https://placehold.co/600x380/2b2b2b/2b2b2b?text=+" alt="Porsche flat-six boxer engine"></div>
-              <div class="card-body">
-                <h3 class="card-title h4">Boxer Engine</h3>
-                <p class="card-text">Boxer engines position cylinders horizontally opposite each other. Their low centre of gravity improves handling and vehicle stability.</p>
-                <a href="page6.html" class="btn-shifted-outline">Learn More &rarr;</a>
-              </div>
+        </div>
+    </section>
+
+    <!-- ================= ENGINE COMPARISON TABLE ================= -->
+    <section class="section">
+        <div class="container">
+            <div class="section-heading reveal">
+                <span class="section-label">Compare</span>
+                <h2>Engine Layouts at a Glance</h2>
             </div>
-          </div>
+            <div class="table-responsive reveal">
+                <table class="table table-shifted align-middle">
+                    <thead>
+                        <tr><th>Feature</th><th>Inline</th><th>V</th><th>Boxer</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Smoothness</td><td>★★★</td><td>★★★★</td><td>★★★★★</td></tr>
+                        <tr><td>Size</td><td>Compact</td><td>Medium</td><td>Wide</td></tr>
+                        <tr><td>Centre of Gravity</td><td>Medium</td><td>Medium</td><td>Very Low</td></tr>
+                        <tr><td>Cost</td><td>Low</td><td>High</td><td>High</td></tr>
+                        <tr><td>Typical Cylinders</td><td>3–6</td><td>6–12</td><td>4–6</td></tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- ================= COMPARISON TABLE ================= -->
-    <section class="bg-alt">
-      <div class="container">
-        <div class="section-heading reveal">
-          <h2>Engine Layout Comparison</h2>
+    <!-- ================= QUICK QUIZ ================= -->
+    <section class="section" style="background-color:var(--card);">
+        <div class="container">
+            <div class="row justify-content-center reveal">
+                <div class="col-lg-7 text-center">
+                    <span class="section-label">Quick Quiz</span>
+                    <h2>Test what you've learned</h2>
+                    <form id="engineQuiz" class="form-shifted text-start bg-body p-4 rounded-4 border" novalidate>
+                        <fieldset>
+                            <legend class="fw-semibold mb-3 fs-6">Which manufacturer is most famous for using Boxer
+                                engines?</legend>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="quizAnswer" id="quizHonda" value="honda">
+                                <label class="form-check-label" for="quizHonda">Honda</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="quizAnswer" id="quizSubaru" value="subaru">
+                                <label class="form-check-label" for="quizSubaru">Subaru</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="quizAnswer" id="quizBMW" value="bmw">
+                                <label class="form-check-label" for="quizBMW">BMW</label>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="radio" name="quizAnswer" id="quizFord" value="ford">
+                                <label class="form-check-label" for="quizFord">Ford</label>
+                            </div>
+                        </fieldset>
+                        <button type="submit" class="btn btn-shifted">Submit Answer</button>
+                        <div id="quizFeedback" class="alert-shifted mt-3 p-3" style="display:none;" role="alert"></div>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div class="table-responsive reveal">
-          <table class="table table-striped table-hover table-shifted mb-0">
-            <thead>
-              <tr>
-                <th scope="col">Feature</th>
-                <th scope="col">Inline</th>
-                <th scope="col">V Engine</th>
-                <th scope="col">Boxer</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><th scope="row">Cylinder Arrangement</th><td>Straight Line</td><td>V Shape</td><td>Horizontal</td></tr>
-              <tr><th scope="row">Size</th><td>Long</td><td>Compact</td><td>Wide</td></tr>
-              <tr><th scope="row">Balance</th><td>Good</td><td>Moderate</td><td>Excellent</td></tr>
-              <tr><th scope="row">Manufacturing Cost</th><td>Low</td><td>Higher</td><td>Higher</td></tr>
-              <tr><th scope="row">Common Vehicles</th><td>Family Cars</td><td>Sports Cars</td><td>Subaru, Porsche</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
     </section>
 
-    <!-- ================= SUMMARY ================= -->
-    <section>
-      <div class="container">
-        <div class="container-narrow text-center reveal">
-          <h2>Summary</h2>
-          <p>Although every internal combustion engine follows the same four-stroke cycle, manufacturers choose different engine layouts depending on their priorities. Inline engines prioritise simplicity and affordability, V engines deliver greater performance in a compact package, while Boxer engines offer exceptional balance and a lower centre of gravity. The following pages explore each design in greater detail.</p>
+    <!-- ================= COMPONENT MODAL (shared, populated by JS) ================= -->
+    <div class="modal fade" id="componentModal" tabindex="-1" aria-labelledby="componentModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title h5" id="componentModalTitle">Component</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Purpose:</strong> <span id="componentModalPurpose"></span></p>
+                    <p><strong>Location:</strong> <span id="componentModalLocation"></span></p>
+                    <p class="mb-0"><strong>Interesting fact:</strong> <span id="componentModalFact"></span></p>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
-
-    <!-- ================= PREVIOUS / NEXT NAVIGATION ================= -->
-    <section class="bg-alt">
-      <div class="container">
-        <div class="prev-next">
-          <a href="page2.html" class="btn-shifted-outline">&larr; Motorsport Technology</a>
-          <a href="page7.html" class="btn-shifted">Hybrid Power &rarr;</a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ================= FOOTER ================= -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="row gy-4 align-items-start">
-        <div class="col-md-4">
-          <h5>SHIFTED</h5>
-          <p class="small-text">An educational automotive website built to teach beginners how modern cars work.</p>
-        </div>
-        <div class="col-md-4">
-          <h5>Quick Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="page3.html">Engine</a></li>
-            <li><a href="page9.html">Ownership</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4 text-md-end">
-          <button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
-        </div>
-      </div>
-      <hr class="mt-4" style="border-color: var(--color-border);">
-      <p class="small-text text-center mb-0">© 2026 SHIFTED. All rights reserved. Version 1.0</p>
     </div>
-  </footer>
+    <!-- ================= PAGE NAVIGATION ================= -->
+    <section class="section pt-0">
+        <div class="container">
+            <hr class="divider mb-5">
+        <div class="page-nav">
+            <a href="page2.html" class="btn btn-dark-outline"><i class="bi bi-arrow-left me-2"></i>Motorsport Technology</a>
+            <a href="../index.html" class="btn btn-dark-outline"><i class="bi bi-house-door me-2"></i>Home</a>
+            <a href="page4.html" class="btn btn-shifted">Hybrid vs Electric<i class="bi bi-arrow-right ms-2"></i></a>
+        </div>
+        </div>
+    </section>
 
+</main>
 
-  <!-- Bootstrap Bundle (includes Popper) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Shared script -->
-  <script src="../JSCode/script.js"></script>
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <p class="footer-brand mb-2">SHIFTED<span style="color:var(--text-secondary)">.</span></p>
+                    <p class="text-secondary" style="max-width:340px;">An educational automotive platform helping
+                        beginners understand the technology, culture and ownership side of modern cars.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p class="fw-semibold mb-3">Quick Links</p>
+                    <div class="footer-links">
+                        <a href="../index.html">Home</a>
+                        <a href="page2.html">Motorsport Technology</a>
+                        <a href="page8.html">Buying Guide</a>
+                        <a href="page9.html">Maintenance Guide</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <p class="fw-semibold mb-3">About This Project</p>
+                    <p class="text-secondary">SHIFTED is a student-built educational website exploring how modern
+                        vehicles work, from motorsport-derived technology to everyday ownership in Singapore.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="mb-0">&copy; 2026 SHIFTED. Built for educational purposes.</p>
+                <p class="mb-0">Designed &amp; developed with HTML5, CSS3, Bootstrap 5 &amp; JavaScript.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../JSCode/script.js" defer></script>
 </body>
 </html>

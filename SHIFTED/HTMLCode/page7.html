@@ -1,369 +1,486 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hybrid Power — SHIFTED</title>
-  <meta name="description" content="Understand how hybrid vehicles combine a petrol engine and electric motor, including regenerative braking and power flow." />
-
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Google Font: Open Sans -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-  <!-- Shared stylesheet -->
-  <link rel="stylesheet" href="../CSSCode/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive Showcase | SHIFTED</title>
+    <meta name="description" content="A curated visual gallery of iconic vehicles from supercars to motorsport machines.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSSCode/style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <!-- ================= NAVIGATION ================= -->
+    <header>
+        <nav class="navbar navbar-expand-xl fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">SHIFTED<span>.</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list fs-2"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto align-items-xl-center">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page2.html">Motorsport Technology</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page3.html">Engine Power</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page4.html">Hybrid vs Electric</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page5.html">Popular Cars</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page6.html">Motorsport Scene</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page7.html">Showcase</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page8.html">Buying Guide</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page9.html">Maintenance</a></li>
+                    </ul>
+                    <button class="theme-toggle theme-toggle-btn" type="button" aria-label="Toggle dark and light mode">
+                        <i class="bi bi-moon-stars-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-
-  <!-- ================= NAVBAR ================= -->
-  <header>
-    <nav class="navbar navbar-expand-lg sticky-top">
-      <div class="container">
-        <a class="navbar-brand" href="../index.html">SHIFTED</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto align-items-lg-center">
-            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="page2.html">Motorsport</a></li>
-            <li class="nav-item"><a class="nav-link" href="page3.html">Engine</a></li>
-            <li class="nav-item"><a class="nav-link" href="page7.html">Hybrid</a></li>
-            <li class="nav-item"><a class="nav-link" href="page8.html">Electric</a></li>
-            <li class="nav-item"><a class="nav-link" href="page9.html">Ownership</a></li>
-            <li class="nav-item">
-              <button class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false"><i class="bi bi-moon-stars"></i><span>Dark</span></button>
-            </li>
-          </ul>
+<main id="main">
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero">
+        <img class="hero-image" src="../Graphics/showcase-hero.jpg" alt="Porsche 911 parked in a minimalist studio setting">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <p class="hero-eyebrow">Page 7 of 9</p>
+            <h1 class="hero-title">Automotive Showcase</h1>
+            <p class="hero-subtitle">Explore a collection of iconic vehicles from around the world, ranging from
+                practical daily drivers to legendary supercars and race-inspired machines.</p>
         </div>
-      </div>
-    </nav>
-  </header>
-
-  <!-- ================= HERO SECTION ================= -->
-  <section class="hero hero--page" aria-label="Hybrid Power introduction">
-    <img class="hero-image" src="../Graphics/Hybrid-Images/porsche-918-spyder.jpg" alt="Porsche 918 Spyder hybrid hypercar">
-    <div class="hero-overlay"></div>
-    <div class="container">
-      <div class="hero-content">
-        <h1>Hybrid Power</h1>
-        <p>The best of both worlds. Hybrid vehicles combine a petrol engine with an electric motor to improve fuel efficiency while maintaining the convenience of traditional refuelling.</p>
-      </div>
-    </div>
-  </section>
-
-  <main>
+    </section>
 
     <!-- ================= INTRODUCTION ================= -->
-    <section>
-      <div class="container">
-        <div class="container-narrow text-center reveal">
-          <h2>Two Power Sources, One Vehicle</h2>
-          <p>Hybrid vehicles combine two different power sources: a petrol engine and an electric motor. Depending on driving conditions, either system can power the vehicle individually or both systems can work together to maximise efficiency and performance.</p>
-          <p>Unlike fully electric vehicles, hybrids never rely entirely on external charging because the battery can recharge itself while driving.</p>
+    <section class="section pb-0">
+        <div class="container">
+            <div class="row reveal">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p>This gallery celebrates automotive design across manufacturers and categories, letting you
+                        appreciate both the engineering and artistry behind each vehicle.</p>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- ================= WHAT IS A HYBRID? ================= -->
-    <section class="bg-alt">
-      <div class="container">
-        <div class="split-section reveal">
-          <img src="https://placehold.co/700x500/2b2b2b/2b2b2b?text=+" alt="Simplified hybrid drivetrain showing petrol engine, electric motor, battery and wheels">
-          <div>
-            <h2>What is a Hybrid?</h2>
-            <p>A hybrid vehicle intelligently switches between petrol power, electric power or both depending on speed, battery charge and driving conditions. This improves fuel economy while reducing emissions.</p>
-          </div>
+    <!-- ================= CATEGORY FILTER + GALLERY ================= -->
+    <section class="section">
+        <div class="container">
+            <div class="filter-group mb-4 justify-content-center reveal" id="galleryFilterGroup">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="supercars">Supercars</button>
+                <button class="filter-btn" data-filter="sports-cars">Sports Cars</button>
+                <button class="filter-btn" data-filter="jdm">JDM</button>
+                <button class="filter-btn" data-filter="electric">Electric</button>
+                <button class="filter-btn" data-filter="motorsport">Motorsport</button>
+            </div>
+            <div class="row g-4 reveal">
+                <div class="col-md-6 col-lg-4 gallery-item gallery-filter-item" data-category="supercars">
+                    <div class="card h-100">
+                        <div class="card-img-wrap"><img src="../Graphics/ferrari-f40.jpg" alt="Ferrari F40 supercar"></div>
+                        <div class="card-body">
+                            <span class="badge-outline mb-2 d-inline-block">Ferrari</span>
+                            <span class="badge-shifted mb-2 ms-1 d-inline-block">Supercars</span>
+                            <h3 class="card-title">Ferrari F40</h3>
+                            <button class="btn btn-dark-outline btn-sm" data-bs-toggle="modal" data-bs-target="#modalFerrariF40">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item gallery-filter-item" data-category="supercars">
+                    <div class="card h-100">
+                        <div class="card-img-wrap"><img src="../Graphics/mclaren-p1.jpg" alt="McLaren P1 hybrid hypercar"></div>
+                        <div class="card-body">
+                            <span class="badge-outline mb-2 d-inline-block">McLaren</span>
+                            <span class="badge-shifted mb-2 ms-1 d-inline-block">Supercars</span>
+                            <h3 class="card-title">McLaren P1</h3>
+                            <button class="btn btn-dark-outline btn-sm" data-bs-toggle="modal" data-bs-target="#modalMcLarenP1">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item gallery-filter-item" data-category="supercars">
+                    <div class="card h-100">
+                        <div class="card-img-wrap"><img src="../Graphics/aventador.jpg" alt="Lamborghini Aventador supercar"></div>
+                        <div class="card-body">
+                            <span class="badge-outline mb-2 d-inline-block">Lamborghini</span>
+                            <span class="badge-shifted mb-2 ms-1 d-inline-block">Supercars</span>
+                            <h3 class="card-title">Lamborghini Aventador</h3>
+                            <button class="btn btn-dark-outline btn-sm" data-bs-toggle="modal" data-bs-target="#modalLamborghiniAventador">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item gallery-filter-item" data-category="sports-cars">
+                    <div class="card h-100">
+                        <div class="card-img-wrap"><img src="../Graphics/porsche-911-showcase.jpg" alt="Porsche 911 sports car"></div>
+                        <div class="card-body">
+                            <span class="badge-outline mb-2 d-inline-block">Porsche</span>
+                            <span class="badge-shifted mb-2 ms-1 d-inline-block">Sports-cars</span>
+                            <h3 class="card-title">Porsche 911</h3>
+                            <button class="btn btn-dark-outline btn-sm" data-bs-toggle="modal" data-bs-target="#modalPorsche911">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item gallery-filter-item" data-category="sports-cars">
+                    <div class="card h-100">
+                        <div class="card-img-wrap"><img src="../Graphics/gr-supra.jpg" alt="Toyota GR Supra sports car"></div>
+                        <div class="card-body">
+                            <span class="badge-outline mb-2 d-inline-block">Toyota</span>
+                            <span class="badge-shifted mb-2 ms-1 d-inline-block">Sports-cars</span>
+                            <h3 class="card-title">Toyota GR Supra</h3>
+                            <button class="btn btn-dark-outline btn-sm" data-bs-toggle="modal" data-bs-target="#modalToyotaGRSupra">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item gallery-filter-item" data-category="sports-cars">
+                    <div class="card h-100">
+                        <div class="card-img-wrap"><img src="../Graphics/nissan-z.jpg" alt="Nissan Z sports car"></div>
+                        <div class="card-body">
+                            <span class="badge-outline mb-2 d-inline-block">Nissan</span>
+                            <span class="badge-shifted mb-2 ms-1 d-inline-block">Sports-cars</span>
+                            <h3 class="card-title">Nissan Z</h3>
+                            <button class="btn btn-dark-outline btn-sm" data-bs-toggle="modal" data-bs-target="#modalNissanZ">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item gallery-filter-item" data-category="jdm">
+                    <div class="card h-100">
+                        <div class="card-img-wrap"><img src="../Graphics/gtr-r35.jpg" alt="Nissan GT-R R35"></div>
+                        <div class="card-body">
+                            <span class="badge-outline mb-2 d-inline-block">Nissan</span>
+                            <span class="badge-shifted mb-2 ms-1 d-inline-block">Jdm</span>
+                            <h3 class="card-title">Nissan GT-R R35</h3>
+                            <button class="btn btn-dark-outline btn-sm" data-bs-toggle="modal" data-bs-target="#modalNissanGTRR35">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item gallery-filter-item" data-category="jdm">
+                    <div class="card h-100">
+                        <div class="card-img-wrap"><img src="../Graphics/ae86.jpg" alt="Toyota AE86 classic sports coupe"></div>
+                        <div class="card-body">
+                            <span class="badge-outline mb-2 d-inline-block">Toyota</span>
+                            <span class="badge-shifted mb-2 ms-1 d-inline-block">Jdm</span>
+                            <h3 class="card-title">Toyota AE86</h3>
+                            <button class="btn btn-dark-outline btn-sm" data-bs-toggle="modal" data-bs-target="#modalToyotaAE86">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item gallery-filter-item" data-category="jdm">
+                    <div class="card h-100">
+                        <div class="card-img-wrap"><img src="../Graphics/honda-nsx.jpg" alt="Honda NSX sports car"></div>
+                        <div class="card-body">
+                            <span class="badge-outline mb-2 d-inline-block">Honda</span>
+                            <span class="badge-shifted mb-2 ms-1 d-inline-block">Jdm</span>
+                            <h3 class="card-title">Honda NSX</h3>
+                            <button class="btn btn-dark-outline btn-sm" data-bs-toggle="modal" data-bs-target="#modalHondaNSX">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item gallery-filter-item" data-category="electric">
+                    <div class="card h-100">
+                        <div class="card-img-wrap"><img src="../Graphics/taycan.jpg" alt="Porsche Taycan electric sports car"></div>
+                        <div class="card-body">
+                            <span class="badge-outline mb-2 d-inline-block">Porsche</span>
+                            <span class="badge-shifted mb-2 ms-1 d-inline-block">Electric</span>
+                            <h3 class="card-title">Porsche Taycan</h3>
+                            <button class="btn btn-dark-outline btn-sm" data-bs-toggle="modal" data-bs-target="#modalPorscheTaycan">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item gallery-filter-item" data-category="electric">
+                    <div class="card h-100">
+                        <div class="card-img-wrap"><img src="../Graphics/model-s-plaid.jpg" alt="Tesla Model S Plaid electric sedan"></div>
+                        <div class="card-body">
+                            <span class="badge-outline mb-2 d-inline-block">Tesla</span>
+                            <span class="badge-shifted mb-2 ms-1 d-inline-block">Electric</span>
+                            <h3 class="card-title">Tesla Model S Plaid</h3>
+                            <button class="btn btn-dark-outline btn-sm" data-bs-toggle="modal" data-bs-target="#modalTeslaModelSPlaid">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item gallery-filter-item" data-category="electric">
+                    <div class="card h-100">
+                        <div class="card-img-wrap"><img src="../Graphics/ioniq5n.jpg" alt="Hyundai IONIQ 5 N electric performance SUV"></div>
+                        <div class="card-body">
+                            <span class="badge-outline mb-2 d-inline-block">Hyundai</span>
+                            <span class="badge-shifted mb-2 ms-1 d-inline-block">Electric</span>
+                            <h3 class="card-title">Hyundai IONIQ 5 N</h3>
+                            <button class="btn btn-dark-outline btn-sm" data-bs-toggle="modal" data-bs-target="#modalHyundaiIONIQ5N">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item gallery-filter-item" data-category="motorsport">
+                    <div class="card h-100">
+                        <div class="card-img-wrap"><img src="../Graphics/ferrari-499p.jpg" alt="Ferrari 499P endurance race car"></div>
+                        <div class="card-body">
+                            <span class="badge-outline mb-2 d-inline-block">Ferrari</span>
+                            <span class="badge-shifted mb-2 ms-1 d-inline-block">Motorsport</span>
+                            <h3 class="card-title">Ferrari 499P</h3>
+                            <button class="btn btn-dark-outline btn-sm" data-bs-toggle="modal" data-bs-target="#modalFerrari499P">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item gallery-filter-item" data-category="motorsport">
+                    <div class="card h-100">
+                        <div class="card-img-wrap"><img src="../Graphics/porsche-963.jpg" alt="Porsche 963 endurance race car"></div>
+                        <div class="card-body">
+                            <span class="badge-outline mb-2 d-inline-block">Porsche</span>
+                            <span class="badge-shifted mb-2 ms-1 d-inline-block">Motorsport</span>
+                            <h3 class="card-title">Porsche 963</h3>
+                            <button class="btn btn-dark-outline btn-sm" data-bs-toggle="modal" data-bs-target="#modalPorsche963">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item gallery-filter-item" data-category="motorsport">
+                    <div class="card h-100">
+                        <div class="card-img-wrap"><img src="../Graphics/gr010.jpg" alt="Toyota GR010 Hybrid endurance race car"></div>
+                        <div class="card-body">
+                            <span class="badge-outline mb-2 d-inline-block">Toyota</span>
+                            <span class="badge-shifted mb-2 ms-1 d-inline-block">Motorsport</span>
+                            <h3 class="card-title">Toyota GR010 Hybrid</h3>
+                            <button class="btn btn-dark-outline btn-sm" data-bs-toggle="modal" data-bs-target="#modalToyotaGR010Hybrid">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- ================= HYBRID SYSTEM DIAGRAM ================= -->
-    <section>
-      <div class="container">
-        <div class="section-heading reveal">
-          <h2>Hybrid System Diagram</h2>
+    <div class="modal fade" id="modalFerrariF40" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header">
+        <h2 class="modal-title h5">Ferrari F40</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div><div class="modal-body">
+        <img src="../Graphics/ferrari-f40-large.jpg" alt="Ferrari F40 supercar, large detail view" class="modal-img">
+        <p><strong>Manufacturer:</strong> Ferrari &nbsp;|&nbsp; <strong>Country of Origin:</strong> Italy</p>
+        <p><strong>Engine/Motor:</strong> 2.9L Twin-Turbo V8 &nbsp;|&nbsp; <strong>Power:</strong> 471 hp</p>
+        <p>The F40 was the last car personally approved by Enzo Ferrari.</p>
+    </div></div></div></div>
+    <div class="modal fade" id="modalMcLarenP1" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header">
+        <h2 class="modal-title h5">McLaren P1</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div><div class="modal-body">
+        <img src="../Graphics/mclaren-p1-large.jpg" alt="McLaren P1 hybrid hypercar, large detail view" class="modal-img">
+        <p><strong>Manufacturer:</strong> McLaren &nbsp;|&nbsp; <strong>Country of Origin:</strong> United Kingdom</p>
+        <p><strong>Engine/Motor:</strong> 3.8L Twin-Turbo V8 Hybrid &nbsp;|&nbsp; <strong>Power:</strong> 903 hp</p>
+        <p>The P1 combines a petrol engine with an electric motor for extra performance.</p>
+    </div></div></div></div>
+    <div class="modal fade" id="modalLamborghiniAventador" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header">
+        <h2 class="modal-title h5">Lamborghini Aventador</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div><div class="modal-body">
+        <img src="../Graphics/aventador-large.jpg" alt="Lamborghini Aventador supercar, large detail view" class="modal-img">
+        <p><strong>Manufacturer:</strong> Lamborghini &nbsp;|&nbsp; <strong>Country of Origin:</strong> Italy</p>
+        <p><strong>Engine/Motor:</strong> 6.5L Naturally Aspirated V12 &nbsp;|&nbsp; <strong>Power:</strong> 700 hp</p>
+        <p>The Aventador's V12 traces its design lineage back to Lamborghini's very first V12 engine.</p>
+    </div></div></div></div>
+    <div class="modal fade" id="modalPorsche911" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header">
+        <h2 class="modal-title h5">Porsche 911</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div><div class="modal-body">
+        <img src="../Graphics/porsche-911-showcase-large.jpg" alt="Porsche 911 sports car, large detail view" class="modal-img">
+        <p><strong>Manufacturer:</strong> Porsche &nbsp;|&nbsp; <strong>Country of Origin:</strong> Germany</p>
+        <p><strong>Engine/Motor:</strong> 3.0L Twin-Turbo Flat-Six &nbsp;|&nbsp; <strong>Power:</strong> 379 hp</p>
+        <p>The 911 has kept its distinctive silhouette for over 60 years.</p>
+    </div></div></div></div>
+    <div class="modal fade" id="modalToyotaGRSupra" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header">
+        <h2 class="modal-title h5">Toyota GR Supra</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div><div class="modal-body">
+        <img src="../Graphics/gr-supra-large.jpg" alt="Toyota GR Supra sports car, large detail view" class="modal-img">
+        <p><strong>Manufacturer:</strong> Toyota &nbsp;|&nbsp; <strong>Country of Origin:</strong> Japan</p>
+        <p><strong>Engine/Motor:</strong> 3.0L Turbo Inline-Six &nbsp;|&nbsp; <strong>Power:</strong> 382 hp</p>
+        <p>The GR Supra was co-developed with BMW, sharing its platform with the Z4.</p>
+    </div></div></div></div>
+    <div class="modal fade" id="modalNissanZ" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header">
+        <h2 class="modal-title h5">Nissan Z</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div><div class="modal-body">
+        <img src="../Graphics/nissan-z-large.jpg" alt="Nissan Z sports car, large detail view" class="modal-img">
+        <p><strong>Manufacturer:</strong> Nissan &nbsp;|&nbsp; <strong>Country of Origin:</strong> Japan</p>
+        <p><strong>Engine/Motor:</strong> 3.0L Twin-Turbo V6 &nbsp;|&nbsp; <strong>Power:</strong> 400 hp</p>
+        <p>The Nissan Z pays visual tribute to the original 240Z from 1969.</p>
+    </div></div></div></div>
+    <div class="modal fade" id="modalNissanGTRR35" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header">
+        <h2 class="modal-title h5">Nissan GT-R R35</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div><div class="modal-body">
+        <img src="../Graphics/gtr-r35-large.jpg" alt="Nissan GT-R R35, large detail view" class="modal-img">
+        <p><strong>Manufacturer:</strong> Nissan &nbsp;|&nbsp; <strong>Country of Origin:</strong> Japan</p>
+        <p><strong>Engine/Motor:</strong> 3.8L Twin-Turbo V6 &nbsp;|&nbsp; <strong>Power:</strong> 565 hp</p>
+        <p>Nicknamed 'Godzilla' for its dominance on track.</p>
+    </div></div></div></div>
+    <div class="modal fade" id="modalToyotaAE86" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header">
+        <h2 class="modal-title h5">Toyota AE86</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div><div class="modal-body">
+        <img src="../Graphics/ae86-large.jpg" alt="Toyota AE86 classic sports coupe, large detail view" class="modal-img">
+        <p><strong>Manufacturer:</strong> Toyota &nbsp;|&nbsp; <strong>Country of Origin:</strong> Japan</p>
+        <p><strong>Engine/Motor:</strong> 1.6L Naturally Aspirated Inline-Four &nbsp;|&nbsp; <strong>Power:</strong> 128 hp</p>
+        <p>The AE86 became a motorsport icon thanks to its lightweight, balanced chassis.</p>
+    </div></div></div></div>
+    <div class="modal fade" id="modalHondaNSX" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header">
+        <h2 class="modal-title h5">Honda NSX</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div><div class="modal-body">
+        <img src="../Graphics/honda-nsx-large.jpg" alt="Honda NSX sports car, large detail view" class="modal-img">
+        <p><strong>Manufacturer:</strong> Honda &nbsp;|&nbsp; <strong>Country of Origin:</strong> Japan</p>
+        <p><strong>Engine/Motor:</strong> 3.5L Twin-Turbo V6 Hybrid &nbsp;|&nbsp; <strong>Power:</strong> 573 hp</p>
+        <p>The original NSX was developed with input from F1 driver Ayrton Senna.</p>
+    </div></div></div></div>
+    <div class="modal fade" id="modalPorscheTaycan" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header">
+        <h2 class="modal-title h5">Porsche Taycan</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div><div class="modal-body">
+        <img src="../Graphics/taycan-large.jpg" alt="Porsche Taycan electric sports car, large detail view" class="modal-img">
+        <p><strong>Manufacturer:</strong> Porsche &nbsp;|&nbsp; <strong>Country of Origin:</strong> Germany</p>
+        <p><strong>Engine/Motor:</strong> Dual Electric Motors &nbsp;|&nbsp; <strong>Power:</strong> 469 hp</p>
+        <p>The Taycan was Porsche's first mass-production all-electric car.</p>
+    </div></div></div></div>
+    <div class="modal fade" id="modalTeslaModelSPlaid" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header">
+        <h2 class="modal-title h5">Tesla Model S Plaid</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div><div class="modal-body">
+        <img src="../Graphics/model-s-plaid-large.jpg" alt="Tesla Model S Plaid electric sedan, large detail view" class="modal-img">
+        <p><strong>Manufacturer:</strong> Tesla &nbsp;|&nbsp; <strong>Country of Origin:</strong> United States</p>
+        <p><strong>Engine/Motor:</strong> Tri-Motor Electric &nbsp;|&nbsp; <strong>Power:</strong> 1,020 hp</p>
+        <p>The Model S Plaid is among the quickest-accelerating production cars ever built.</p>
+    </div></div></div></div>
+    <div class="modal fade" id="modalHyundaiIONIQ5N" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header">
+        <h2 class="modal-title h5">Hyundai IONIQ 5 N</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div><div class="modal-body">
+        <img src="../Graphics/ioniq5n-large.jpg" alt="Hyundai IONIQ 5 N electric performance SUV, large detail view" class="modal-img">
+        <p><strong>Manufacturer:</strong> Hyundai &nbsp;|&nbsp; <strong>Country of Origin:</strong> South Korea</p>
+        <p><strong>Engine/Motor:</strong> Dual Electric Motors &nbsp;|&nbsp; <strong>Power:</strong> 641 hp</p>
+        <p>The IONIQ 5 N simulates gear shifts and engine sound to mimic a combustion car.</p>
+    </div></div></div></div>
+    <div class="modal fade" id="modalFerrari499P" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header">
+        <h2 class="modal-title h5">Ferrari 499P</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div><div class="modal-body">
+        <img src="../Graphics/ferrari-499p-large.jpg" alt="Ferrari 499P endurance race car, large detail view" class="modal-img">
+        <p><strong>Manufacturer:</strong> Ferrari &nbsp;|&nbsp; <strong>Country of Origin:</strong> Italy</p>
+        <p><strong>Engine/Motor:</strong> 3.0L Twin-Turbo V6 Hybrid &nbsp;|&nbsp; <strong>Power:</strong> Le Mans Hypercar class</p>
+        <p>The 499P won the 24 Hours of Le Mans on its class debut in 2023.</p>
+    </div></div></div></div>
+    <div class="modal fade" id="modalPorsche963" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header">
+        <h2 class="modal-title h5">Porsche 963</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div><div class="modal-body">
+        <img src="../Graphics/porsche-963-large.jpg" alt="Porsche 963 endurance race car, large detail view" class="modal-img">
+        <p><strong>Manufacturer:</strong> Porsche &nbsp;|&nbsp; <strong>Country of Origin:</strong> Germany</p>
+        <p><strong>Engine/Motor:</strong> 4.6L Twin-Turbo V8 Hybrid &nbsp;|&nbsp; <strong>Power:</strong> Le Mans Hypercar class</p>
+        <p>The 963 marked Porsche's return to top-class endurance racing.</p>
+    </div></div></div></div>
+    <div class="modal fade" id="modalToyotaGR010Hybrid" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header">
+        <h2 class="modal-title h5">Toyota GR010 Hybrid</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div><div class="modal-body">
+        <img src="../Graphics/gr010-large.jpg" alt="Toyota GR010 Hybrid endurance race car, large detail view" class="modal-img">
+        <p><strong>Manufacturer:</strong> Toyota &nbsp;|&nbsp; <strong>Country of Origin:</strong> Japan</p>
+        <p><strong>Engine/Motor:</strong> 3.5L Twin-Turbo V6 Hybrid &nbsp;|&nbsp; <strong>Power:</strong> Le Mans Hypercar class</p>
+        <p>The GR010 has secured multiple Le Mans overall victories for Toyota.</p>
+    </div></div></div></div>
+
+    <!-- ================= FEATURED CAR OF THE WEEK ================= -->
+    <section class="section" style="background-color:var(--card);">
+        <div class="container">
+            <div class="split-section reveal">
+                <div class="split-media col-lg-6">
+                    <img src="../Graphics/gt3rs-featured.jpg" alt="Porsche 911 GT3 RS with large rear wing, featured vehicle of the week">
+                </div>
+                <div class="split-text col-lg-6">
+                    <span class="section-label">Featured Car of the Week</span>
+                    <h2>Porsche 911 GT3 RS</h2>
+                    <p>Built as a track-focused evolution of the standard 911, the GT3 RS pairs a high-revving
+                        naturally aspirated flat-six with extensive aerodynamic upgrades borrowed directly from
+                        motorsport.</p>
+                    <p><strong>Why it's iconic:</strong> It represents the purest expression of the 911 bloodline —
+                        uncompromising, track-honed, and still road legal.</p>
+                    <p><strong>Signature features:</strong> Naturally aspirated flat-six engine, adjustable rear
+                        wing, and motorsport-derived suspension geometry.</p>
+                </div>
+            </div>
         </div>
-        <div class="text-center reveal">
-          <img src="https://placehold.co/1000x550/2b2b2b/2b2b2b?text=+" alt="Labelled diagram of a hybrid system showing petrol engine, electric motor, battery, power control unit, transmission and wheels" class="w-100 rounded-4" style="max-width:800px;">
-          <p class="container-narrow mt-4">Energy flows between the petrol engine, electric motor and battery depending on driving conditions, with the power control unit deciding which source to use at any given moment.</p>
-        </div>
-      </div>
     </section>
 
-    <!-- ================= MAIN COMPONENTS ================= -->
-    <section class="bg-alt">
-      <div class="container">
-        <div class="section-heading reveal"><h2>Main Components</h2></div>
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-3">
-            <div class="card card--simple reveal">
-              <div class="card-img-wrap mb-3"><img src="https://placehold.co/300x200/2b2b2b/2b2b2b?text=+" alt="Petrol Engine illustration" style="border-radius:10px;"></div>
-              <h3 class="h5">Petrol Engine</h3>
-              <p class="mb-0">Provides power during higher-speed driving and charges the battery when required.</p>
+    <!-- ================= FUN FACTS CAROUSEL ================= -->
+    <section class="section">
+        <div class="container">
+            <div class="section-heading reveal">
+                <span class="section-label">Trivia</span>
+                <h2>Fun Facts</h2>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="card card--simple reveal">
-              <div class="card-img-wrap mb-3"><img src="https://placehold.co/300x200/2b2b2b/2b2b2b?text=+" alt="Electric Motor illustration" style="border-radius:10px;"></div>
-              <h3 class="h5">Electric Motor</h3>
-              <p class="mb-0">Provides instant torque and assists the petrol engine during acceleration.</p>
+            <div id="funFactsCarousel" class="carousel carousel-shifted slide reveal" data-bs-ride="carousel">
+                <div class="carousel-inner text-center">
+                    <div class="carousel-item active">
+                        <i class="bi bi-info-circle-fill fs-1 mb-3 d-block"></i>
+                        <p class="fs-5 mb-0">The Toyota Corolla is one of the best-selling cars in history.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <i class="bi bi-info-circle-fill fs-1 mb-3 d-block"></i>
+                        <p class="fs-5 mb-0">The Porsche 911 has retained its distinctive silhouette for over 60
+                            years.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <i class="bi bi-info-circle-fill fs-1 mb-3 d-block"></i>
+                        <p class="fs-5 mb-0">The Nissan GT-R earned the nickname "Godzilla" because of its racing
+                            dominance.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <i class="bi bi-info-circle-fill fs-1 mb-3 d-block"></i>
+                        <p class="fs-5 mb-0">Formula One cars can generate enough downforce to theoretically drive
+                            upside down at high speeds.</p>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#funFactsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#funFactsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span>
+                </button>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="card card--simple reveal">
-              <div class="card-img-wrap mb-3"><img src="https://placehold.co/300x200/2b2b2b/2b2b2b?text=+" alt="Hybrid Battery illustration" style="border-radius:10px;"></div>
-              <h3 class="h5">Hybrid Battery</h3>
-              <p class="mb-0">Stores electrical energy for the motor. Hybrid batteries are much smaller than those used in fully electric vehicles.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="card card--simple reveal">
-              <div class="card-img-wrap mb-3"><img src="https://placehold.co/300x200/2b2b2b/2b2b2b?text=+" alt="Power Control Unit illustration" style="border-radius:10px;"></div>
-              <h3 class="h5">Power Control Unit</h3>
-              <p class="mb-0">Acts as the "brain" of the hybrid system by deciding when to use petrol power, electric power or both.</p>
-            </div>
-          </div>
         </div>
-      </div>
+    </section>
+    <!-- ================= PAGE NAVIGATION ================= -->
+    <section class="section pt-0">
+        <div class="container">
+            <hr class="divider mb-5">
+        <div class="page-nav">
+            <a href="page6.html" class="btn btn-dark-outline"><i class="bi bi-arrow-left me-2"></i>Motorsport Scene</a>
+            <a href="../index.html" class="btn btn-dark-outline"><i class="bi bi-house-door me-2"></i>Home</a>
+            <a href="page8.html" class="btn btn-shifted">Buying Guide<i class="bi bi-arrow-right ms-2"></i></a>
+        </div>
+        </div>
     </section>
 
-    <!-- ================= REGENERATIVE BRAKING ================= -->
-    <section>
-      <div class="container">
-        <div class="split-section split-section--reverse reveal">
-          <img src="https://placehold.co/600x420/2b2b2b/2b2b2b?text=+" alt="Diagram showing kinetic energy converted to electrical energy during regenerative braking">
-          <div>
-            <h2>Regenerative Braking</h2>
-            <p>When the driver slows down, the electric motor acts as a generator instead of consuming electricity. The vehicle's kinetic energy is converted into electrical energy and stored in the battery rather than being wasted as heat through the brakes.</p>
-            <ul>
-              <li>Improves efficiency</li>
-              <li>Reduces brake wear</li>
-              <li>Recharges the battery</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+</main>
 
-    <!-- ================= POWER FLOW ================= -->
-    <section class="bg-alt">
-      <div class="container">
-        <div class="section-heading reveal"><h2>Power Flow</h2></div>
-        <div class="power-flow reveal mb-5">
-          <div class="power-flow-node">Battery</div>
-          <span class="power-flow-arrow">&rarr;</span>
-          <div class="power-flow-node">Electric Motor</div>
-          <span class="power-flow-arrow">&rarr;</span>
-          <div class="power-flow-node">Wheels</div>
-          <span class="power-flow-arrow">&larr;</span>
-          <div class="power-flow-node">Petrol Engine</div>
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <p class="footer-brand mb-2">SHIFTED<span style="color:var(--text-secondary)">.</span></p>
+                    <p class="text-secondary" style="max-width:340px;">An educational automotive platform helping
+                        beginners understand the technology, culture and ownership side of modern cars.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p class="fw-semibold mb-3">Quick Links</p>
+                    <div class="footer-links">
+                        <a href="../index.html">Home</a>
+                        <a href="page2.html">Motorsport Technology</a>
+                        <a href="page8.html">Buying Guide</a>
+                        <a href="page9.html">Maintenance Guide</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <p class="fw-semibold mb-3">About This Project</p>
+                    <p class="text-secondary">SHIFTED is a student-built educational website exploring how modern
+                        vehicles work, from motorsport-derived technology to everyday ownership in Singapore.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="mb-0">&copy; 2026 SHIFTED. Built for educational purposes.</p>
+                <p class="mb-0">Designed &amp; developed with HTML5, CSS3, Bootstrap 5 &amp; JavaScript.</p>
+            </div>
         </div>
-        <div class="row g-4 text-center">
-          <div class="col-sm-6 col-lg-3"><div class="card card--simple reveal"><h3 class="h6">Low-Speed Driving</h3><p class="mb-0">Electric motor only.</p></div></div>
-          <div class="col-sm-6 col-lg-3"><div class="card card--simple reveal"><h3 class="h6">Normal Driving</h3><p class="mb-0">Petrol engine and electric motor work together.</p></div></div>
-          <div class="col-sm-6 col-lg-3"><div class="card card--simple reveal"><h3 class="h6">Hard Acceleration</h3><p class="mb-0">Both systems deliver maximum performance.</p></div></div>
-          <div class="col-sm-6 col-lg-3"><div class="card card--simple reveal"><h3 class="h6">Braking</h3><p class="mb-0">Energy flows back into the battery through regenerative braking.</p></div></div>
-        </div>
-      </div>
-    </section>
+    </footer>
 
-    <!-- ================= ADVANTAGES ================= -->
-    <section>
-      <div class="container">
-        <div class="section-heading reveal"><h2>Advantages</h2></div>
-        <div class="row g-4">
-          <div class="col-sm-6 col-lg-4">
-            <div class="card card--simple reveal">
-              <i class="bi bi-fuel-pump icon-lg"></i>
-              <h3 class="h6 mb-0">Better Fuel Economy</h3>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card card--simple reveal">
-              <i class="bi bi-cloud icon-lg"></i>
-              <h3 class="h6 mb-0">Lower Emissions</h3>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card card--simple reveal">
-              <i class="bi bi-volume-mute icon-lg"></i>
-              <h3 class="h6 mb-0">Quiet Low-Speed Driving</h3>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card card--simple reveal">
-              <i class="bi bi-lightning-charge icon-lg"></i>
-              <h3 class="h6 mb-0">Instant Electric Torque</h3>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card card--simple reveal">
-              <i class="bi bi-signpost icon-lg"></i>
-              <h3 class="h6 mb-0">No Range Anxiety Compared to EVs</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Back to top -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
 
-    <!-- ================= DISADVANTAGES ================= -->
-    <section class="bg-alt">
-      <div class="container">
-        <div class="section-heading reveal"><h2>Disadvantages</h2></div>
-        <div class="row g-4">
-          <div class="col-sm-6 col-lg-3">
-            <div class="card card--simple reveal">
-              <i class="bi bi-diagram-3 icon-lg"></i>
-              <h3 class="h6 mb-0">More Complex Drivetrain</h3>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="card card--simple reveal">
-              <i class="bi bi-currency-dollar icon-lg"></i>
-              <h3 class="h6 mb-0">Higher Purchase Price</h3>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="card card--simple reveal">
-              <i class="bi bi-battery-half icon-lg"></i>
-              <h3 class="h6 mb-0">Limited Electric-Only Range</h3>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="card card--simple reveal">
-              <i class="bi bi-tools icon-lg"></i>
-              <h3 class="h6 mb-0">Battery Replacement Can Be Expensive</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= COMMON HYBRID VEHICLES ================= -->
-    <section>
-      <div class="container">
-        <div class="section-heading reveal"><h2>Common Hybrid Vehicles</h2></div>
-        <div class="row g-4">
-          <div class="col-sm-6 col-lg-4">
-            <div class="card vehicle-card reveal">
-              <div class="card-img-wrap"><img src="https://placehold.co/400x260/2b2b2b/2b2b2b?text=+" alt="Toyota Prius exterior"></div>
-              <div class="card-body">
-                <h3 class="card-title h5">Toyota Prius</h3>
-                <span class="badge-shifted">Full Hybrid</span>
-                <p class="card-text mt-2 mb-0">The pioneering mass-market hybrid, prized for its efficiency.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card vehicle-card reveal">
-              <div class="card-img-wrap"><img src="https://placehold.co/400x260/2b2b2b/2b2b2b?text=+" alt="Toyota Corolla Hybrid exterior"></div>
-              <div class="card-body">
-                <h3 class="card-title h5">Toyota Corolla Hybrid</h3>
-                <span class="badge-shifted">Full Hybrid</span>
-                <p class="card-text mt-2 mb-0">A practical family car with strong fuel economy.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card vehicle-card reveal">
-              <div class="card-img-wrap"><img src="https://placehold.co/400x260/2b2b2b/2b2b2b?text=+" alt="Honda Civic e:HEV exterior"></div>
-              <div class="card-body">
-                <h3 class="card-title h5">Honda Civic e:HEV</h3>
-                <span class="badge-shifted">Full Hybrid</span>
-                <p class="card-text mt-2 mb-0">Combines efficiency with Honda's refined driving feel.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card vehicle-card reveal">
-              <div class="card-img-wrap"><img src="https://placehold.co/400x260/2b2b2b/2b2b2b?text=+" alt="Hyundai Tucson Hybrid exterior"></div>
-              <div class="card-body">
-                <h3 class="card-title h5">Hyundai Tucson Hybrid</h3>
-                <span class="badge-shifted">Full Hybrid</span>
-                <p class="card-text mt-2 mb-0">A family SUV that balances space and efficiency.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card vehicle-card reveal">
-              <div class="card-img-wrap"><img src="https://placehold.co/400x260/2b2b2b/2b2b2b?text=+" alt="Ferrari 296 GTB exterior"></div>
-              <div class="card-body">
-                <h3 class="card-title h5">Ferrari 296 GTB</h3>
-                <span class="badge-shifted">Performance Hybrid</span>
-                <p class="card-text mt-2 mb-0">A V6 hybrid supercar with electrified performance.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card vehicle-card reveal">
-              <div class="card-img-wrap"><img src="../Graphics/Hybrid-Images/porsche-918-spyder.jpg" alt="Porsche 918 Spyder exterior"></div>
-              <div class="card-body">
-                <h3 class="card-title h5">Porsche 918 Spyder</h3>
-                <span class="badge-shifted">Performance Hybrid</span>
-                <p class="card-text mt-2 mb-0">A hypercar that pairs a V8 with electric motors.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= SUMMARY ================= -->
-    <section class="bg-alt">
-      <div class="container">
-        <div class="container-narrow text-center reveal">
-          <h2>Summary</h2>
-          <p>Hybrid vehicles bridge the gap between traditional petrol cars and fully electric vehicles. By combining a petrol engine with an electric motor, hybrids improve fuel efficiency, reduce emissions and deliver smoother driving without requiring drivers to depend entirely on charging infrastructure.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= PREVIOUS / NEXT NAVIGATION ================= -->
-    <section>
-      <div class="container">
-        <div class="prev-next">
-          <a href="page6.html" class="btn-shifted-outline">&larr; Boxer Engine</a>
-          <a href="page8.html" class="btn-shifted">Electric Power &rarr;</a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ================= FOOTER ================= -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="row gy-4 align-items-start">
-        <div class="col-md-4">
-          <h5>SHIFTED</h5>
-          <p class="small-text">An educational automotive website built to teach beginners how modern cars work.</p>
-        </div>
-        <div class="col-md-4">
-          <h5>Quick Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="page3.html">Engine</a></li>
-            <li><a href="page9.html">Ownership</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4 text-md-end">
-          <button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
-        </div>
-      </div>
-      <hr class="mt-4" style="border-color: var(--color-border);">
-      <p class="small-text text-center mb-0">© 2026 SHIFTED. All rights reserved. Version 1.0</p>
-    </div>
-  </footer>
-
-
-  <!-- Bootstrap Bundle (includes Popper) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Shared script -->
-  <script src="../JSCode/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../JSCode/script.js" defer></script>
 </body>
 </html>

@@ -1,389 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ownership Guide — SHIFTED</title>
-  <meta name="description" content="Practical guidance on buying and maintaining a car, plus an interactive tool to find the powertrain that best suits your lifestyle." />
-
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Google Font: Open Sans -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-  <!-- Shared stylesheet -->
-  <link rel="stylesheet" href="../CSSCode/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Maintenance Guide | SHIFTED</title>
+    <meta name="description" content="An interactive checklist and reference guide for essential car maintenance.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSSCode/style.css">
 </head>
 <body>
-
-  <!-- ================= NAVBAR ================= -->
-  <header>
-    <nav class="navbar navbar-expand-lg sticky-top">
-      <div class="container">
-        <a class="navbar-brand" href="../index.html">SHIFTED</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto align-items-lg-center">
-            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="page2.html">Motorsport</a></li>
-            <li class="nav-item"><a class="nav-link" href="page3.html">Engine</a></li>
-            <li class="nav-item"><a class="nav-link" href="page7.html">Hybrid</a></li>
-            <li class="nav-item"><a class="nav-link" href="page8.html">Electric</a></li>
-            <li class="nav-item"><a class="nav-link" href="page9.html">Ownership</a></li>
-            <li class="nav-item">
-              <button class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false"><i class="bi bi-moon-stars"></i><span>Dark</span></button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <!-- ================= HERO SECTION ================= -->
-  <section class="hero hero--page" aria-label="Ownership Guide introduction">
-    <img class="hero-image" src="../Graphics/Ownership-Images/aston-martin-db12-raffles-hotel.jpg" alt="Aston Martin DB12 parked outside Raffles Hotel, Singapore">
-    <div class="hero-overlay"></div>
-    <div class="container">
-      <div class="hero-content">
-        <h1>Ownership Guide</h1>
-        <p>Choosing the right car is about more than performance. Understanding your budget, lifestyle and driving habits will help you find the vehicle that best suits your needs.</p>
-      </div>
-    </div>
-  </section>
-
-  <main>
-
-    <!-- ================= INTRODUCTION ================= -->
-    <section>
-      <div class="container">
-        <div class="container-narrow text-center reveal">
-          <h2>Buying With Confidence</h2>
-          <p>Buying a car is one of the largest financial decisions many people make. Beyond the purchase price, owners should consider fuel costs, maintenance, insurance, servicing and how the vehicle fits their daily driving needs.</p>
-          <p>Whether you choose a petrol, hybrid or electric vehicle depends on your priorities rather than a single "best" option.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= BUYING CHECKLIST ================= -->
-    <section class="bg-alt">
-      <div class="container">
-        <div class="section-heading reveal">
-          <h2>Buying Checklist</h2>
-        </div>
-        <div class="row g-4">
-          <div class="col-sm-6 col-lg-4">
-            <div class="card card--simple reveal">
-              <span class="icon-lg"><i class="bi bi-wallet2"></i></span>
-              <h3 class="h5">Budget</h3>
-              <p class="mb-0">Consider the purchase price, financing and insurance.</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card card--simple reveal">
-              <span class="icon-lg"><i class="bi bi-signpost-2"></i></span>
-              <h3 class="h5">Daily Driving Distance</h3>
-              <p class="mb-0">Short city trips may favour hybrids or EVs. Long highway journeys may favour petrol or hybrid vehicles.</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card card--simple reveal">
-              <span class="icon-lg"><i class="bi bi-ev-station"></i></span>
-              <h3 class="h5">Charging Availability</h3>
-              <p class="mb-0">Do you have convenient access to home or public charging?</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card card--simple reveal">
-              <span class="icon-lg"><i class="bi bi-people"></i></span>
-              <h3 class="h5">Passenger Capacity</h3>
-              <p class="mb-0">Choose a vehicle appropriate for your family's needs.</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card card--simple reveal">
-              <span class="icon-lg"><i class="bi bi-bag"></i></span>
-              <h3 class="h5">Storage Space</h3>
-              <p class="mb-0">Consider luggage and cargo requirements.</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card card--simple reveal">
-              <span class="icon-lg"><i class="bi bi-wrench-adjustable"></i></span>
-              <h3 class="h5">Maintenance Costs</h3>
-              <p class="mb-0">Research servicing schedules and long-term ownership costs.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= RUNNING COSTS ================= -->
-    <section>
-      <div class="container">
-        <div class="split-section reveal">
-          <img src="https://placehold.co/700x500/2b2b2b/2b2b2b?text=+" alt="Infographic illustrating typical vehicle running costs">
-          <div>
-            <h2>Running Costs</h2>
-            <p>Owning a car involves more than the initial purchase. Everyday running costs typically include:</p>
-            <ul>
-              <li><strong>Fuel or Electricity</strong> — petrol at the pump, or electricity at home or public chargers.</li>
-              <li><strong>Insurance</strong> — required coverage that varies with vehicle type and driver profile.</li>
-              <li><strong>Servicing</strong> — routine maintenance to keep the vehicle safe and reliable.</li>
-              <li><strong>Road Tax</strong> — an annual cost that can vary by engine type and emissions.</li>
-              <li><strong>Tyres</strong> — replaced periodically as tread wears down.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= MAINTENANCE TIPS ================= -->
-    <section class="bg-alt">
-      <div class="container">
-        <div class="section-heading reveal">
-          <h2>Maintenance Tips</h2>
-        </div>
-        <div class="row g-4">
-          <div class="col-sm-6 col-lg-4">
-            <div class="card card--simple reveal">
-              <span class="icon-lg"><i class="bi bi-droplet-half"></i></span>
-              <h3 class="h5">Engine Oil</h3>
-              <p class="mb-0">Change according to manufacturer recommendations.</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card card--simple reveal">
-              <span class="icon-lg"><i class="bi bi-circle"></i></span>
-              <h3 class="h5">Tyres</h3>
-              <p class="mb-0">Maintain correct tyre pressure and inspect tread regularly.</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card card--simple reveal">
-              <span class="icon-lg"><i class="bi bi-record-circle"></i></span>
-              <h3 class="h5">Brakes</h3>
-              <p class="mb-0">Inspect brake pads and discs for wear.</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card card--simple reveal">
-              <span class="icon-lg"><i class="bi bi-battery-full"></i></span>
-              <h3 class="h5">Battery</h3>
-              <p class="mb-0">For hybrids and EVs, monitor battery health and follow servicing guidelines.</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card card--simple reveal">
-              <span class="icon-lg"><i class="bi bi-droplet"></i></span>
-              <h3 class="h5">Fluids</h3>
-              <p class="mb-0">Check coolant, brake fluid and washer fluid regularly.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= PETROL vs HYBRID vs EV TABLE ================= -->
-    <section>
-      <div class="container">
-        <div class="section-heading reveal">
-          <h2>Petrol vs Hybrid vs Electric</h2>
-        </div>
-        <div class="table-responsive reveal">
-          <table class="table table-shifted table-striped table-hover align-middle mb-2">
-            <thead>
-              <tr>
-                <th scope="col">Feature</th>
-                <th scope="col">Petrol</th>
-                <th scope="col">Hybrid</th>
-                <th scope="col">Electric</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Fuel Cost</td>
-                <td>Higher</td>
-                <td>Lower</td>
-                <td>Lowest</td>
-              </tr>
-              <tr>
-                <td>Maintenance</td>
-                <td>Moderate</td>
-                <td>Moderate</td>
-                <td>Lowest</td>
-              </tr>
-              <tr>
-                <td>Refuelling Time</td>
-                <td>5 mins</td>
-                <td>5 mins</td>
-                <td>20 mins&ndash;10 hrs</td>
-              </tr>
-              <tr>
-                <td>Tailpipe Emissions</td>
-                <td>High</td>
-                <td>Lower</td>
-                <td>None</td>
-              </tr>
-              <tr>
-                <td>Long Distance Travel</td>
-                <td>Excellent</td>
-                <td>Excellent</td>
-                <td>Good</td>
-              </tr>
-              <tr>
-                <td>Charging Required</td>
-                <td>No</td>
-                <td>No</td>
-                <td>Yes</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="small-text reveal">The most suitable vehicle depends on individual driving habits, budget and access to charging infrastructure.</p>
-      </div>
-    </section>
-
-    <!-- ================= VEHICLE RECOMMENDATION FORM ================= -->
-    <section class="bg-alt" id="recommendation">
-      <div class="container">
-        <div class="section-heading reveal">
-          <h2>Find My Best Vehicle</h2>
-          <p>Answer a few questions and SHIFTED will recommend a powertrain suited to your lifestyle.</p>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <form id="recommendationForm" class="form-shifted row g-3 reveal" novalidate>
-
-              <div class="col-md-6">
-                <label for="budget" class="form-label">Budget</label>
-                <select class="form-select" id="budget" required>
-                  <option value="" selected disabled>Select your budget</option>
-                  <option value="under50">Under $50,000</option>
-                  <option value="50to100">$50,000 &ndash; $100,000</option>
-                  <option value="above100">Above $100,000</option>
-                </select>
-                <div class="invalid-feedback">Please select a budget range.</div>
-              </div>
-
-              <div class="col-md-6">
-                <label for="dailyDistance" class="form-label">Daily Driving Distance (km)</label>
-                <input type="number" class="form-control" id="dailyDistance" min="0" step="1" placeholder="e.g. 40" required>
-                <div class="invalid-feedback">Please enter a valid distance in kilometres.</div>
-              </div>
-
-              <div class="col-md-6">
-                <label for="passengers" class="form-label">Number of Passengers</label>
-                <select class="form-select" id="passengers" required>
-                  <option value="" selected disabled>Select passenger count</option>
-                  <option value="1-2">1&ndash;2</option>
-                  <option value="3-5">3&ndash;5</option>
-                  <option value="6+">6+</option>
-                </select>
-                <div class="invalid-feedback">Please select the number of passengers.</div>
-              </div>
-
-              <div class="col-md-6">
-                <label for="preference" class="form-label">Driving Preference</label>
-                <select class="form-select" id="preference" required>
-                  <option value="" selected disabled>Select your priority</option>
-                  <option value="performance">Performance</option>
-                  <option value="economy">Fuel Economy</option>
-                  <option value="comfort">Comfort</option>
-                  <option value="technology">Technology</option>
-                </select>
-                <div class="invalid-feedback">Please select a driving preference.</div>
-              </div>
-
-              <fieldset class="col-12">
-                <legend class="form-label h6 mb-2">Home Charging Available?</legend>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="charging" id="chargingYes" value="yes" required>
-                  <label class="form-check-label" for="chargingYes">Yes</label>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <!-- ================= NAVIGATION ================= -->
+    <header>
+        <nav class="navbar navbar-expand-xl fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">SHIFTED<span>.</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list fs-2"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto align-items-xl-center">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page2.html">Motorsport Technology</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page3.html">Engine Power</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page4.html">Hybrid vs Electric</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page5.html">Popular Cars</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page6.html">Motorsport Scene</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page7.html">Showcase</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page8.html">Buying Guide</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page9.html">Maintenance</a></li>
+                    </ul>
+                    <button class="theme-toggle theme-toggle-btn" type="button" aria-label="Toggle dark and light mode">
+                        <i class="bi bi-moon-stars-fill"></i>
+                    </button>
                 </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="charging" id="chargingNo" value="no" required>
-                  <label class="form-check-label" for="chargingNo">No</label>
-                </div>
-                <div class="invalid-feedback d-block" id="chargingFeedback" style="display:none !important;">Please choose an option.</div>
-              </fieldset>
-
-              <div class="col-12 text-center mt-4">
-                <button type="submit" class="btn-shifted">Find My Best Vehicle</button>
-              </div>
-            </form>
-
-            <!-- ================= RESULT ================= -->
-            <div id="recommendationResult" class="result-box text-center mt-4 d-none">
-              <p class="small-text mb-1">Recommended Powertrain</p>
-              <h3 id="recommendationType" class="h2 mb-3"></h3>
-              <p id="recommendationReason" class="mb-0"></p>
             </div>
-          </div>
+        </nav>
+    </header>
+
+<main id="main">
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero">
+        <img class="hero-image" src="../Graphics/maintenance-hero.jpg" alt="Mechanic inspecting the engine bay of a car in a workshop">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <p class="hero-eyebrow">Page 9 of 9</p>
+            <h1 class="hero-title">Car Maintenance Guide</h1>
+            <p class="hero-subtitle">Looking after your car doesn't have to be complicated. Learn the essential
+                maintenance tasks that improve safety, reliability and long-term ownership.</p>
         </div>
-      </div>
     </section>
 
-    <!-- ================= FINAL MESSAGE ================= -->
-    <section>
-      <div class="container">
-        <div class="container-narrow text-center reveal">
-          <h2>The Road Ahead</h2>
-          <p>Whether powered by petrol, hybrid systems or electricity, modern vehicles continue to evolve through advances in engineering and technology. By understanding how these systems work, drivers can make more informed decisions and better appreciate the innovation behind every journey.</p>
+    <!-- ================= WHY MAINTENANCE MATTERS ================= -->
+    <section class="section">
+        <div class="container">
+            <div class="split-section reveal">
+                <div class="split-media col-lg-5">
+                    <img src="../Graphics/maintenance-oil-change.jpg" alt="Mechanic performing an oil change under a car">
+                </div>
+                <div class="split-text col-lg-7">
+                    <span class="section-label">Why It Matters</span>
+                    <h2>Small habits, big benefits</h2>
+                    <p>Routine maintenance prevents breakdowns, improves safety, and saves money over the life of
+                        the vehicle. It also helps maintain performance and protects resale value — all for a
+                        fraction of the cost of major repairs.</p>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- ================= BACK TO HOME ================= -->
-    <section class="bg-alt text-center">
-      <div class="container">
-        <a href="../index.html" class="btn-shifted-outline reveal">&larr; Return to Homepage</a>
-      </div>
+    <!-- ================= MAINTENANCE SCHEDULE ================= -->
+    <section class="section" style="background-color:var(--card);">
+        <div class="container">
+            <div class="section-heading reveal">
+                <span class="section-label">Reference</span>
+                <h2>Maintenance Schedule</h2>
+            </div>
+            <div class="table-responsive reveal">
+                <table class="table table-shifted align-middle">
+                    <thead><tr><th>Maintenance Item</th><th>Suggested Interval</th></tr></thead>
+                    <tbody>
+                        <tr><td>Engine Oil</td><td>Every 10,000 km</td></tr>
+                        <tr><td>Tyre Pressure</td><td>Monthly</td></tr>
+                        <tr><td>Brake Fluid</td><td>Every 2 years</td></tr>
+                        <tr><td>Coolant</td><td>Every 2–5 years</td></tr>
+                        <tr><td>Air Filter</td><td>Every 20,000 km</td></tr>
+                        <tr><td>Wiper Blades</td><td>Every 6–12 months</td></tr>
+                    </tbody>
+                </table>
+                <p class="table-note">Maintenance intervals vary depending on manufacturer recommendations and
+                    driving conditions. Always consult your owner's manual.</p>
+            </div>
+        </div>
     </section>
 
-    <!-- ================= PREVIOUS / NEXT NAVIGATION ================= -->
-    <section>
-      <div class="container">
-        <div class="prev-next">
-          <a href="page8.html" class="btn-shifted-outline">&larr; Electric Power</a>
-          <a href="../index.html" class="btn-shifted">Home &rarr;</a>
+    <!-- ================= INTERACTIVE MAINTENANCE CHECKLIST ================= -->
+    <section class="section">
+        <div class="container">
+            <div class="row justify-content-center reveal">
+                <div class="col-lg-8">
+                    <div class="text-center mb-4">
+                        <span class="section-label">Interactive Tool</span>
+                        <h2>Maintenance Checklist</h2>
+                        <p>Tick off each task as you complete it and watch your progress update.</p>
+                    </div>
+                    <div class="mb-3 d-flex justify-content-between">
+                        <span class="fw-semibold">Maintenance Progress</span>
+                        <span id="maintenanceProgressLabel" class="fw-semibold">0%</span>
+                    </div>
+                    <div class="progress-shifted mb-4">
+                        <div id="maintenanceProgressBar" class="progress-bar" role="progressbar" aria-label="Maintenance checklist progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%;"></div>
+                    </div>
+                    <div id="maintenanceChecklist" class="border rounded-4 p-4" style="background-color:var(--card);">
+                        <div class="checklist-item">
+                            <input type="checkbox" id="chkTyre" aria-describedby="chkTyreDesc">
+                            <div><label for="chkTyre" class="checklist-label">Check tyre pressure</label>
+                                <p id="chkTyreDesc" class="checklist-desc">Under- or over-inflated tyres affect
+                                    handling, fuel economy and safety.</p></div>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="chkOil" aria-describedby="chkOilDesc">
+                            <div><label for="chkOil" class="checklist-label">Check engine oil</label>
+                                <p id="chkOilDesc" class="checklist-desc">Low or dirty oil accelerates engine
+                                    wear.</p></div>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="chkBrakes" aria-describedby="chkBrakesDesc">
+                            <div><label for="chkBrakes" class="checklist-label">Inspect brake pads</label>
+                                <p id="chkBrakesDesc" class="checklist-desc">Worn pads increase stopping distance and
+                                    risk damaging the discs.</p></div>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="chkWasher" aria-describedby="chkWasherDesc">
+                            <div><label for="chkWasher" class="checklist-label">Top up washer fluid</label>
+                                <p id="chkWasherDesc" class="checklist-desc">Keeps your windscreen clear in poor
+                                    weather.</p></div>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="chkCoolant" aria-describedby="chkCoolantDesc">
+                            <div><label for="chkCoolant" class="checklist-label">Check coolant</label>
+                                <p id="chkCoolantDesc" class="checklist-desc">Prevents the engine from
+                                    overheating.</p></div>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="chkFilter" aria-describedby="chkFilterDesc">
+                            <div><label for="chkFilter" class="checklist-label">Replace air filter</label>
+                                <p id="chkFilterDesc" class="checklist-desc">A clean filter keeps the engine
+                                    breathing efficiently.</p></div>
+                        </div>
+                    </div>
+                    <div id="maintenanceCompletionMessage" class="alert-shifted p-3 mt-3" style="display:none;">
+                        <i class="bi bi-check-circle-fill me-2"></i>Great work — you've completed every maintenance
+                        task on this checklist!
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-  </main>
+    <!-- ================= WARNING SIGNS ================= -->
+    <section class="section" style="background-color:var(--card);">
+        <div class="container">
+            <div class="section-heading reveal">
+                <span class="section-label">Pay Attention</span>
+                <h2>Warning Signs</h2>
+            </div>
+            <div class="row g-4 reveal">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 card-body text-center">
+                        <i class="bi bi-exclamation-triangle-fill fs-2 mb-2"></i>
+                        <h3 class="card-title fs-6">Engine Warning Light</h3>
+                        <p class="small text-secondary mb-0">Often signals a sensor fault or emissions issue —
+                            have it checked promptly.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 card-body text-center">
+                        <i class="bi bi-cloud-fog2-fill fs-2 mb-2"></i>
+                        <h3 class="card-title fs-6">Smoke from Exhaust</h3>
+                        <p class="small text-secondary mb-0">Blue, white or black smoke can indicate burning oil,
+                            coolant leaks or fuel issues.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 card-body text-center">
+                        <i class="bi bi-volume-up-fill fs-2 mb-2"></i>
+                        <h3 class="card-title fs-6">Strange Noises</h3>
+                        <p class="small text-secondary mb-0">Squealing, grinding or knocking sounds often signal
+                            wear that needs attention.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 card-body text-center">
+                        <i class="bi bi-activity fs-2 mb-2"></i>
+                        <h3 class="card-title fs-6">Vibrations While Driving</h3>
+                        <p class="small text-secondary mb-0">Can point to unbalanced wheels, worn suspension or
+                            brake issues.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- ================= FOOTER ================= -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="row gy-4 align-items-start">
-        <div class="col-md-4">
-          <h5>SHIFTED</h5>
-          <p class="small-text">An educational automotive website built to teach beginners how modern cars work.</p>
+    <!-- ================= PETROL VS HYBRID VS EV MAINTENANCE ================= -->
+    <section class="section">
+        <div class="container">
+            <div class="section-heading reveal">
+                <span class="section-label">Powertrain Differences</span>
+                <h2>Petrol vs Hybrid vs Electric Maintenance</h2>
+            </div>
+            <div class="row g-4 reveal">
+                <div class="col-lg-4">
+                    <div class="card h-100 card-body">
+                        <h3 class="card-title">Petrol</h3>
+                        <ul class="small text-secondary ps-3 mb-0">
+                            <li>More frequent oil changes</li>
+                            <li>More moving parts</li>
+                            <li>Regular engine servicing</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100 card-body">
+                        <h3 class="card-title">Hybrid</h3>
+                        <ul class="small text-secondary ps-3 mb-0">
+                            <li>Petrol engine plus battery</li>
+                            <li>Regenerative braking reduces brake wear</li>
+                            <li>Slightly more complex servicing</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100 card-body">
+                        <h3 class="card-title">Electric</h3>
+                        <ul class="small text-secondary ps-3 mb-0">
+                            <li>No engine oil</li>
+                            <li>Fewer moving parts</li>
+                            <li>Battery and software inspections</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4">
-          <h5>Quick Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="page2.html">Motorsport</a></li>
-            <li><a href="page3.html">Engine</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4 text-md-end">
-          <button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
-        </div>
-      </div>
-      <hr class="mt-4" style="border-color: var(--color-border);">
-      <p class="small-text text-center mb-0">© 2026 SHIFTED. All rights reserved. Version 1.0</p>
-    </div>
-  </footer>
+    </section>
 
-  <!-- Bootstrap Bundle (includes Popper) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Shared script -->
-  <script src="../JSCode/script.js"></script>
+    <!-- ================= QUICK TIPS ================= -->
+    <section class="section" style="background-color:var(--card);">
+        <div class="container">
+            <div class="section-heading reveal">
+                <span class="section-label">Remember</span>
+                <h2>Quick Tips</h2>
+            </div>
+            <div class="row g-3 reveal">
+                <div class="col-md-6"><div class="alert-shifted p-3 h-100"><i class="bi bi-check2-circle me-2"></i>Check tyre pressure once a month.</div></div>
+                <div class="col-md-6"><div class="alert-shifted p-3 h-100"><i class="bi bi-exclamation-circle me-2"></i>Don't ignore dashboard warning lights.</div></div>
+                <div class="col-md-6"><div class="alert-shifted p-3 h-100"><i class="bi bi-calendar-check me-2"></i>Follow your manufacturer's service schedule.</div></div>
+                <div class="col-md-6"><div class="alert-shifted p-3 h-100"><i class="bi bi-battery-charging me-2"></i>Keep your battery terminals clean.</div></div>
+            </div>
+        </div>
+    </section>
+    <!-- ================= PAGE NAVIGATION ================= -->
+    <section class="section pt-0">
+        <div class="container">
+            <hr class="divider mb-5">
+        <div class="page-nav">
+            <a href="page8.html" class="btn btn-dark-outline"><i class="bi bi-arrow-left me-2"></i>Buying Guide</a>
+            <a href="../index.html" class="btn btn-dark-outline"><i class="bi bi-house-door me-2"></i>Home</a>
+            <span></span>
+        </div>
+        </div>
+    </section>
+
+</main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <p class="footer-brand mb-2">SHIFTED<span style="color:var(--text-secondary)">.</span></p>
+                    <p class="text-secondary" style="max-width:340px;">An educational automotive platform helping
+                        beginners understand the technology, culture and ownership side of modern cars.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p class="fw-semibold mb-3">Quick Links</p>
+                    <div class="footer-links">
+                        <a href="../index.html">Home</a>
+                        <a href="page2.html">Motorsport Technology</a>
+                        <a href="page8.html">Buying Guide</a>
+                        <a href="page9.html">Maintenance Guide</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <p class="fw-semibold mb-3">About This Project</p>
+                    <p class="text-secondary">SHIFTED is a student-built educational website exploring how modern
+                        vehicles work, from motorsport-derived technology to everyday ownership in Singapore.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="mb-0">&copy; 2026 SHIFTED. Built for educational purposes.</p>
+                <p class="mb-0">Designed &amp; developed with HTML5, CSS3, Bootstrap 5 &amp; JavaScript.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../JSCode/script.js" defer></script>
 </body>
 </html>

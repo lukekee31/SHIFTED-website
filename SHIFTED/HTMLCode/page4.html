@@ -1,329 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Inline Engine — SHIFTED</title>
-  <meta name="description" content="Learn how inline engines are arranged, their advantages and disadvantages, and which cars use them." />
-
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Google Font: Open Sans -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-  <!-- Shared stylesheet -->
-  <link rel="stylesheet" href="../CSSCode/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hybrid vs Electric | SHIFTED</title>
+    <meta name="description" content="Compare how hybrid and electric vehicles work, and find which suits your driving.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSSCode/style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <!-- ================= NAVIGATION ================= -->
+    <header>
+        <nav class="navbar navbar-expand-xl fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">SHIFTED<span>.</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list fs-2"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto align-items-xl-center">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page2.html">Motorsport Technology</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page3.html">Engine Power</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page4.html">Hybrid vs Electric</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page5.html">Popular Cars</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page6.html">Motorsport Scene</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page7.html">Showcase</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page8.html">Buying Guide</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page9.html">Maintenance</a></li>
+                    </ul>
+                    <button class="theme-toggle theme-toggle-btn" type="button" aria-label="Toggle dark and light mode">
+                        <i class="bi bi-moon-stars-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-
-  <!-- ================= NAVBAR ================= -->
-  <header>
-    <nav class="navbar navbar-expand-lg sticky-top">
-      <div class="container">
-        <a class="navbar-brand" href="../index.html">SHIFTED</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto align-items-lg-center">
-            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="page2.html">Motorsport</a></li>
-            <li class="nav-item"><a class="nav-link" href="page3.html">Engine</a></li>
-            <li class="nav-item"><a class="nav-link" href="page7.html">Hybrid</a></li>
-            <li class="nav-item"><a class="nav-link" href="page8.html">Electric</a></li>
-            <li class="nav-item"><a class="nav-link" href="page9.html">Ownership</a></li>
-            <li class="nav-item">
-              <button class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false"><i class="bi bi-moon-stars"></i><span>Dark</span></button>
-            </li>
-          </ul>
+<main id="main">
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero">
+        <img class="hero-image" src="../Graphics/hybrid-ev-hero.jpg" alt="Electric vehicle plugged into a home charging point at night">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <p class="hero-eyebrow">Page 4 of 9</p>
+            <h1 class="hero-title">Hybrid vs Electric</h1>
+            <p class="hero-subtitle">Both hybrid and electric vehicles are shaping the future of transportation.
+                Learn how they work, where they differ, and which may be the better choice depending on your
+                driving needs.</p>
         </div>
-      </div>
-    </nav>
-  </header>
+    </section>
 
-  <!-- ================= HERO SECTION ================= -->
-  <section class="hero hero--page" aria-label="Inline Engine introduction">
-    <img class="hero-image" src="https://placehold.co/1920x1080/2b2b2b/2b2b2b?text=+" alt="BMW inline-six engine bay">
-    <div class="hero-overlay"></div>
-    <div class="container">
-      <div class="hero-content">
-        <h1>Inline Engine</h1>
-        <p>Simple, reliable and efficient. The inline engine is the most widely used engine layout in modern passenger vehicles.</p>
-      </div>
+    <!-- ================= INTRODUCTION ================= -->
+    <section class="section">
+        <div class="container">
+            <div class="row reveal">
+                <div class="col-lg-8 mx-auto text-center">
+                    <span class="section-label">A Balanced View</span>
+                    <h2>Two paths toward cleaner driving</h2>
+                    <p>Electrification is becoming more common as manufacturers respond to environmental concerns
+                        and improving battery technology. Neither hybrid nor electric vehicles are universally
+                        "better" — each solves different problems for different drivers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= HOW THEY WORK ================= -->
+    <section class="section" style="background-color:var(--card);">
+        <div class="container">
+            <div class="row g-4 reveal">
+                <div class="col-lg-6">
+                    <div class="card h-100">
+                        <div class="card-img-wrap"><img src="../Graphics/hybrid-diagram.jpg" alt="Diagram illustrating how a hybrid vehicle drivetrain works"></div>
+                        <div class="card-body">
+                            <h3 class="card-title">Hybrid Vehicle</h3>
+                            <p class="small text-secondary mb-2">Petrol Engine <i class="bi bi-arrow-down mx-2"></i> Battery <i class="bi bi-arrow-down mx-2"></i> Electric Motor <i class="bi bi-arrow-down mx-2"></i> Wheels</p>
+                            <ul class="small text-secondary ps-3 mb-0">
+                                <li>A petrol engine works alongside an electric motor.</li>
+                                <li>A small battery stores energy for electric-only driving.</li>
+                                <li>Regenerative braking recovers energy when slowing down.</li>
+                                <li>No charging cable is required.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100">
+                        <div class="card-img-wrap"><img src="../Graphics/ev-diagram.jpg" alt="Diagram illustrating how an electric vehicle drivetrain works"></div>
+                        <div class="card-body">
+                            <h3 class="card-title">Electric Vehicle</h3>
+                            <p class="small text-secondary mb-2">Battery <i class="bi bi-arrow-down mx-2"></i> Inverter <i class="bi bi-arrow-down mx-2"></i> Motor <i class="bi bi-arrow-down mx-2"></i> Wheels</p>
+                            <ul class="small text-secondary ps-3 mb-0">
+                                <li>A large battery pack stores all the vehicle's energy.</li>
+                                <li>An inverter converts stored energy for the electric motor.</li>
+                                <li>The motor delivers instant, smooth torque to the wheels.</li>
+                                <li>Charging is required to replenish the battery.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ADVANTAGES & DISADVANTAGES ================= -->
+    <section class="section">
+        <div class="container">
+            <div class="section-heading reveal">
+                <span class="section-label">Weigh It Up</span>
+                <h2>Advantages &amp; Disadvantages</h2>
+            </div>
+            <div class="row g-4 reveal">
+                <div class="col-lg-6">
+                    <div class="card h-100 card-body">
+                        <h3 class="card-title">Hybrid</h3>
+                        <p class="fw-semibold small mb-1 text-success">Advantages</p>
+                        <ul class="small text-secondary ps-3">
+                            <li>Better fuel economy</li>
+                            <li>No charging required</li>
+                            <li>Lower emissions than petrol</li>
+                        </ul>
+                        <p class="fw-semibold small mb-1">Disadvantages</p>
+                        <ul class="small text-secondary ps-3 mb-0">
+                            <li>More mechanically complex</li>
+                            <li>Still uses petrol</li>
+                            <li>Smaller battery capacity</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100 card-body">
+                        <h3 class="card-title">Electric</h3>
+                        <p class="fw-semibold small mb-1 text-success">Advantages</p>
+                        <ul class="small text-secondary ps-3">
+                            <li>Zero tailpipe emissions</li>
+                            <li>Instant torque</li>
+                            <li>Quiet operation</li>
+                        </ul>
+                        <p class="fw-semibold small mb-1">Disadvantages</p>
+                        <ul class="small text-secondary ps-3 mb-0">
+                            <li>Charging required</li>
+                            <li>Longer refuelling time</li>
+                            <li>Battery degrades over time</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= COMPARISON TABLE ================= -->
+    <section class="section" style="background-color:var(--card);">
+        <div class="container">
+            <div class="section-heading reveal">
+                <span class="section-label">Compare</span>
+                <h2>Hybrid vs Electric</h2>
+            </div>
+            <div class="table-responsive reveal">
+                <table class="table table-shifted align-middle">
+                    <thead><tr><th>Feature</th><th>Hybrid</th><th>Electric</th></tr></thead>
+                    <tbody>
+                        <tr><td>Fuel</td><td>Petrol + Electric</td><td>Electric Only</td></tr>
+                        <tr><td>Charging</td><td>Optional</td><td>Required</td></tr>
+                        <tr><td>Tailpipe Emissions</td><td>Low</td><td>None</td></tr>
+                        <tr><td>Maintenance</td><td>Medium</td><td>Lower</td></tr>
+                        <tr><td>Best For</td><td>Mixed Driving</td><td>Daily Commuting</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= DRIVING SCENARIO TOOL ================= -->
+    <section class="section">
+        <div class="container">
+            <div class="row justify-content-center reveal">
+                <div class="col-lg-7">
+                    <div class="text-center mb-4">
+                        <span class="section-label">Interactive Tool</span>
+                        <h2>Which suits your driving?</h2>
+                        <p>Answer three quick questions for an instant recommendation.</p>
+                    </div>
+                    <form id="scenarioForm" class="form-shifted bg-body p-4 rounded-4 border">
+                        <div class="mb-3">
+                            <label for="distance" class="form-label">Daily driving distance</label>
+                            <select id="distance" name="distance" class="form-select" required>
+                                <option value="short">Under 30 km</option>
+                                <option value="medium">30–80 km</option>
+                                <option value="long">Over 80 km</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="charging" class="form-label">Access to home charging</label>
+                            <select id="charging" name="charging" class="form-select" required>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="drivingType" class="form-label">Mostly city or highway driving?</label>
+                            <select id="drivingType" name="drivingType" class="form-select" required>
+                                <option value="city">Mostly City</option>
+                                <option value="highway">Mostly Highway</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-shifted w-100">Get My Recommendation</button>
+                    </form>
+                    <div id="scenarioResult" class="result-card card card-body text-center">
+                        <p class="section-label mb-1">Recommended</p>
+                        <h3 class="result-type mb-2">—</h3>
+                        <p class="result-reason text-secondary mb-0">—</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= EXAMPLE VEHICLES ================= -->
+    <section class="section" style="background-color:var(--card);">
+        <div class="container">
+            <div class="section-heading reveal">
+                <span class="section-label">Examples</span>
+                <h2>Popular Hybrid &amp; Electric Models</h2>
+            </div>
+            <div class="row g-4 reveal">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-img-wrap"><img src="../Graphics/toyota-prius.jpg" alt="Toyota Prius hybrid hatchback"></div>
+                        <div class="card-body">
+                            <span class="badge-shifted mb-2 d-inline-block">Hybrid</span>
+                            <h3 class="card-title">Toyota Prius</h3>
+                            <p class="card-text">The pioneering hybrid, known for exceptional fuel economy.</p>
+                            <button class="btn btn-dark-outline btn-sm" data-bs-toggle="modal" data-bs-target="#priusModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-img-wrap"><img src="../Graphics/honda-civic-hev.jpg" alt="Honda Civic e:HEV hybrid sedan"></div>
+                        <div class="card-body">
+                            <span class="badge-shifted mb-2 d-inline-block">Hybrid</span>
+                            <h3 class="card-title">Honda Civic e:HEV</h3>
+                            <p class="card-text">Combines efficiency with Honda's engaging driving character.</p>
+                            <button class="btn btn-dark-outline btn-sm" data-bs-toggle="modal" data-bs-target="#civicModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-img-wrap"><img src="../Graphics/tesla-model-3.jpg" alt="Tesla Model 3 electric sedan"></div>
+                        <div class="card-body">
+                            <span class="badge-shifted mb-2 d-inline-block">Electric</span>
+                            <h3 class="card-title">Tesla Model 3</h3>
+                            <p class="card-text">A benchmark EV known for range and over-the-air software.</p>
+                            <button class="btn btn-dark-outline btn-sm" data-bs-toggle="modal" data-bs-target="#teslaModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-img-wrap"><img src="../Graphics/byd-seal.jpg" alt="BYD Seal electric sedan"></div>
+                        <div class="card-body">
+                            <span class="badge-shifted mb-2 d-inline-block">Electric</span>
+                            <h3 class="card-title">BYD Seal</h3>
+                            <p class="card-text">A fast-growing EV offering strong value and performance.</p>
+                            <button class="btn btn-dark-outline btn-sm" data-bs-toggle="modal" data-bs-target="#bydModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vehicle info modals -->
+    <div class="modal fade" id="priusModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header">
+            <h2 class="modal-title h5">Toyota Prius</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div><div class="modal-body">
+            <img src="../Graphics/toyota-prius-large.jpg" alt="Toyota Prius hybrid hatchback in a studio setting" class="modal-img">
+            <p>The Prius popularised hybrid technology worldwide and remains one of the most fuel-efficient petrol-powered cars available, making it a common sight on Singapore roads.</p>
+        </div></div></div>
     </div>
-  </section>
-
-  <main>
-
-    <!-- ================= OVERVIEW ================= -->
-    <section>
-      <div class="container">
-        <div class="container-narrow text-center reveal">
-          <h2>Overview</h2>
-          <p>Inline engines arrange all cylinders in a single straight row along the crankshaft. This simple design makes them easier to manufacture, maintain and repair compared to more complex engine layouts. Inline engines are commonly found in compact cars, family sedans and many sports cars because they offer a good balance between performance, fuel efficiency and production cost.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= HOW AN INLINE ENGINE IS ARRANGED ================= -->
-    <section class="bg-alt">
-      <div class="container">
-        <div class="split-section reveal">
-          <img src="https://placehold.co/700x500/2b2b2b/2b2b2b?text=+" alt="Diagram showing cylinders arranged in a single straight line above the crankshaft">
-          <div>
-            <h2>How an Inline Engine is Arranged</h2>
-            <p>In an inline engine, every cylinder is positioned in a single straight row. This compact design reduces manufacturing complexity and allows easier access for servicing, making it the most common engine layout used in passenger vehicles.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= ADVANTAGES ================= -->
-    <section>
-      <div class="container">
-        <div class="section-heading reveal"><h2>Advantages</h2></div>
-        <div class="row g-4">
-          <div class="col-sm-6 col-lg-4">
-            <div class="card card--simple reveal">
-              <i class="bi bi-gear icon-lg"></i>
-              <h3 class="h5">Simple Design</h3>
-              <p class="mb-0">Fewer components make the engine easier to manufacture.</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card card--simple reveal">
-              <i class="bi bi-currency-dollar icon-lg"></i>
-              <h3 class="h5">Lower Production Cost</h3>
-              <p class="mb-0">Ideal for mass-market vehicles.</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card card--simple reveal">
-              <i class="bi bi-tools icon-lg"></i>
-              <h3 class="h5">Easy Maintenance</h3>
-              <p class="mb-0">Mechanics can access most components more easily.</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card card--simple reveal">
-              <i class="bi bi-fuel-pump icon-lg"></i>
-              <h3 class="h5">Good Fuel Efficiency</h3>
-              <p class="mb-0">Particularly for three- and four-cylinder engines.</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card card--simple reveal">
-              <i class="bi bi-shield-check icon-lg"></i>
-              <h3 class="h5">Reliable</h3>
-              <p class="mb-0">Proven design used for decades.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= DISADVANTAGES ================= -->
-    <section class="bg-alt">
-      <div class="container">
-        <div class="section-heading reveal"><h2>Disadvantages</h2></div>
-        <div class="row g-4">
-          <div class="col-sm-6 col-lg-3">
-            <div class="card card--simple reveal">
-              <i class="bi bi-arrows-expand icon-lg"></i>
-              <h3 class="h5">Long Engine Block</h3>
-              <p class="mb-0">Especially on engines with many cylinders.</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="card card--simple reveal">
-              <i class="bi bi-box icon-lg"></i>
-              <h3 class="h5">Packaging Challenges</h3>
-              <p class="mb-0">Fitting inline-6 engines into smaller cars can be difficult.</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="card card--simple reveal">
-              <i class="bi bi-exclamation-triangle icon-lg"></i>
-              <h3 class="h5">Cylinder Count Limits</h3>
-              <p class="mb-0">Less suitable for very high cylinder counts.</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="card card--simple reveal">
-              <i class="bi bi-arrow-up icon-lg"></i>
-              <h3 class="h5">Taller Engine</h3>
-              <p class="mb-0">Results in a higher centre of gravity compared to boxer designs.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="info-panel mt-5 reveal">
-          <h3 class="h5">Maintenance Tips</h3>
-          <ul>
-            <li>Follow the manufacturer's schedule for regular engine oil changes.</li>
-            <li>Check coolant levels periodically.</li>
-            <li>Replace the air filter as recommended.</li>
-            <li>Service spark plugs at the intervals set by the manufacturer.</li>
-            <li>Listen for unusual engine noises and investigate promptly.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= COMMON VEHICLES ================= -->
-    <section>
-      <div class="container">
-        <div class="section-heading reveal">
-          <h2>Common Vehicles</h2>
-          <p>These popular models all use inline engine layouts.</p>
-        </div>
-        <div id="page4VehicleCarousel" class="carousel slide vehicle-carousel" data-bs-touch="true">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row g-4 justify-content-center">
-          <div class="col-sm-6 col-lg-4">
-            <div class="card vehicle-card reveal">
-              <div class="card-img-wrap"><img src="https://placehold.co/400x260/2b2b2b/2b2b2b?text=+" alt="Toyota Corolla exterior"></div>
-              <div class="card-body">
-                <h3 class="card-title h5">Toyota Corolla</h3>
-                <span class="badge-shifted">Inline-4</span>
-                <p class="card-text mt-2 mb-0">A dependable compact sedan known for efficiency.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card vehicle-card reveal">
-              <div class="card-img-wrap"><img src="https://placehold.co/400x260/2b2b2b/2b2b2b?text=+" alt="Honda Civic exterior"></div>
-              <div class="card-body">
-                <h3 class="card-title h5">Honda Civic</h3>
-                <span class="badge-shifted">Inline-4</span>
-                <p class="card-text mt-2 mb-0">A popular choice balancing performance and economy.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card vehicle-card reveal">
-              <div class="card-img-wrap"><img src="https://placehold.co/400x260/2b2b2b/2b2b2b?text=+" alt="Mazda 3 exterior"></div>
-              <div class="card-body">
-                <h3 class="card-title h5">Mazda 3</h3>
-                <span class="badge-shifted">Inline-4</span>
-                <p class="card-text mt-2 mb-0">Offers refined handling with a naturally aspirated engine.</p>
-              </div>
-            </div>
-          </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row g-4 justify-content-center">
-          <div class="col-sm-6 col-lg-4">
-            <div class="card vehicle-card reveal">
-              <div class="card-img-wrap"><img src="https://placehold.co/400x260/2b2b2b/2b2b2b?text=+" alt="BMW 330i exterior"></div>
-              <div class="card-body">
-                <h3 class="card-title h5">BMW 330i</h3>
-                <span class="badge-shifted">Inline-4</span>
-                <p class="card-text mt-2 mb-0">A sports sedan with a turbocharged four-cylinder.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card vehicle-card reveal">
-              <div class="card-img-wrap"><img src="https://placehold.co/400x260/2b2b2b/2b2b2b?text=+" alt="BMW M340i exterior"></div>
-              <div class="card-body">
-                <h3 class="card-title h5">BMW M340i</h3>
-                <span class="badge-shifted">Inline-6 (B58)</span>
-                <p class="card-text mt-2 mb-0">Renowned for its smooth and powerful straight-six.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card vehicle-card reveal">
-              <div class="card-img-wrap"><img src="https://placehold.co/400x260/2b2b2b/2b2b2b?text=+" alt="Mercedes-Benz C200 exterior"></div>
-              <div class="card-body">
-                <h3 class="card-title h5">Mercedes-Benz C200</h3>
-                <span class="badge-shifted">Inline-4</span>
-                <p class="card-text mt-2 mb-0">A premium sedan built around a compact turbo engine.</p>
-              </div>
-            </div>
-          </div>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#page4VehicleCarousel" data-bs-slide="prev">
-            <i class="bi bi-chevron-left"></i>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#page4VehicleCarousel" data-bs-slide="next">
-            <i class="bi bi-chevron-right"></i>
-            <span class="visually-hidden">Next</span>
-          </button>
-          <div class="vehicle-carousel-indicators">
-            <button type="button" data-bs-target="#page4VehicleCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#page4VehicleCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ================= QUICK FACTS ================= -->
-    <section class="bg-alt">
-      <div class="container">
-        <div class="info-panel reveal">
-          <h3 class="h5">Quick Facts</h3>
-          <ul>
-            <li>Most common engine layout in the world.</li>
-            <li>Available with 2, 3, 4, 5 and 6 cylinders.</li>
-            <li>Commonly used in passenger cars.</li>
-            <li>Known for simplicity and reliability.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= PREVIOUS / NEXT NAVIGATION ================= -->
-    <section>
-      <div class="container">
-        <div class="prev-next">
-          <a href="page3.html" class="btn-shifted-outline">&larr; Engine Power</a>
-          <a href="page5.html" class="btn-shifted">V Engine &rarr;</a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ================= FOOTER ================= -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="row gy-4 align-items-start">
-        <div class="col-md-4">
-          <h5>SHIFTED</h5>
-          <p class="small-text">An educational automotive website built to teach beginners how modern cars work.</p>
-        </div>
-        <div class="col-md-4">
-          <h5>Quick Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="page3.html">Engine</a></li>
-            <li><a href="page9.html">Ownership</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4 text-md-end">
-          <button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
-        </div>
-      </div>
-      <hr class="mt-4" style="border-color: var(--color-border);">
-      <p class="small-text text-center mb-0">© 2026 SHIFTED. All rights reserved. Version 1.0</p>
+    <div class="modal fade" id="civicModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header">
+            <h2 class="modal-title h5">Honda Civic e:HEV</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div><div class="modal-body">
+            <img src="../Graphics/honda-civic-hev-large.jpg" alt="Honda Civic e:HEV hybrid sedan on the road" class="modal-img">
+            <p>Honda's e:HEV system pairs a petrol engine with electric motors for a smooth, efficient and refined driving experience, popular among Singaporean commuters.</p>
+        </div></div></div>
     </div>
-  </footer>
+    <div class="modal fade" id="teslaModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header">
+            <h2 class="modal-title h5">Tesla Model 3</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div><div class="modal-body">
+            <img src="../Graphics/tesla-model-3-large.jpg" alt="Tesla Model 3 electric sedan parked outdoors" class="modal-img">
+            <p>The Model 3 offers strong range, rapid acceleration and Tesla's extensive Supercharger network, making long trips more convenient for EV owners.</p>
+        </div></div></div>
+    </div>
+    <div class="modal fade" id="bydModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header">
+            <h2 class="modal-title h5">BYD Seal</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div><div class="modal-body">
+            <img src="../Graphics/byd-seal-large.jpg" alt="BYD Seal electric sedan in a showroom" class="modal-img">
+            <p>The Seal combines a sleek design with competitive range and pricing, contributing to BYD's fast-growing presence in Singapore's EV market.</p>
+        </div></div></div>
+    </div>
+    <!-- ================= PAGE NAVIGATION ================= -->
+    <section class="section pt-0">
+        <div class="container">
+            <hr class="divider mb-5">
+        <div class="page-nav">
+            <a href="page3.html" class="btn btn-dark-outline"><i class="bi bi-arrow-left me-2"></i>Engine Power</a>
+            <a href="../index.html" class="btn btn-dark-outline"><i class="bi bi-house-door me-2"></i>Home</a>
+            <a href="page5.html" class="btn btn-shifted">Popular Cars<i class="bi bi-arrow-right ms-2"></i></a>
+        </div>
+        </div>
+    </section>
 
+</main>
 
-  <!-- Bootstrap Bundle (includes Popper) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Shared script -->
-  <script src="../JSCode/script.js"></script>
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <p class="footer-brand mb-2">SHIFTED<span style="color:var(--text-secondary)">.</span></p>
+                    <p class="text-secondary" style="max-width:340px;">An educational automotive platform helping
+                        beginners understand the technology, culture and ownership side of modern cars.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p class="fw-semibold mb-3">Quick Links</p>
+                    <div class="footer-links">
+                        <a href="../index.html">Home</a>
+                        <a href="page2.html">Motorsport Technology</a>
+                        <a href="page8.html">Buying Guide</a>
+                        <a href="page9.html">Maintenance Guide</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <p class="fw-semibold mb-3">About This Project</p>
+                    <p class="text-secondary">SHIFTED is a student-built educational website exploring how modern
+                        vehicles work, from motorsport-derived technology to everyday ownership in Singapore.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="mb-0">&copy; 2026 SHIFTED. Built for educational purposes.</p>
+                <p class="mb-0">Designed &amp; developed with HTML5, CSS3, Bootstrap 5 &amp; JavaScript.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../JSCode/script.js" defer></script>
 </body>
 </html>
