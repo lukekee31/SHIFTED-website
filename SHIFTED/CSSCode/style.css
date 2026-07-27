@@ -236,17 +236,6 @@ select:focus-visible, textarea:focus-visible,
 }
 .theme-toggle:hover { transform: scale(1.08); background-color: var(--card); }
 
-/* Navbar overlay — sits on top of a full-screen hero (homepage) */
-.navbar-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1030;
-  background-color: transparent !important;
-  box-shadow: none;
-}
-
 .navbar-overlay .navbar-brand,
 .navbar-overlay .nav-link,
 .navbar-overlay .theme-toggle {
@@ -295,16 +284,14 @@ select:focus-visible, textarea:focus-visible,
 /* ================= HERO ================= */
 .hero {
     position: relative;
-    min-height: 100vh;
     height: 100vh;
-    min-height: 100svh;
-    height: 100svh;
     display: flex;
     align-items: flex-end;
-    overflow: hidden;
+    overflow: visible;
     color: #fff;
     width: 100%;
 }
+
 .hero.hero-tall { min-height: 100vh; height: 100vh; min-height: 100svh; height: 100svh; }
 .hero.hero-short { min-height: 46vh; height: auto; }
 
@@ -324,7 +311,7 @@ select:focus-visible, textarea:focus-visible,
     z-index: 2;
 }
 
-.hero-content { position: relative; z-index: 2; padding-bottom: 70px; width: 100%; }
+.hero-content { position: relative; z-index: 2; padding-bottom: 20px; width: 100%; }
 
 
 .hero-eyebrow {
