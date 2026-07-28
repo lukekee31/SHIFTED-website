@@ -33,7 +33,7 @@
 }
 
 [data-theme="dark"] {
-    --background: #0B121C;
+    --background: #131212;
     --card: #141E2C;
     --bg-alt: #101927;
     --text: #EEF3FA;
@@ -45,7 +45,7 @@
     --accent-strong: #6FB2F5;
     --accent: #4E9CEE;
     --accent-mid: #63A9F0;
-    --accent-light: #8FC4F7;
+    --accent-light: #86c0f6;
     --accent-pale: rgba(78, 156, 238, 0.14);
 
     --border: rgba(111, 178, 245, 0.18);
