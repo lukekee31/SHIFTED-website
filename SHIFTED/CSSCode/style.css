@@ -256,12 +256,12 @@ body[data-page="home"] .page-hero { min-height: 72vh; }
     transition: transform var(--transition);
     height: 100%;
 }
-.stroke-stage:hover { transform: translateY(-6px) scale(1.03); }
+.stroke-stage:hover { transform: translateY(-6px) scale(1.01); box-shadow: var(--shadow-hover);}
 .stroke-icon {
     width: 60px; height: 60px; border-radius: 50%;
     background-color: var(--accent-pale); color: var(--accent-mid);
     display: inline-flex; align-items: center; justify-content: center;
-    font-size: 1.5rem; margin-bottom: 0.9rem;
+    font-size: 1.5rem; margin-bottom: 0.9rem; 
 }
 
 /* ================= COMPONENT ICON BUTTONS ================= */
@@ -353,6 +353,7 @@ body[data-page="home"] .page-hero { min-height: 72vh; }
 }
 .table-shifted thead { background-color: var(--accent-mid); color: #fff; }
 .table-shifted thead th { border: none; font-weight: 700; padding: 0.9rem 1rem; }
+[data-theme="dark"] .table-shifted thead th { color: var(--accent-mid)}
 .table-shifted tbody td { padding: 0.85rem 1rem; border-color: var(--border); color: var(--text-secondary); }
 .table-shifted tbody tr:nth-of-type(odd) { background-color: var(--bg-alt); }
 
