@@ -284,13 +284,24 @@ function initCategoryFilter(buttonSelector, cardSelector) {
 
     buttons.forEach((btn) => {
         btn.addEventListener("click", () => {
+            // Update active state of buttons
             buttons.forEach((b) => b.classList.remove("active"));
             btn.classList.add("active");
+
+            // Read the filter value
             const filter = btn.getAttribute("data-filter");
 
             cards.forEach((card) => {
-                const category = card.getAttribute("data-category");
+                // Get catogary for cards (checks data-cars-category OR data-category)
+                const category = card.dataset.galleryCategory || card.dataset.carsCategory || card.dataset.category;
                 const show = filter === "all" || filter === category;
+
+                // Show/hide element
+                if (show) {
+                    card.classList.remove("d-none");
+                    card.style.display = "";
+                }
+                else { card.style.display = "none"; }
                 card.style.display = show ? "" : "none";
             });
         });
@@ -312,13 +323,13 @@ function initDetailModal(triggerSelector, modalId) {
             fields.forEach((field) => {
                 const value = trigger.getAttribute(`data-${field}`);
                 const target = modalEl.querySelector(`[data-modal-${field}]`);
-                if (target && value) {
+                if (target) {
                     if (target.tagName === "IMG") {
-                        target.src = value;
+                        target.src = value || "";
                     } else if (target.tagName === "A") {
-                        target.href = value;
+                        target.href = value || "#";
                     } else {
-                        target.textContent = value;
+                        target.textContent = value || "";
                     }
                 }
             });
