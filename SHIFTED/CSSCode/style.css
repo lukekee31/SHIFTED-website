@@ -330,7 +330,8 @@ body[data-page="home"] .page-hero { min-height: 72vh; }
 .accordion-button:not(.collapsed) { background-color: var(--accent-pale); color: var(--accent-strong); }
 .accordion-button::after { filter: none; }
 .accordion-body { color: var(--text-secondary); }
-[data-theme="dark"] .accordion-button:after{ filter:invert(1)}
+[data-theme="dark"] .accordion-button:after
+{ filter:invert(1)}
 
 /* ================= TABS / PILLS ================= */
 .nav-pills-shifted .nav-link {
