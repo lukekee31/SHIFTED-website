@@ -108,42 +108,6 @@ function initBackToTop() {
 }
 initBackToTop();
 
-// ================= HOME: STAT COUNTERS =================
-// Animates each statistic from 0 up to its target value once visible.
-function initStatCounters() {
-    const stats = document.querySelectorAll("[data-stat-target]");
-    if (!stats.length) return;
-
-    const animateStat = (el) => {
-        const target = parseInt(el.getAttribute("data-stat-target"), 10);
-        const suffix = el.getAttribute("data-stat-suffix") || "";
-        const duration = 1400;
-        const start = performance.now();
-
-        function step(now) {
-            const progress = Math.min((now - start) / duration, 1);
-            const value = Math.floor(progress * target);
-            el.textContent = value + suffix;
-            if (progress < 1) requestAnimationFrame(step);
-        }
-        requestAnimationFrame(step);
-    };
-
-    const observer = new IntersectionObserver(
-        (entries, obs) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    animateStat(entry.target);
-                    obs.unobserve(entry.target);
-                }
-            });
-        },
-        { threshold: 0.4 }
-    );
-    stats.forEach((el) => observer.observe(el));
-}
-initStatCounters();
-
 // ================= ENGINE POWER: QUICK QUIZ =================
 // Checks the selected answer and shows contextual feedback without reloading.
 function initEngineQuiz() {

@@ -233,11 +233,6 @@ body[data-page="home"] .page-hero { min-height: 72vh; }
     letter-spacing: 0.02em;
 }
 
-/* ================= STATS ================= */
-.stat-block { text-align: center; }
-.stat-number { font-family: var(--font-display); font-size: 2.6rem; font-weight: 800; color: var(--accent-mid); }
-.stat-label { color: var(--text-secondary); font-weight: 600; font-size: 0.92rem; }
-
 /* ================= QUOTE ================= */
 .quote-section { text-align: center; }
 .quote-section blockquote {
@@ -335,6 +330,7 @@ body[data-page="home"] .page-hero { min-height: 72vh; }
 .accordion-button:not(.collapsed) { background-color: var(--accent-pale); color: var(--accent-strong); }
 .accordion-button::after { filter: none; }
 .accordion-body { color: var(--text-secondary); }
+[data-theme="dark"] .accordion-button:after{ filter:invert(1)}
 
 /* ================= TABS / PILLS ================= */
 .nav-pills-shifted .nav-link {
