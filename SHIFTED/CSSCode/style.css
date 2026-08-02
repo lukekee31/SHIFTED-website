@@ -121,10 +121,10 @@ section { padding: 90px 0; }
 .navbar-shifted .navbar-brand span { color: var(--accent-mid); }
 .navbar-shifted .nav-link {
     font-weight: 600;
-    font-size: 0.88rem;
+    font-size: 0.85rem;
     color: var(--text);
-    margin: 0 0.2rem;
-    padding: 0.5rem 0.7rem !important;
+    margin: 0;
+    padding: 0.55rem 0.65rem !important;
     border-radius: 50px;
     transition: color var(--transition), background-color var(--transition);
 }
@@ -237,9 +237,14 @@ body[data-page="home"] .page-hero { min-height: 72vh; }
 .quote-section { text-align: center; }
 .quote-section blockquote {
     font-family: var(--font-display);
-    font-size: clamp(1.25rem, 2.6vw, 1.9rem);
+    font-size: clamp(1.50rem, 2.6vw, 2.15rem);
     font-weight: 600; color: var(--text);
     max-width: 780px; margin: 0 auto; line-height: 1.55;
+}
+
+.quote-section .quote-author {
+    font-size: clamp(1.25rem, 2vw, 1.65rem);
+    font-weight: 500; color: var(--accent-light);
 }
 
 /* ================= FOUR-STROKE STAGES ================= */
