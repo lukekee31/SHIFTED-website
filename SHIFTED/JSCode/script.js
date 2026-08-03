@@ -1,8 +1,3 @@
-// =====================================================================
-// SHIFTED — Shared JavaScript
-// One shared file used across every page of the website.
-// =====================================================================
-
 // ================= GLOBAL VARIABLES =================
 const root = document.documentElement;
 const themeToggleButtons = document.querySelectorAll(".theme-toggle-btn");
@@ -78,35 +73,6 @@ function initScrollReveal() {
     revealElements.forEach((el) => observer.observe(el));
 }
 initScrollReveal();
-
-// ================= SMOOTH SCROLLING =================
-// Any link pointing to an in-page anchor (e.g. the Explore button) scrolls smoothly.
-function initSmoothScroll() {
-    document.querySelectorAll('a[href^="#"]').forEach((link) => {
-        link.addEventListener("click", (e) => {
-            const targetId = link.getAttribute("href");
-            if (targetId.length <= 1) return;
-            const target = document.querySelector(targetId);
-            if (target) {
-                e.preventDefault();
-                target.scrollIntoView({ behavior: "smooth", block: "start" });
-            }
-        });
-    });
-}
-initSmoothScroll();
-
-// ================= BACK TO TOP =================
-function initBackToTop() {
-    if (!backToTopBtn) return;
-    window.addEventListener("scroll", () => {
-        backToTopBtn.classList.toggle("show", window.scrollY > 500);
-    });
-    backToTopBtn.addEventListener("click", () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-}
-initBackToTop();
 
 // ================= ENGINE POWER: QUICK QUIZ =================
 // Checks the selected answer and shows contextual feedback without reloading.

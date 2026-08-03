@@ -1,7 +1,4 @@
-/* =====================================================================
-   SHIFTED — Shared Stylesheet
-   ===================================================================== */
-
+/* !important gives things the highest priority */
 /* ================= ROOT VARIABLES ================= */
 :root {
     /* Light Mode */
@@ -71,7 +68,7 @@ h1, h2, h3, h4, h5 {
     color: var(--text);
     letter-spacing: -0.01em;
 }
-h1 { font-size: 3rem; }
+h1 { font-size: 2rem; }
 p { color: var(--text-secondary); }
 a { color: var(--accent-mid); text-decoration: none; }
 a:hover { color: var(--accent-light); }
@@ -183,8 +180,8 @@ body[data-page="home"] .page-hero { min-height: 90vh; }
     border-radius: 50px;
     margin-bottom: 1rem;
 }
-.hero-content h1 { color: #fff; font-size: clamp(2.2rem, 5.5vw, 3.6rem); margin-bottom: 0.75rem; }
-.hero-content p { color: rgba(255,255,255,0.88); font-size: 1.08rem; max-width: 640px; }
+.hero-content h1 { color: #fff; font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 0.75rem; }
+.hero-content p { color: rgba(255,255,255,0.88); font-size: 1.0rem; max-width: 640px; }
 
 /* ================= BUTTONS ================= */
 .btn-shifted {
@@ -205,8 +202,6 @@ body[data-page="home"] .page-hero { min-height: 90vh; }
 .btn-shifted-outline:hover { background-color: var(--accent-mid); color: #fff; transform: translateY(-3px); }
 .btn-shifted-sm { padding: 0.5rem 1.2rem; font-size: 0.88rem; }
 
-.page-flow-nav { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
-
 /* ================= CARDS ================= */
 .shifted-card {
     background-color: var(--card);
@@ -219,8 +214,7 @@ body[data-page="home"] .page-hero { min-height: 90vh; }
 }
 .shifted-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-hover); }
 .shifted-card .card-img-wrap { overflow: hidden; aspect-ratio: 16/10; }
-.shifted-card .card-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
-.shifted-card:hover .card-img-wrap img { transform: scale(1.08); }
+.shifted-card .card-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;}
 .shifted-card .card-body { padding: 1.4rem; }
 
 .badge-blue {
@@ -232,6 +226,18 @@ body[data-page="home"] .page-hero { min-height: 90vh; }
     font-size: 0.72rem;
     letter-spacing: 0.02em;
 }
+
+/* ================= FORMS ================= */
+.shifted-form {
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform var(--transition), box-shadow var(--transition);
+    height: 100%;
+}
+.shifted-form .card-body { padding: 1.4rem; }
 
 /* ================= QUOTE ================= */
 .quote-section { text-align: center; }
@@ -427,19 +433,6 @@ body[data-page="home"] .page-hero { min-height: 90vh; }
 .site-footer p, .site-footer .small { color: var(--footer-text); }
 .site-footer hr { border-color: rgba(255,255,255,0.15) !important; }
 .site-footer .small { color: rgba(255,255,255,0.55); }
-
-.back-to-top {
-    position: fixed; bottom: 28px; right: 28px;
-    background-color: var(--accent-mid); color: #fff; border: none;
-    width: 46px; height: 46px; border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    box-shadow: var(--shadow-hover);
-    opacity: 0; visibility: hidden; transform: translateY(10px);
-    transition: all var(--transition);
-    z-index: 999;
-}
-.back-to-top.show { opacity: 1; visibility: visible; transform: translateY(0); }
-.back-to-top:hover { background-color: var(--accent-strong); }
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 991px) {
