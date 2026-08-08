@@ -52,6 +52,84 @@ function highlightActiveNav() {
 }
 highlightActiveNav();
 
+// =================== BONUS POINTS THING =========================
+// Replaces card information in page7.html to data.js
+function renderGallery() {
+    const grid = document.getElementById('gallery-grid');
+    if (!grid || typeof carsData === 'undefined') return;
+
+    // Clear whatever's currently in the grid before rebuilding
+    grid.replaceChildren();
+
+    carsData.forEach((car) => {
+        // Outer column wrapper
+        const col = document.createElement('div');
+        col.className = 'col-md-6 col-lg-4 reveal';
+        col.dataset.galleryCategory = car.category;
+
+        // Card
+        const card = document.createElement('div');
+        card.className = 'shifted-card';
+
+        // Image wrapper
+        const imgWrap = document.createElement('div');
+        imgWrap.className = 'card-img-wrap';
+        const img = document.createElement('img');
+        img.src = car.cardImg;
+        img.alt = car.alt;
+        imgWrap.appendChild(img);
+
+        // Card body
+        const body = document.createElement('div');
+        body.className = 'card-body';
+
+        const badge = document.createElement('span');
+        badge.className = 'badge-blue mb-2 d-inline-block';
+        badge.textContent = car.badgeCato;
+
+        const title = document.createElement('h5');
+        title.textContent = car.title;
+
+        const manufacturer = document.createElement('p');
+        manufacturer.className = 'small mb-2';
+        manufacturer.textContent = `Manufacturer: ${car.manufacturer}`;
+
+        const btn = document.createElement('button');
+        btn.className = 'btn btn-shifted-outline btn-shifted-sm';
+        btn.setAttribute('data-showcase-trigger', '');
+        btn.textContent = 'View Details';
+
+        // Data attributes read by initDetailModal()
+        const specEngine = car.engine ? `Engine: ${car.engine}`
+                   : car.powertrain ? `Powertrain: ${car.powertrain}`
+                   : '';    
+        const specCaCo = car.country ? `Country: ${car.country}`
+                : car.carCato ? `Category: ${car.carCato}`
+                : '';
+        const specPower = car.power ? `Power: ${car.power}`
+                   : car.drivetrain ? `Drivetrain: ${car.drivetrain}`
+                   : car.layout ? `Layout: ${car.layout}`
+                   : car.zerotohun ? `0 - 100km/h: ${car.zerotohun}`
+                   : car.series ? `Series: ${car.series}`
+                   : '';
+        btn.dataset.title = car.title;
+        btn.dataset.img = car.modalImg;
+        btn.dataset.alt = car.alt;
+        btn.dataset.spec1 = `Manufacturer: ${car.manufacturer}`;
+        btn.dataset.spec2 = specCaCo;
+        btn.dataset.spec3 = specEngine;
+        btn.dataset.spec4 = specPower;
+        btn.dataset.fact = car.fact;
+        btn.dataset.link = car.link;
+
+        body.append(badge, title, manufacturer, btn);
+        card.append(imgWrap, body);
+        col.appendChild(card);
+        grid.appendChild(col);
+    });
+}
+renderGallery();
+
 // ================= SCROLL REVEAL =================
 // Elements fade in and move up slightly the first time they enter the viewport.
 function initScrollReveal() {
@@ -206,32 +284,6 @@ function initDrivingScenarioTool() {
 }
 initDrivingScenarioTool();
 
-// =================== BONUS POINTS THING =========================
-// Replaces card information in page7.html to data.js
-function renderGallery() {
-    const grid = document.getElementById('gallery-grid');
-    if (!grid || typeof carsData === 'undefined') return;
-
-    grid.innerHTML = carsData.map(car => `
-        <div class="col-md-6 col-lg-4 reveal" data-gallery-category="${car.category}">
-            <div class="shifted-card">
-                <div class="card-img-wrap"><img src="${car.cardImg}" alt="${car.title}"></div>
-                <div class="card-body">
-                    <span class="badge-blue mb-2 d-inline-block">${car.category}</span>
-                    <h5>${car.title}</h5>
-                    <p class="small mb-2">Manufacturer: ${car.manufacturer}</p>
-                    <button class="btn btn-shifted-outline btn-shifted-sm" data-showcase-trigger
-                        data-title="${car.title}" data-img="${car.modalImg}"
-                        data-spec1="Manufacturer: ${car.manufacturer}" data-spec2="Country: ${car.country}"
-                        data-spec3="Engine: ${car.engine}" data-spec4="${car.power}"
-                        data-fact="${car.fact}" data-link="${car.link}">View Details</button>
-                </div>
-            </div>
-        </div>
-    `).join('');
-}
-renderGallery();
-
 // ================= POPULAR CARS: CATEGORY FILTER =================
 function initCategoryFilter(buttonSelector, cardSelector) {
     const buttons = document.querySelectorAll(buttonSelector);
@@ -245,11 +297,11 @@ function initCategoryFilter(buttonSelector, cardSelector) {
             btn.classList.add("active");
 
             // Read the filter value
-            const filter = btn.getAttribute("data-filter");
+            const filter = (btn.getAttribute("data-filter") || "").toLowerCase();
 
             cards.forEach((card) => {
                 // Get catogary for cards (checks data-cars-category OR data-category)
-                const category = card.dataset.galleryCategory || card.dataset.carsCategory || card.dataset.category;
+                const category = (card.dataset.galleryCategory || card.dataset.carsCategory || card.dataset.category || "").toLowerCase();
                 const show = filter === "all" || filter === category;
 
                 // Show/hide element
@@ -275,7 +327,7 @@ function initDetailModal(triggerSelector, modalId) {
 
     triggers.forEach((trigger) => {
         trigger.addEventListener("click", () => {
-            const fields = ["title", "img", "manufacturer", "spec1", "spec2", "spec3", "spec4", "fact", "link"];
+            const fields = ["title", "img", "alt", "manufacturer", "spec1", "spec2", "spec3", "spec4", "fact", "link"];
             fields.forEach((field) => {
                 const value = trigger.getAttribute(`data-${field}`);
                 const target = modalEl.querySelector(`[data-modal-${field}]`);
@@ -289,6 +341,11 @@ function initDetailModal(triggerSelector, modalId) {
                     }
                 }
             });
+            // Set alt text on the modal image directly (images don't use data-modal-alt)
+            const modalImg = modalEl.querySelector("[data-modal-img]");
+            if (modalImg) {
+                modalImg.alt = trigger.getAttribute("data-alt") || "";
+            }
             const modal = bootstrap.Modal.getOrCreateInstance(modalEl);
             modal.show();
         });
