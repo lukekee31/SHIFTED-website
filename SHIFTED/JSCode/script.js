@@ -100,6 +100,7 @@ function renderGallery() {
         btn.textContent = 'View Details';
 
         // Data attributes read by initDetailModal()
+        // const spec___ checks which key is in each btn.dataset.spec_ as there are more than one type of data point that fills that spot and cannot jsut hard code the text.
         const specEngine = car.engine ? `Engine: ${car.engine}`
                    : car.powertrain ? `Powertrain: ${car.powertrain}`
                    : '';    
