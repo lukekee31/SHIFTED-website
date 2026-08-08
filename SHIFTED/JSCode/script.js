@@ -206,6 +206,32 @@ function initDrivingScenarioTool() {
 }
 initDrivingScenarioTool();
 
+// =================== BONUS POINTS THING =========================
+// Replaces card information in page7.html to data.js
+function renderGallery() {
+    const grid = document.getElementById('gallery-grid');
+    if (!grid || typeof carsData === 'undefined') return;
+
+    grid.innerHTML = carsData.map(car => `
+        <div class="col-md-6 col-lg-4 reveal" data-gallery-category="${car.category}">
+            <div class="shifted-card">
+                <div class="card-img-wrap"><img src="${car.cardImg}" alt="${car.title}"></div>
+                <div class="card-body">
+                    <span class="badge-blue mb-2 d-inline-block">${car.category}</span>
+                    <h5>${car.title}</h5>
+                    <p class="small mb-2">Manufacturer: ${car.manufacturer}</p>
+                    <button class="btn btn-shifted-outline btn-shifted-sm" data-showcase-trigger
+                        data-title="${car.title}" data-img="${car.modalImg}"
+                        data-spec1="Manufacturer: ${car.manufacturer}" data-spec2="Country: ${car.country}"
+                        data-spec3="Engine: ${car.engine}" data-spec4="${car.power}"
+                        data-fact="${car.fact}" data-link="${car.link}">View Details</button>
+                </div>
+            </div>
+        </div>
+    `).join('');
+}
+renderGallery();
+
 // ================= POPULAR CARS: CATEGORY FILTER =================
 function initCategoryFilter(buttonSelector, cardSelector) {
     const buttons = document.querySelectorAll(buttonSelector);
